@@ -1,0 +1,250 @@
+
+a {
+	text-decoration: none;
+	color: #CCC;
+	cursor: pointer;
+	@include transition(all 0.3s ease);
+	&:hover {
+		color: #000;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+h1 {
+	line-height: 0.9;
+	text-transform: uppercase;
+
+	&:before {
+		font-size: 70%;
+	}
+}
+
+h2 {
+	line-height: 1.8;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 6px;
+	&:before {
+		font-size: 70%;
+	}
+}
+
+h3 {
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 4px;
+
+	&:before {
+		font-size: 70%;
+	}
+}
+
+h4 {
+	line-height: 1;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	&:before {
+		font-size: 70%;
+	}
+}
+
+h5 {
+	line-height: 1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	&:before {
+		font-size: 70%;
+	}
+}
+
+h6 {
+	line-height: 1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	&:before {
+		font-size: 70%;
+	}
+}
+
+p {}
+
+.huge {
+	font-size: 150%;
+}
+
+.big {
+	font-size: 130%;
+}
+
+.small {
+	font-size: 90%;
+}
+
+.small {
+	margin: 0.4em 0;
+}
+
+.tiny {
+	font-size: 70%;
+}
+
+.bold,
+strong,
+b {
+	font-weight: bold;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.align-left,
+.text-left {
+	text-align: left;
+}
+
+.align-right,
+.text-right {
+	text-align: right;
+}
+
+.align-center,
+.text-center {
+	text-align:  center;
+}
+
+.align-middle,
+.text-middle {
+	vertical-align: middle;
+}
+
+.normal-style {
+	font-style: normal;	
+}
+
+.underline {
+	text-decoration: underline;	
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.normalcase {
+	text-transform: none;
+}
+
+.black {
+	color: #000;
+}
+
+.white {
+	color: #fff;
+}
+
+a.white:hover {
+	color: #ffbbbb;
+}
+
+.grey {
+	color: #a8a8a8;	
+}
+
+a.grey:hover {
+	color: #878787;	
+}
+
+.dark-grey {
+	color: #333333;
+}
+
+a.dark-grey:hover {
+	color: #141414;
+}
+
+.light-grey {
+	color: #CCC;	
+}
+
+a.light-grey:hover {
+	color: #a8a8a8;	
+}
+
+.orange {
+	color: #d35c2a;	
+}
+
+a.orange:hover {
+	color: #ac4b22;
+}
+
+.pink {
+	color: #ed1375;	
+}
+
+.blue {
+	color: #008ece;	
+}
+
+a.blue:hover {
+	color: #00587f;
+}
+.dark-blue {
+	color: #0057a6;
+}
+
+.teal {
+	color: #13a89e;
+}
+
+.red {
+	color: #701830;
+}
+
+a.red:hover {
+	color: #000;
+}
+
+.green {
+	color: #c2ed00;
+}
+
+a.green:hover {
+	color: #c9f400;
+}
+
+.purple {
+	color: #9c0059;
+}
+
+a.purple:hover {
+	color: #000000;
+}
+.error {
+	color: #7e0606;
+}
+
+.brown {
+	color: #7d563b;
+}
+
+a.brown:hover {
+	color: #5c3f2b;
+}
+
+.light-brown {
+	color: #c09367;
+}
+
+a.light-brown:hover {
+	color: #977451;
+}

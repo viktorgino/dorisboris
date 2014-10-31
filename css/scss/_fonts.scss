@@ -1,0 +1,23 @@
+@mixin avenir {
+	font-family:'Avenir LT W01 55 Roman';
+}
+
+.avenir {
+	@include avenir;
+}
+
+@mixin avenir-book {
+	font-family:'Avenir LT W01 45 Book';
+}
+
+.avenir-book {
+	@include avenir-book;
+}
+
+@mixin avenir-heavy {
+	font-family:'Avenir LT W01 85 Heavy';
+}
+
+.avenir-heavy {
+	@include avenir-heavy;
+}

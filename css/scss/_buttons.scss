@@ -1,0 +1,87 @@
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+
+button {
+	@include transition(all 0.3s ease);
+	background: none;
+	border: 0;
+	letter-spacing: 2px;
+
+	&:disabled {
+		opacity: 0.5;	
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+
+
+
+.menu-btn {
+	text-transform: uppercase;
+	@include font-size(13);
+	padding: 1em;
+	// background: #000;
+	// color: #FFF;
+	text-align: center;
+	line-height: 0;
+	width: 40px;
+	height: 40px;
+	&:before {
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		line-height: 1;
+		font-size: 1em;
+		vertical-align: middle;
+	}
+}
+
+
+.overlay-btn {
+	position: relative;
+	display: block;
+
+	&:after {
+		@include transition(all 0.3s ease);
+		content: '';
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(#FFF, 0.6);
+		visibility: hidden;
+	}
+
+	.overlay {
+		visibility: hidden;
+		opacity: 0;
+		display: block;
+		left: 10%;
+		right: 10%;
+		top: 50%;
+		bottom: auto;
+		@include translateY(-50%);
+		@include transition(all 0.3s ease);
+		.no-csstransforms {
+			top: 2em;
+		}
+	}
+
+	&:hover {
+		&:after,
+		.overlay {
+			opacity: 1;
+			visibility: visible;			
+		}
+	}
+
+	> img {
+		display: block;
+	}
+}

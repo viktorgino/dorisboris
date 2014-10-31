@@ -1,0 +1,90 @@
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	height: 100%;
+	background: #FFF;
+	color: #000;
+	@include font-size(14);
+	@include avenir;
+	line-height: 1.5;
+	min-width: 300px;
+	-webkit-font-smoothing: antialiased;
+}
+
+#tortilla {
+	height: 100%;
+	position: relative;
+}
+
+#header {
+	@extend .clearfix;
+
+	@include device-width(8) {
+		.container {
+			padding: 0 !important;
+		}		
+	}
+
+	.top {
+		background: #0d2f3f;
+		color: #FFF;
+		text-align: right;
+		padding: 5px 0;
+	}
+
+	.bottom {
+		background: #207d98;
+		padding: 2.2em 0;
+	}
+}
+
+#main {}
+
+#footer {
+	.top {
+		@extend .clearfix;
+		background: #151f24;
+		padding: 3.5em 0;
+	}
+
+	.bottom {
+		background: #013e5b;
+		padding: 15px 0;
+		color: #FFF;
+
+		.logo {
+			float: left;
+
+			&:after {
+				@include font-size(35);
+			}
+
+			@include device-width(5) {
+				width: 100%;
+				text-align: center;
+				padding: 1em 0;
+			}			
+		}
+
+		.copyright {
+			float: right;
+			line-height: 35px;
+			position: relative;
+			padding-right: 13em;
+
+			@include device-width(5) {
+				width: 100%;
+				text-align: center;
+			}
+
+			.social-links {
+				position: absolute;
+				right: 0;
+				top: 1px;
+			}
+		}
+	}
+}
