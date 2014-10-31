@@ -29,6 +29,12 @@ body {
 		}		
 	}
 
+	.one-third {
+		@include device-width(5) {
+			width: 100%;
+		}
+	}
+
 	.top {
 		background: #d4e5f4;
 		color: #FFF;
@@ -56,17 +62,29 @@ body {
 		}
 
 		.ecommerce-options {
-			text-align: right;
+			text-align: right;		
 
 			a {
 				@include font-size(13);
 				color: #2f2f2f;
 				margin-left: 30px;
 			}
+
+			@include device-width(5) {
+				text-align: center;
+
+				a {
+					margin: 0 15px;
+				}
+			}				
 		}
 
 		.phone {
 			color: #2f2f2f;
+
+			@include device-width(5) {
+				display: none;
+			}
 
 			.icon-tel {
 				padding: 10px 7px;
@@ -92,14 +110,20 @@ body {
 #footer {
 	.top {
 		@extend .clearfix;
-		background: #151f24;
+		background: #FFF;
 		padding: 3.5em 0;
 	}
 
 	.bottom {
-		background: #013e5b;
-		padding: 15px 0;
-		color: #FFF;
+		color: #666666;
+		@include font-size(13);
+		@include gillsans;
+		text-transform: uppercase;
+
+		.container {
+			padding: 21px 0;
+			border-top: 1px solid #d7d5cf;
+		}
 
 		.logo {
 			float: left;

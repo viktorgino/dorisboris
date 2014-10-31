@@ -7,6 +7,7 @@
 
 			main.global.init();		
 			main.mobileNav.init();
+			main.footerNav.init();
 		},
 
 		loaded: function(){
@@ -49,6 +50,29 @@
 				});
 			}
 		},
+
+		footerNav: {	
+			element :$('#footer aside div'),		    
+			init: function() {
+				if ($(window).width() < 400) {
+					var allPanels = main.footerNav.element.hide();
+
+					$('#footer aside > h5').click(function() {
+						if($(this).parent().hasClass('open')) {
+							allPanels.slideUp();
+							$('#footer aside').removeClass('open');
+							return false;
+						} else {
+							$('#footer aside').removeClass('open');
+							$(this).parent().addClass('open');
+							allPanels.slideUp();
+							$(this).next().slideDown();
+							return false;
+						}
+					});
+				}
+			}
+		},		
 
 		equalHeight: function(){
 			if($('.equal-height').length !== 0){

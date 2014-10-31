@@ -74,3 +74,4 @@
 		</div><!-- .bottom -->
 	</header><!-- #header -->
 	<div id="main" class="site-main" role="main">
+		<div class="container">

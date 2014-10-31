@@ -8,6 +8,7 @@
  * @since dorisboris 1.0
  */
 ?>
+		</div><!-- .container .site-main -->
 	</div><!-- #main .site-main -->
 	
 	<footer id="footer" class="site-footer" role="contentinfo">
@@ -17,16 +18,10 @@
 			</div>
 		</div>
 		<div class="bottom">
+			
 			<div class="container">
-				<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php // bloginfo( 'name' ); ?></a>			
+				<?php the_time('Y'); ?> <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> <?php _e(' LTD'); ?>
 				<div class="copyright">
-					<ul class="social-links">
-						<li><a class="facebook" href=""></a></li>
-						<li><a class="googleplus" href=""></a></li>
-						<li><a class="twitter" href=""></a></li>
-						<li><a class="linkedin" href=""></a></li>
-					</ul>
-					<?php _e("Follow Epigeum:", THEME_NAME); ?>
 				</div>
 			</div>
 		</div>

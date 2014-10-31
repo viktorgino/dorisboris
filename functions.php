@@ -112,7 +112,7 @@ function custom_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Footer', THEME_NAME ),
 		'id' => 'footer',
-		'before_widget' => '<aside id="%1$s" class="widget span one-third %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget span two-and-half %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h5 class="widget-title text-center light-brown uppercase">',
 		'after_title' => '</h5>',

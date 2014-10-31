@@ -72,57 +72,7 @@ blockquote {
 }
 
 .social-links {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	@extend .clearfix;
-	li {
-		float: left;
-		margin: 0;
-		padding: 0 0.5em;
-	}
 
-	a {
-		display: inline-block;
-		color: #000;
-		vertical-align: middle;
-		background: #FFF;
-		@include font-size(31);
-		width: 30px;
-		height: 30px;
-
-		&:after {
-			display: block;
-		}
-
-		&.facebook {
-			&:after {
-				//@include icon(facebook);	
-				color: #3b5597;
-			}		
-		}
-
-		&.googleplus {
-			&:after {
-				//@include icon(googleplus);
-				color: #b8242d;
-			}
-		}	
-
-		&.twitter {
-			&:after {
-				//@include icon(twitter);
-				color: #34a9e0;
-			}
-		}	
-
-		&.linkedin {
-			&:after {
-				//@include icon(linkedin);
-				color: #2175ab;
-			}
-		}				
-	}
 }
 
 .logo-container {
@@ -262,6 +212,81 @@ blockquote {
    Widgets
    ========================================================================== */
 
+#footer {
+
+	aside {
+		@include borderbox;
+		width: 25%;
+
+		@include device-width(8) {
+			width: 50%;
+			margin-bottom: 3em;
+			padding-right: 5%;
+
+			&:nth-child(3) {
+				clear: left;
+			}
+		}
+
+		@include device-width(4) {
+			width: 100%;
+		}
+
+		.widget-title {
+			color: #111111;
+			@include font-size(16);
+			@include gillsans-medium;
+			text-transform: none;
+			text-transform: uppercase;
+
+			&:after {
+				@include icon(chevron-down);
+				font-size: 0.5em;
+				margin-left: 1em;				
+				display: none;
+
+			}			
+			@include device-width(4) {
+				cursor: pointer;
+
+				&:after {
+					@include inline-block;
+				}
+			}
+		}
+
+		&.open {
+			.widget-title {
+				&:after {
+					@include icon(chevron-up);
+				}
+			}
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+
+			li {
+
+				a {
+					color: #111;
+					@include font-size(13);
+					@include gillsans;
+					font-weight: normal;
+					line-height: 1.7;
+					text-transform: uppercase;
+					display: block;
+					text-align: center;
+
+					&:hover {
+						color: #f68d36;
+					}
+				}
+			}
+		}
+	}	
+}   
 
 
 
@@ -315,7 +340,6 @@ blockquote {
 		position: relative;
 		cursor: pointer;
 		outline: none;
-		top: -50px;
 		margin-right: 20px;		
 
 		&:after {
