@@ -67,26 +67,27 @@ function custom_init(){
 	require( $template_directory . '/inc/classes/custom-post-type.php' );
 
 
-	if(function_exists('get_field')) {
-	
-		$courses_page = get_field('courses_page', 'options');
+	if(function_exists('get_field')) {	
 
-		if( !empty($courses_page->ID) ){
-			$courses_uri = get_page_uri($courses_page->ID);
+		$scrapbook_page = get_field('scrapbook_page', 'options');
 
-			$courses = new Custom_Post_Type( 'Courses', 
+		if( !empty($scrapbook_page->ID) ){
+			$scrapbook_uri = get_page_uri($scrapbook_page->ID);
+
+			$scrapbook = new Custom_Post_Type( 'Scrapbook', 
 				array(
-					'rewrite' => array('with_front' => false, 'slug' => $courses_uri),
+					'rewrite' => array('with_front' => false, 'slug' => $scrapbook_uri),
 					'capability_type' => 'post',
 					'publicly_queryable' => true,
 					'has_archive' => true, 
 					'hierarchical' => false,
 					'menu_position' => null,
 					'supports' => array('title', 'editor'),
-					'plural' => "Courses"					
+					'plural' => "Scrapbook"					
 				)
 			);							
 		}		
+
 	}
 }
 
@@ -97,7 +98,7 @@ function custom_wp(){
 function custom_widgets_init() {
 	global $template_directory;
 
-	// 	/********************** Content ***********************/
+	//********************** Content ***********************/
 
 	register_sidebar( array(
 		'name' => __( 'Sidebar', THEME_NAME ),
@@ -134,7 +135,7 @@ function custom_styles() {
 	global $wp_styles, $template_directory_uri;
 
 	wp_enqueue_style( 'style', $template_directory_uri . '/css/style.css' );	
-	wp_enqueue_style( 'fonts', '//fast.fonts.net/cssapi/03fd67ae-eb7b-4e64-af8c-a4c78b4b4ad5.css' );		
+	wp_enqueue_style( 'fonts', '//fast.fonts.net/cssapi/ba131fe1-e71a-4fd6-83e4-29c24022bc46.css' );	
 }
 
 function custom_pre_get_posts( $query ) {
@@ -145,3 +146,4 @@ function custom_pre_get_posts( $query ) {
 
 	return $query;
 }
+

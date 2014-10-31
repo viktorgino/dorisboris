@@ -29,48 +29,48 @@
 
 </head>
 <body <?php body_class(); ?>>
-<div id="tortilla">
+<div id="tortilla" class="<?php the_field('colour_scheme', 'options'); ?>">
 	<header id="header" role="banner">
 		<div class="top">
 			<div class="container">		
+				<div class="span one-third phone">
+					<i class="icon icon-tel"></i>
+					<?php the_field('global_phone_number', 'options'); ?>	
+				</div>
+				<div class="span one-third">
+					<h1 class="logo-container">
+						<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php // bloginfo( 'name' ); ?></a>
+					</h1>						
+				</div>
+				<div class="span one-third ecommerce-options">
+					<?php if ( is_user_logged_in() ): ?>
+							<?php $redirect_url = (isset($post->ID)) ? get_permalink($post->ID) : home_url(); ?>
+							<a class="btn account-btn" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">
+								<i class="icon icon-account"></i>
+								<?php _e("My Account", 'ivip'); ?>
+							</a>
+					<?php else: ?>
+							<a class="btn logout-btn" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">
+								<i class="icon icon-account"></i>
+								<?php _e("Login", 'ivip'); ?>
+							</a>	
+					<?php endif; ?>					
+					<?php global $woocommerce; ?>	
+					<a class="btn cart-btn" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping bag', 'woothemes'); ?>">
+						<i class="icon icon-basket"></i>
+						<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
+					</a>					
+				</div>
 			</div>
 		</div>
 		<div class="bottom">
 			<div class="container">
-				<div class="span two">
-					<h1 class="logo-container">
-						<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php // bloginfo( 'name' ); ?></a>
-					</h1>	
-				</div>
-				<div class="span eight primary">
-					<nav>
-						<button class="menu-btn"></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'clearfix menu', 'container' => 'nav', 'container_class' => 'primary-navigation navigation', 'depth' => 2, 'container_id' => 'header-navigation' )); ?>			
-					</nav>			
-				</div>	
-				<div id="dl-menu" class="dl-menuwrapper mobile-navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'clearfix menu', 'container' => 'nav', 'container_class' => 'primary-navigation navigation', 'depth' => 2, 'container_id' => 'header-navigation' )); ?>			
+					<div id="dl-menu" class="dl-menuwrapper mobile-navigation">
 					<button class="dl-trigger">Open Menu</button>
-					<?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_class' => 'dl-menu', 'depth' => 4, 'container' => '' )); ?>		
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'dl-menu', 'depth' => 4, 'container' => '' )); ?>		
 				</div><!-- /dl-menuwrapper -->							
 			</div>
 		</div><!-- .bottom -->
-		<?php if(!$post->post_parent){
-			$children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0&sort_column=menu_order");
-		}else{
-			if($post->ancestors) {
-				$ancestors = end($post->ancestors);
-				$children = wp_list_pages("title_li=&child_of=".$ancestors."&echo=0");
-			}
-		} ?>
-		<?php if ($children): ?>
-			<div id="subnav">
-				<div class="container">
-					<ul>
-						<?php echo $children; ?>
-					</ul>
-				</div>
-			</div>							
-		<?php endif; ?>	<!-- #subnav -->		
-
 	</header><!-- #header -->
 	<div id="main" class="site-main" role="main">

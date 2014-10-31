@@ -97,46 +97,52 @@ blockquote {
 
 		&.facebook {
 			&:after {
-				@include icon(facebook);	
+				//@include icon(facebook);	
 				color: #3b5597;
 			}		
 		}
 
 		&.googleplus {
 			&:after {
-				@include icon(googleplus);
+				//@include icon(googleplus);
 				color: #b8242d;
 			}
 		}	
 
 		&.twitter {
 			&:after {
-				@include icon(twitter);
+				//@include icon(twitter);
 				color: #34a9e0;
 			}
 		}	
 
 		&.linkedin {
 			&:after {
-				@include icon(linkedin);
+				//@include icon(linkedin);
 				color: #2175ab;
 			}
 		}				
 	}
 }
 
-.logo {
-	&:after {
-		@include icon(logo);
-		@include font-size(62);
-		color: #FFF;
-	}
+.logo-container {
+	text-align: center;
 
-	&:hover {
+	.logo {
+
 		&:after {
-			color: #5ec2e0;
+			@include icon(logo);
+			@include font-size(62);
+			color: #000;
+			@include transition(all 0.3s ease);
 		}
-	}		
+
+		&:hover {
+			&:after {
+				color: #003e6d;
+			}
+		}		
+	}	
 }
 
 .navigation {
@@ -148,7 +154,6 @@ blockquote {
 	}
 
 	li {
-		padding: 0 1em;
 		float: left;
 	}
 }
@@ -180,21 +185,28 @@ blockquote {
 		}
 
 		li {
-			padding: 0 0.5em;
 			@include inline-block;
 
 			a {
 				display: block;
 				line-height: 1;
-				@include avenir-book;
-				color: #FFF;
+				color: #555555;
+				text-transform: uppercase;
+				@include font-size(12);
+				@include gillsans-medium;
+				padding: 0 18px;
+				border-right: 1px solid #555555;
 
 				&:hover {
-					color: #f68d36;
+					color: #000;
 				}				
 			}
 
-	 	
+			&:last-child {
+				a {
+					border-right: none;
+				}
+			}
 		}
 	}	
 
@@ -206,81 +218,41 @@ blockquote {
 
 
 	/* Top Nav Styles */
-	#top-navigation {
+	#header-navigation {
 		margin: 0 3em;
 
 		@include device-width(8) {
 			display: none;
 		}
 
-		li {
-
-			a {
-				padding: 9px;
-				@include font-size(15);
-			}
-
-		 	&.current_page_parent > a,
-		 	&.current-menu-item > a,
-		 	&.current-category-ancestor > a,
-		 	&.current-page-ancestor > a,
-		 	&.current-post-ancestor > a,
-		 	&.current-menu-parent > a,
-		 	&.current-post-parent > a,
-		 	&.current > a 	{
-		 		color: #FFF;
-				@include border-radius(3px);
-				background: #0b648e;					 		
-		 	}			
+		.menu {
+			position: static;
 		}
-	}
 
-	/* Primary Header Nav Styles */	
-	.primary {
-		padding-top: 0.5em;
-
-		@include device-width(8) {
+		ul.sub-menu {
 			display: none;
+			position: absolute;
+			left: 0;
+			top: 64px;
+			width: 100%;
+			background: #eae8e2;
+			padding: 20px;
+			text-align: center;		
+
+			li {
+				float: none;
+			}	
 		}
 
-		.primary-navigation {
-			float:right;
+		.current-menu-item {
 
-			li, li.hightlight {
-				padding: 0;
-				margin: 0 0.5em;
+			&.menu-item-has-children {
+				margin-bottom: 59px;
 
-				a {
-					padding: 14px 38px;
-					@include font-size(18);
-
-					@include device-width(13) {
-						padding: 14px 30px;
-					}					
-
-					@include device-width(12) {
-						padding: 14px 20px;
-					}
-
-					@include device-width(11) {
-						padding: 14px 20px !important;
-						@include font-size(15);
-					}					
+				ul.sub-menu {
+					display: block;					
 				}
-
-			 	&.current_page_parent > a,
-			 	&.current-menu-item > a,
-			 	&.current-category-ancestor > a,
-			 	&.current-page-ancestor > a,
-			 	&.current-post-ancestor > a,
-			 	&.current-menu-parent > a,
-			 	&.current-post-parent > a,
-			 	&.current > a 	{
-			 		color: #FFF;
-					@include border-radius(25px);
-					background: #176c84;		 		
-			 	}			
-			}			
+			}
 		}
 	}
 }
@@ -421,7 +393,7 @@ blockquote {
 			position: absolute;
 			top: 0;
 			line-height: 50px;
-			@include icon(chevron-right);
+			@include icon(arrow-right);
 			speak: none;
 			-webkit-font-smoothing: antialiased;
 			color: #FFF;
