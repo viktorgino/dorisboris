@@ -215,6 +215,10 @@ blockquote {
 	.item {
 		position: relative;
 
+		img {
+			display: block;
+		}
+
 		.caption {
 			position: absolute;
 			bottom: 2em;
@@ -269,6 +273,74 @@ blockquote {
 	}
 }   
 
+#quick-links {
+	margin: 15px 0;
+
+	.span {
+		padding: 0 5px;
+
+		&:first-child {
+			padding-left: 0;
+		}	
+
+		&:last-child {
+			padding-right: 0;
+		}	
+
+		@include device-width(4) {
+			width: 100%;
+			padding: 0 10px !important;
+		}		
+
+		a {
+			display: block;
+			position: relative;
+
+			h1 {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				background: #FFF;
+				padding: 15px;
+				@include gillsans-medium;
+				@include font-size(18);
+				color: #111111;				
+
+				&:after {
+					@include icon(arrow-right);
+					margin-left: 6px;
+					font-size: 6px;
+					float: right;
+					margin-top: 5px;					
+				}
+
+				@include device-width(9) {
+					@include font-size(15);
+				}
+
+				@include device-width(6) {
+					@include font-size(13);
+					position: static;
+
+					&:after {
+						float: none;
+					}
+				}	
+
+				@include device-width(4) {
+					@include font-size(13);
+					position: absolute;
+
+					&:after {
+						float: none;
+					}
+				}							
+			}
+		}
+
+	}
+
+}
 
 
 /* =============================================================================
