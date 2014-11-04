@@ -1,0 +1,42 @@
+.orange {
+	
+	a.button {
+		background: #c1272d;
+
+		&:after {
+			border-color: transparent transparent transparent #c1272d;
+		}
+	}
+
+	h1 {
+		color: #bf1e2e;
+	}	
+
+
+	#header {
+		.top {
+			background: #fff0e3;
+		}
+	}
+
+	.owl-carousel {
+
+		.item {
+			.caption {
+				a.link:hover {
+					color: #c1272d;
+				}
+			}
+		}
+	}
+
+	#quick-links {
+		a:hover {
+			h1 {
+				color: #c1272d;
+			}
+		}
+	}
+
+
+}

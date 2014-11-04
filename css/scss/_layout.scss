@@ -12,7 +12,7 @@ body {
 	min-width: 300px;
 	-webkit-font-smoothing: antialiased;
 
-	@include american;
+	@include gillsans;
 }
 
 #tortilla {
@@ -42,10 +42,7 @@ body {
 		background: #d4e5f4;
 		color: #FFF;
 		padding: 35px 0 30px;
-
-		.orange & {
-			background: #fff0e3;
-		}
+		@include american;
 
 		i {
 			color: #FFF;

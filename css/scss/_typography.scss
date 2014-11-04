@@ -16,10 +16,9 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
 	line-height: 0.9;
 	text-transform: uppercase;
-
-	&:before {
-		font-size: 70%;
-	}
+	@include font-size(25);
+	@include gillsans;
+	color: #010101;
 }
 
 h2 {
@@ -27,9 +26,6 @@ h2 {
 	text-transform: uppercase;
 	font-weight: normal;
 	letter-spacing: 6px;
-	&:before {
-		font-size: 70%;
-	}
 }
 
 h3 {
@@ -37,41 +33,25 @@ h3 {
 	text-transform: uppercase;
 	font-weight: normal;
 	letter-spacing: 4px;
-
-	&:before {
-		font-size: 70%;
-	}
 }
 
 h4 {
 	line-height: 1;
 	letter-spacing: 4px;
 	text-transform: uppercase;
-	&:before {
-		font-size: 70%;
-	}
 }
 
 h5 {
 	line-height: 1;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	&:before {
-		font-size: 70%;
-	}
 }
 
 h6 {
 	line-height: 1;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-
-	&:before {
-		font-size: 70%;
-	}
 }
-
-p {}
 
 .huge {
 	font-size: 150%;
@@ -99,46 +79,14 @@ b {
 	font-weight: bold;
 }
 
-.normal {
-	font-weight: normal;
-}
+.content {
 
-.italic {
-	font-style: italic;
-}
+	p {
+		@include font-size(15);
+		line-height: 1.4;
 
-.align-left,
-.text-left {
-	text-align: left;
-}
-
-.align-right,
-.text-right {
-	text-align: right;
-}
-
-.align-center,
-.text-center {
-	text-align:  center;
-}
-
-.align-middle,
-.text-middle {
-	vertical-align: middle;
-}
-
-.normal-style {
-	font-style: normal;	
-}
-
-.underline {
-	text-decoration: underline;	
-}
-
-.uppercase {
-	text-transform: uppercase;
-}
-
-.normalcase {
-	text-transform: none;
+		strong {
+			@include font-size(18);		
+		}
+	}
 }

@@ -85,3 +85,43 @@ button {
 		display: block;
 	}
 }
+
+a.button {
+	background: #0258ad;
+	color: #FFF;
+	@include gillsans-medium;
+	text-transform: uppercase;
+	@include font-size(15);
+	padding: 6px 12px 6px 25px;
+	@include inline-block;
+	position: relative;
+	margin-top: 20px;
+
+	&:after {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 17px 0 17px 10px;
+		border-color: transparent transparent transparent #0258ad;
+		position: absolute;
+		right: -10px;
+		top: 0;		
+	}
+
+	&:before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 17px 0 17px 10px;
+		border-color: transparent transparent transparent #FFF;
+		position: absolute;
+		left: 0px;
+		top: 0;		
+	}	
+
+	&:hover {
+		color: #000;
+	}
+}

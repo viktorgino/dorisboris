@@ -18,20 +18,20 @@
 	switch($layout){
 
 		case 'row':	
-		if(get_sub_field('column')): ?>
+		if(get_sub_field('columns')): ?>
 					
 			<div class="row" style="
 				<?php if (get_sub_field('background_color')): ?>background-color: <?php the_sub_field('background_color'); ?>; <?php endif; ?>
 				<?php if (get_sub_field('background_image')): ?>background-image: url('<?php the_sub_field('background_image'); ?>');<?php endif; ?>
 				<?php if (get_sub_field('css')):?><?php the_sub_field('css'); ?><?php endif; ?>
 				">
-				<div class="inner container">
+				<div class="inner">
 				<?php if (get_sub_field('row_title')):?>
 					<h1 class="row-title"><?php the_sub_field('row_title'); ?></h1>
 				<?php endif; ?>
 				
-				<?php $total_columns = count( get_sub_field('column', $id)); ?>
-				<?php while (has_sub_field('column', $id)) : ?>
+				<?php $total_columns = count( get_sub_field('columns', $id)); ?>
+				<?php while (has_sub_field('columns', $id)) : ?>
 					<?php
 					switch($total_columns){
 						case 2:
@@ -54,10 +54,12 @@
 							$class = 'ten';
 							break;
 					} ?>
-					<div class="break-on-tablet span <?php if (get_sub_field('column_width')):?><?php the_sub_field('column_width'); ?><?php else: ?><?php echo $class; ?><?php endif; ?>" style="
-					<?php if (get_sub_field('text_color')):?>color: <?php the_sub_field('text_color'); ?>;<?php endif; ?>
-					">
+					<div class="break-on-tablet span <?php echo $class; ?>">
 						<?php the_sub_field('column-content'); ?>
+						<?php if(get_sub_field('cta_link')): ?>
+							<a class="button" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_text'); ?></a>
+						<?php endif; ?>
+
 					</div>
 				<?php endwhile; ?>
 				</div>

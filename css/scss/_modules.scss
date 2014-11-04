@@ -266,7 +266,7 @@ blockquote {
 				}
 
 				&:hover {
-					color: #ccc;
+					color: #0258ad;
 				}
 			}
 		}
@@ -295,6 +295,11 @@ blockquote {
 		a {
 			display: block;
 			position: relative;
+			@include transition(all 0.3s ease);
+
+			img {
+				display: block;
+			}
 
 			h1 {
 				position: absolute;
@@ -304,7 +309,8 @@ blockquote {
 				padding: 15px;
 				@include gillsans-medium;
 				@include font-size(18);
-				color: #111111;				
+				color: #111111;	
+				@include transition(all 0.3s ease);			
 
 				&:after {
 					@include icon(arrow-right);
@@ -336,10 +342,14 @@ blockquote {
 					}
 				}							
 			}
+
+			&:hover {
+				h1 {
+					color: #0258ad;
+				}
+			}
 		}
-
 	}
-
 }
 
 
@@ -349,9 +359,85 @@ blockquote {
 
 #footer {
 
+	.share {
+		background: #eae9e7;
+		padding: 15px 0;
+
+		i {
+			color: #FFF;
+			background: #333333;
+			@include border-radius(25px);
+			padding: 10px 9px;
+			@include font-size(13);			
+		}		
+
+		.phone {
+			color: #2f2f2f;
+			@include gillsans-medium;
+			@include font-size(18);
+
+			.icon-tel {
+				padding: 10px 7px;
+				@include font-size(13);
+			}
+		}		
+	}
+
+	#newsletter {
+		.container {
+			padding: 3em 11em 1.5em;
+			border-top: 1px solid #d7d5cf;
+
+			@include device-width(8) {
+				padding: 21px 1em;
+			}
+
+			.label {
+				@include american;
+				@include font-size(13);
+				color: #666666;
+				text-transform: uppercase;
+			}
+
+			.gform_wrapper {
+
+				.ginput_container {
+					input {
+						@include box-shadow(0px 2px 0px #e3e3e3 inset);
+					}
+				}
+
+				.gform_footer {
+					padding: 0;
+					margin: 0;
+
+					.gform_button {
+						display: none;
+					}
+				}
+			}
+
+			.stamp {
+				@include inline-block;
+				position: absolute;
+				right: -35%;
+				top: -60px;	
+
+				@include device-width(8) {
+					right: 0;
+				}			
+
+				@include device-width(6) {
+					display: none;	
+				}
+			}
+		}
+	}	
+
 	aside {
 		@include borderbox;
 		width: 25%;
+		text-align: center;
 
 		@include device-width(8) {
 			width: 50%;
