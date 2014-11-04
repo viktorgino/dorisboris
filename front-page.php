@@ -1,6 +1,38 @@
 <?php get_header(); ?>
 <section id="front-page">
 	<div class="inner">
+
+	<!-- if is FRONT-PAGE -->
+
+	<?php if (is_front_page()): ?>
+		<?php if( have_rows('front_page_slider') ): ?>
+			<div class="owl-carousel">
+		  	<?php while ( have_rows('front_page_slider') ) : the_row(); ?>  
+
+				<?php 
+					$attachment_id = get_sub_field('slide_image');
+					$size = "slider";
+					$image = wp_get_attachment_image_src( $attachment_id, $size );								
+				?>
+				<div class="item">
+					<img alt="" src="<?php echo $image[0]; ?>" />
+					<div class="caption">
+						<h1><?php the_sub_field('slide_title'); ?></h1>
+						<p><?php the_sub_field('slide_description'); ?></p>
+						<?php 
+						$posts = get_sub_field('link_to');
+						if( $posts ): ?>
+							<?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+							    	<a class="link" href="<?php echo get_permalink( $p ); ?>"><?php the_sub_field('button_title'); ?></a>
+							<?php endforeach; ?>
+						<?php endif; ?>						
+					</div>
+				</div>
+		    <?php endwhile; ?>
+		    </div>
+		<?php endif; ?>
+	<?php endif; ?>
+
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

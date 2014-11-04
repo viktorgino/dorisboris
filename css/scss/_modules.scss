@@ -207,6 +207,69 @@ blockquote {
 	}
 }
 
+/* =============================================================================
+   Carousel
+   ========================================================================== */
+
+.owl-carousel {
+	.item {
+		position: relative;
+
+		.caption {
+			position: absolute;
+			bottom: 2em;
+			left: 3em;
+			background-color: #fff;
+		    background-image: url(../images/backgrounds/strip.jpg);
+		    background-repeat:repeat-x;
+		    background-position: 100% 95%;				
+			padding: 40px;	
+			text-align: center;
+			max-width: 375px;
+
+			@include device-width(9) {
+				position: static;
+				max-width: 100%;
+			}
+
+			@include device-width(6) {
+				padding: 20px;	
+			}
+
+			h1, p {
+				@include gillsans-medium;
+				@include font-size(25);
+				color: #111111;
+			}	
+
+			p {
+				@include font-size(18);
+				line-height: 1;
+				margin-top: 1em;				
+			}
+
+			a.link {
+				@include gillsans;
+				@include font-size(11);
+				color: #111;
+				margin-top: 3em;
+				@include inline-block;				
+
+				&:after {
+					@include icon(arrow-right);
+					font-size: 6px;
+					margin-left: 6px;
+				}
+
+				&:hover {
+					color: #ccc;
+				}
+			}
+		}
+	}
+}   
+
+
 
 /* =============================================================================
    Widgets

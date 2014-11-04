@@ -8,6 +8,21 @@
 			main.global.init();		
 			main.mobileNav.init();
 			main.footerNav.init();
+
+			$('.owl-carousel').owlCarousel({
+			    loop:true,
+			    margin:0,
+			    nav:true,
+			    items: 1,
+			    touchDrag: true,
+			    navText: [,],
+			    autoplay: true,
+			    autoplayHoverPause: true,
+			    autoplaySpeed: 1000,
+			    dots: false
+
+
+			});				
 		},
 
 		loaded: function(){

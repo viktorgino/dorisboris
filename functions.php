@@ -57,6 +57,9 @@ function custom_setup_theme() {
 
 	add_editor_style('css/editor-style.css');
 
+	add_image_size( 'slider', 1172, 375, true);
+
+
 }
 
 function custom_init(){

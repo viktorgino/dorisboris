@@ -30,7 +30,11 @@ body {
 	}
 
 	.one-third {
-		@include device-width(5) {
+		@include device-width(9) {
+			width: 50%;
+		}
+
+		@include device-width(6) {
 			width: 100%;
 		}
 	}
@@ -70,7 +74,7 @@ body {
 				margin-left: 30px;
 			}
 
-			@include device-width(5) {
+			@include device-width(6) {
 				text-align: center;
 
 				a {
@@ -82,7 +86,7 @@ body {
 		.phone {
 			color: #2f2f2f;
 
-			@include device-width(5) {
+			@include device-width(9) {
 				display: none;
 			}
 
@@ -105,7 +109,9 @@ body {
 	}
 }
 
-#main {}
+#main {
+	padding-top: 30px;
+}
 
 #footer {
 	.top {
