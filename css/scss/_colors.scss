@@ -1,10 +1,12 @@
+$red: #c1272d;
+
 .orange {
 	
 	a.button {
-		background: #c1272d;
+		background: $red;
 
 		&:after {
-			border-color: transparent transparent transparent #c1272d;
+			border-color: transparent transparent transparent $red;
 		}
 	}
 
@@ -24,7 +26,7 @@
 		.item {
 			.caption {
 				a.link:hover {
-					color: #c1272d;
+					color: $red;
 				}
 			}
 		}
@@ -33,10 +35,31 @@
 	#quick-links {
 		a:hover {
 			h1 {
-				color: #c1272d;
+				color: $red;
 			}
 		}
 	}
 
+	#footer {
 
+		aside {
+			ul {
+				li {
+					a:hover {
+						color: $red;
+					}
+				}				
+			} 
+		} 
+		.footer-navigation {
+
+			ul.menu {
+				li {
+					a:hover {
+						color: $red;
+					}					
+				}
+			}
+		}
+	}
 }

@@ -289,7 +289,8 @@ blockquote {
 
 		@include device-width(4) {
 			width: 100%;
-			padding: 0 10px !important;
+			padding: 0px !important;
+			margin: 0.5em 0;
 		}		
 
 		a {
@@ -356,6 +357,10 @@ blockquote {
 /* =============================================================================
    Widgets
    ========================================================================== */
+
+.widget_price_filter {
+	display: none;
+}
 
 #footer {
 
@@ -501,12 +506,62 @@ blockquote {
 					text-align: center;
 
 					&:hover {
-						color: #f68d36;
+						color: #0258ad;
 					}
 				}
 			}
 		}
 	}	
+
+	.footer-navigation {
+		text-align: right;
+
+		@include device-width(6) {
+			text-align: center;
+			margin-bottom: 2em;
+		}
+
+		ul.menu {
+			@include inline-block;
+
+			li {
+				border-right: 1px solid #949494;
+				line-height: 1;
+
+				&:last-child {
+					border-right: none;
+				}
+
+				@include device-width(4) {
+					border-right: none;
+					width: 100%;
+					border-bottom: 1px solid #F0F0F0;
+					padding: 1em 0;
+
+					&:last-child {
+						border-bottom: none;
+					}					
+				}
+
+				a {
+					@include font-size(13);
+					@include gillsans;
+					color: #666666;
+					padding: 0 18px;
+					font-weight: normal;
+
+					&:hover {
+						color: #0258ad;
+					}
+
+					@include device-width(7) {
+						@include font-size(12);
+						padding: 0 14px;
+					}
+				}
+			}
+		}
+	}
 }   
 
 

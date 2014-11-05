@@ -52,7 +52,8 @@ function custom_setup_theme() {
 	add_post_type_support('page', 'excerpt');
 
 	register_nav_menus( array(
-		'primary' => __( 'Primary', THEME_NAME )
+		'primary' => __( 'Primary', THEME_NAME ),
+		'footer' => __( 'Footer', THEME_NAME )
 	) );
 
 	add_editor_style('css/editor-style.css');
@@ -149,4 +150,7 @@ function custom_pre_get_posts( $query ) {
 
 	return $query;
 }
+
+//remove Woocommerce Default Sorting Dropdown
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 

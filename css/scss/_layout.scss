@@ -113,50 +113,33 @@ body {
 	.top {
 		@extend .clearfix;
 		background: #FFF;
-		padding: 3.5em 0;
+		padding: 3.5em 0 1em;
 	}
 
 	.bottom {
 		color: #666666;
 		@include font-size(13);
-		@include gillsans;
+		@include gillsans-medium;
 		text-transform: uppercase;
 
 		.container {
 			padding: 21px 0;
 			border-top: 1px solid #d7d5cf;
-		}
 
-		.logo {
-			float: left;
-
-			&:after {
-				@include font-size(35);
+			.three {
+				float: left;
 			}
 
-			@include device-width(5) {
-				width: 100%;
-				text-align: center;
-				padding: 1em 0;
-			}			
-		}
+			.seven {
+				float: right;
+			}				
 
-		.copyright {
-			float: right;
-			line-height: 35px;
-			position: relative;
-			padding-right: 13em;
-
-			@include device-width(5) {
-				width: 100%;
-				text-align: center;
-			}
-
-			.social-links {
-				position: absolute;
-				right: 0;
-				top: 1px;
-			}
+			@include device-width(6) {
+				.three, .seven {
+					width: 100%;
+					text-align: center;
+				}
+			}		
 		}
 	}
 }

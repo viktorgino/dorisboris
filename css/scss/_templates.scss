@@ -4,6 +4,10 @@
 
 		.span {
 			padding: 3em;
+
+			@include device-width(4) {
+				padding: 3em 0em;				
+			}
 		}
 	}
 	

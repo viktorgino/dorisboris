@@ -43,9 +43,12 @@
 		<div class="bottom">
 			
 			<div class="container">
-				<?php the_time('Y'); ?> <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> <?php _e(' LTD'); ?>
-				<div class="copyright">
+				<div class="span seven">
+					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'clearfix menu', 'container' => 'nav', 'container_class' => 'footer-navigation navigation', 'depth' => 1 )); ?>								
 				</div>
+				<div class="span three">
+					<?php the_time('Y'); ?> <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> <?php _e(' LTD'); ?>	
+				</div>				
 			</div>
 		</div>
 	</div>
