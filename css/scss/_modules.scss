@@ -164,7 +164,12 @@ blockquote {
 
 				&:hover {
 					color: #000;
-				}				
+				}		
+
+				@include device-width(10) {
+					@include font-size(10);
+					padding: 0 10px;
+				}						
 			}
 
 			&:last-child {
@@ -186,6 +191,10 @@ blockquote {
 	#header-navigation {
 		margin: 0 3em;
 
+		@include device-width(11) {
+			margin: 0em;
+		}
+
 		@include device-width(8) {
 			display: none;
 		}
@@ -206,6 +215,7 @@ blockquote {
 
 			li {
 				float: none;
+
 			}	
 		}
 

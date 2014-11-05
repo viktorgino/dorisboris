@@ -29,22 +29,13 @@
 
 .container {
 	@include box-sizing(border-box);
-	width: 80%;
+	width: 100%;
 	max-width: 1172px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-
-	@include device-width(9) {
-		width: 90%;
-	}
-
-
-	@include device-width(10) {
-		width: auto;
-	}
-
-	@include device-width(8) {
+	
+	@include device-width(12) {
 		padding: 0 1em;
 	}
 }

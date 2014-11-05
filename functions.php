@@ -71,28 +71,28 @@ function custom_init(){
 	require( $template_directory . '/inc/classes/custom-post-type.php' );
 
 
-	if(function_exists('get_field')) {	
+	// if(function_exists('get_field')) {	
 
-		$scrapbook_page = get_field('scrapbook_page', 'options');
+	// 	$scrapbook_page = get_field('scrapbook_page', 'options');
 
-		if( !empty($scrapbook_page->ID) ){
-			$scrapbook_uri = get_page_uri($scrapbook_page->ID);
+	// 	if( !empty($scrapbook_page->ID) ){
+	// 		$scrapbook_uri = get_page_uri($scrapbook_page->ID);
 
-			$scrapbook = new Custom_Post_Type( 'Scrapbook', 
-				array(
-					'rewrite' => array('with_front' => false, 'slug' => $scrapbook_uri),
-					'capability_type' => 'post',
-					'publicly_queryable' => true,
-					'has_archive' => true, 
-					'hierarchical' => false,
-					'menu_position' => null,
-					'supports' => array('title', 'editor'),
-					'plural' => "Scrapbook"					
-				)
-			);							
-		}		
+	// 		$scrapbook = new Custom_Post_Type( 'Scrapbook', 
+	// 			array(
+	// 				'rewrite' => array('with_front' => false, 'slug' => $scrapbook_uri),
+	// 				'capability_type' => 'post',
+	// 				'publicly_queryable' => true,
+	// 				'has_archive' => true, 
+	// 				'hierarchical' => false,
+	// 				'menu_position' => null,
+	// 				'supports' => array('title', 'editor'),
+	// 				'plural' => "Scrapbook"					
+	// 			)
+	// 		);							
+	// 	}		
 
-	}
+	// }
 }
 
 function custom_wp(){

@@ -11,25 +11,23 @@ get_header(); ?>
 
 	<section id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
+		    <?php 
+				$i = 1;
+				$array = array(3,7);
+			?> 
 			<?php if ( have_posts() ) : ?>
 
-			<?php
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
+			<?php while ( have_posts() ) : the_post(); ?>
+				<article id="post-<?php the_ID(); ?>" class="item span <?php if (in_array($i, $array)){echo 'five';} else {echo 'two-and-half';} ?>">
+						<?php 
+							the_title();
+							the_post_thumbnail(); 
+						?>
+				</article>
+				<?php $i++; ?>
+				<?php endwhile;  ?>	
+			<?php endif; ?>
 
-						the_title();
-						the_post_thumbnail();
-					endwhile;
-					// Previous/next page navigation.
-					get_template_part('inc/pagination');
-
-				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
-
-				endif;
-			?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 

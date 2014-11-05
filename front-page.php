@@ -59,7 +59,7 @@
 								$imgsrc = wp_get_attachment_image_src($attachment_id,array(380, 220, 'bfi_thumb' => true) );
 								$image = bfi_thumb( $imgsrc[0] );
 							?>
-							<img src="<?php echo $image;  ?>" alt="">
+							<img src="<?php echo $image; ?>" alt="">
 							<h1><?php the_sub_field('box_title'); ?></h1>					
 						</a>
 				</div>
