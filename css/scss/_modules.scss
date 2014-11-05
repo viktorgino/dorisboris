@@ -71,8 +71,23 @@ blockquote {
 
 }
 
-.social-links {
+.social {
+	text-transform: uppercase;
+	@include gillsans-medium;
+	@include font-size(15);
+	color: #2f2f2f;
+	text-align: right;
+	line-height: 1;
 
+	span {
+		position: relative;
+		top: -10px;
+		margin-right: 5px;
+	}		
+
+	a {
+		margin: 0 7px;
+	}
 }
 
 .logo-container {
@@ -368,6 +383,18 @@ blockquote {
 		background: #eae9e7;
 		padding: 15px 0;
 
+		
+		@include device-width(5) {
+			.span {
+				width: 100%;
+				text-align: center;
+
+				&.phone {
+					margin-bottom: 1em;
+				}
+			}
+		}
+
 		i {
 			color: #FFF;
 			background: #333333;
@@ -380,6 +407,7 @@ blockquote {
 			color: #2f2f2f;
 			@include gillsans-medium;
 			@include font-size(18);
+			padding-top: 3px;
 
 			.icon-tel {
 				padding: 10px 7px;

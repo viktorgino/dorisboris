@@ -14,9 +14,14 @@
 	<footer id="footer" class="site-footer" role="contentinfo">
 		<div class="share">
 			<div class="container">
-				<div class="span five phone break-on-mobile">
+				<div class="span four phone break-on-mobile">
 					<i class="icon icon-tel"></i>
 					<?php the_field('global_phone_number', 'options'); ?>	
+				</div>
+				<div class="span six social">
+					<span><?php _e('Find us on:') ?></span>
+					<a href="<?php the_field('facebook_url', 'options'); ?>"><img src="<?php the_field('facebook_icon', 'options'); ?>" alt=""></a>
+					<a href="<?php the_field('ebay_url', 'options'); ?>"><img src="<?php the_field('ebay_icon', 'options'); ?>" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -27,21 +32,19 @@
 		</div>
 		<div id="newsletter">
 			<div class="container">
-					<div class="span five break-on-mobile">
-						<img src="<?php bloginfo('template_directory'); ?>/images/misc/newsletter-title.jpg" alt="">
-						<span class="label"><?php _e('Keep up to date with our latest news & products:') ?></span>
-					</div>
-					<div class="span five break-on-mobile">
-						<?php gravity_form(1, false, false, false, '', true); ?>
-						<span class="stamp">
-							<img src="<?php bloginfo('template_directory'); ?>/images/misc/newsletter-stamp.png" alt="">
-						</span>
-					</div>
-				
+				<div class="span five break-on-mobile">
+					<img src="<?php bloginfo('template_directory'); ?>/images/misc/newsletter-title.jpg" alt="">
+					<span class="label"><?php _e('Keep up to date with our latest news & products:') ?></span>
+				</div>
+				<div class="span five break-on-mobile">
+					<?php gravity_form(1, false, false, false, '', true); ?>
+					<span class="stamp">
+						<img src="<?php bloginfo('template_directory'); ?>/images/misc/newsletter-stamp.png" alt="">
+					</span>
+				</div>			
 			</div>				
 		</div>
-		<div class="bottom">
-			
+		<div class="bottom">		
 			<div class="container">
 				<div class="span seven">
 					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'clearfix menu', 'container' => 'nav', 'container_class' => 'footer-navigation navigation', 'depth' => 1 )); ?>								
