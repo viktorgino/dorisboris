@@ -173,6 +173,7 @@ function frontend_scripts_include_lightbox() {
 // Remove Woo Breadcrumbs
 remove_action( 'woocommerce_before_main_content','woocommerce_breadcrumb', 20, 0);
 
+
 // Woo Number of Product before pagination
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 22;' ), 20 );
 
@@ -182,6 +183,9 @@ function woo_related_products_limit() {
 	$args['posts_per_page'] = 6;
 	return $args;
 }
+
+
+//Change number of related items on Product Page
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
   function jk_related_products_args( $args ) {
  
@@ -190,11 +194,24 @@ add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_arg
 	return $args;
 }
 
+
+//Completely remove Rewiev tab from Product page
 add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
 function sb_woo_remove_reviews_tab($tabs) {
 
  unset($tabs['reviews']);
+ unset( $tabs['additional_information'] );
 
  return $tabs;
 }
 
+
+//Change number of thumbnails per row in product galleries
+add_filter ( 'woocommerce_product_thumbnails_columns', 'xx_thumb_cols' );
+ function xx_thumb_cols() {
+     return 4; // .last class applied to every 4th thumbnail
+ }
+
+
+ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 15 );
