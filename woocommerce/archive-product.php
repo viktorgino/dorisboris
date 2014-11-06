@@ -44,17 +44,29 @@ get_header( 'shop' ); ?>
 				<?php 
 					$queried_object = get_queried_object();
 					$taxonomy = $queried_object->taxonomy;
+					$taxonomy_name = $queried_object->name;
 					$term_id = $queried_object->term_id;
 
 					$cat_description = get_field('category_description', $queried_object);		 
 					$cat_image = get_field('category_image', $taxonomy . '_' . $term_id);									
 				?>				
-
+				
+				<?php if($cat_description): ?>
 					<li class="description" style="background-image: url(<?php echo bfi_thumb( $cat_image, array('width' => 510, 'height' => 336)); ?>);">
 						<div class="inner">
 							<?php echo $cat_description; ?>
 						</div>
 					</li>
+				<?php else: ?>
+					<li class="description" style="background-image: url(<?php bloginfo('template_directory'); ?>/images/misc/cat-default.jpg);">
+						<div class="inner">
+							
+							<p style="text-align: center;"><img src="<?php bloginfo('template_directory'); ?>/images/misc/cat-default-icon.png" alt=""></p><p>&nbsp;</p>
+							<p style="text-align: center;"><strong style="text-transform: uppercase"><?php echo $taxonomy_name; ?></strong></p>
+							<hr>
+						</div>
+					</li>					
+				<?php endif; ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

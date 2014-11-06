@@ -132,96 +132,137 @@
 	/* =Archives
 	-------------------------------------------------------------- */
 
-	ul.products {
+	#content {
+		> ul.products {
 
-		li, li.product {
-			width: 23%;
-			margin: 1%;
-			float: left !important;
-			clear: none;
-
-			&.description {
-				width: 48%;
-				float: left;
-				padding: 2%;
-				background-size: cover;
-
-				@include device-width(8) {
-					width: 98%;
-				}
-
-				> img {
-					display: block;
-				}				
-
-				.inner {
-					background: rgba(255, 255, 255, 0.8);
-					padding: 35px 35px 80px;	
-
-					hr {
-						background: url(../images/misc/separator.png) left top repeat;
-						height: 6px;
-						width: 70%;
-					}			
-				}
-			}
-
-			&.first {
+			li, li.product {
+				width: 23%;
+				margin: 1%;
+				float: left !important;
 				clear: none;
-			}
 
-			&:nth-child(4) {
-				clear: left !important;
+				&.description {
+					width: 48%;
+					float: left;
+					padding: 2%;
+					background-size: cover;
 
-				@include device-width(8) {
-					clear: none !important;
-				}				
-			}
+					@include device-width(8) {
+						width: 98%;
+					}
 
-			@include device-width(8) {
-				width: 31%;
+					> img {
+						display: block;
+					}				
 
-				&:nth-child(3n+2) {
-					clear: left !important;
+					.inner {
+						background: rgba(255, 255, 255, 0.8);
+						padding: 35px 35px 80px;	
 
-					@include device-width(6) {
-						clear: none !important;
+						hr {
+							background: url(../images/misc/separator.png) left top repeat;
+							height: 6px;
+							width: 70%;
+						}			
 					}
 				}
-			}	
 
-			@include device-width(6) {
-				width: 48%;
-
-				&:nth-child(2n+2) {
-					clear: left !important;
+				&.first {
+					clear: none;
 				}
-			}			
 
-			h3 {
-				@include gillsans-medium;
-				@include font-size(12);
-				color: #333333;
-				letter-spacing: 0;
-				padding: .5em 3em;
-				line-height: 1.4;		
-				
-				@include device-width(10) {
-					padding: .5em;
-				}		
+				&:nth-child(4) {
+					clear: left !important;
+
+					@include device-width(8) {
+						clear: none !important;
+					}				
+				}
+
+				@include device-width(8) {
+					width: 31%;
+
+					&:nth-child(3n+2) {
+						clear: left !important;
+
+						@include device-width(6) {
+							clear: none !important;
+						}
+					}
+				}	
+
+				@include device-width(6) {
+					width: 48%;
+
+					&:nth-child(2n+2) {
+						clear: left !important;
+					}
+				}			
+
+				h3 {
+					@include gillsans-medium;
+					@include font-size(12);
+					color: #333333;
+					letter-spacing: 0;
+					padding: .5em 3em;
+					line-height: 1.4;		
+					
+					@include device-width(10) {
+						padding: .5em;
+					}		
+				}
+
+				.price {
+					color: #333333;
+					@include font-size(16);
+					@include gillsans-medium;
+				}
+
+				.add_to_cart_button {
+					display: none;
+				}
 			}
+		}	
 
-			.price {
-				color: #333333;
-				@include font-size(16);
-				@include gillsans-medium;
-			}
+	}
 
-			.add_to_cart_button {
-				display: none;
+
+	/* =Single Product
+	-------------------------------------------------------------- */	
+
+	.product {
+		.product-inner {
+			@extend .clearfix;
+
+			.summary {
+				.product_title {
+					color: #0063a1;
+				}
 			}
 		}
-	}	
+
+		.related {
+			@extend .clearfix;
+			background: #f6f6f5;
+
+			h2 {
+				text-align: center;
+				@include font-size(19);
+				color: #333333;
+				@include gillsans;
+				padding: 40px 0;
+			}
+
+			ul.products {
+				li.product {
+					width: 23%;
+					margin: 1%;
+					float: left;
+				}
+
+			}			
+		}
+	}
 
 	/* =Tables
 	-------------------------------------------------------------- */

@@ -176,3 +176,25 @@ remove_action( 'woocommerce_before_main_content','woocommerce_breadcrumb', 20, 0
 // Woo Number of Product before pagination
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 22;' ), 20 );
 
+function woo_related_products_limit() {
+  global $product;
+	
+	$args['posts_per_page'] = 6;
+	return $args;
+}
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+  function jk_related_products_args( $args ) {
+ 
+	$args['posts_per_page'] = 4; // 4 related products
+	$args['columns'] = 4; // arranged in 1 columns
+	return $args;
+}
+
+add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
+function sb_woo_remove_reviews_tab($tabs) {
+
+ unset($tabs['reviews']);
+
+ return $tabs;
+}
+
