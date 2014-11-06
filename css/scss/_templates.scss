@@ -14,9 +14,21 @@
 }
 
 #scrapbook {
+	padding-bottom: 10%;
+	@extend .clearfix;
 
 	.item {
 		margin: 10px 0;
+
+		@include device-width(6) {
+			&.five {
+				width: 100%;
+			}
+
+			&.two-and-half {
+				width: 50%;
+			}
+		}
 		
 		.btn {
 			display: block;
@@ -29,18 +41,53 @@
 			}
 
 			&:before {
+				content: '';
 				background-image: url(../images/misc/tapes.png);
 				background-repeat: no-repeat;
-				display: block;				
+				display: block;		
+				position: absolute;
+
 			}
 
 			&.tape-top-left {
 				&:before {
 					width: 38px;
 					height: 25px;
-
+					left: -3px;
+					top: -10px;
+					background-position: top left;
 				}
 			} 
+
+			&.tape-top-right {
+				&:before {
+					width: 38px;
+					height: 25px;
+					right: -3px;
+					top: -10px;
+					background-position: top right;
+				}
+			} 
+
+			&.tape-bottom-left {
+				&:before {
+					width: 38px;
+					height: 25px;
+					left: -3px;
+					bottom: -10px;
+					background-position: bottom left;
+				}
+			} 				
+
+			&.tape-bottom-right {
+				&:before {
+					width: 38px;
+					height: 25px;
+					right: -3px;
+					bottom: -10px;
+					background-position: bottom right;
+				}
+			} 					
 		}
 	}
 }

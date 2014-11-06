@@ -154,3 +154,19 @@ function custom_pre_get_posts( $query ) {
 //remove Woocommerce Default Sorting Dropdown
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 
+//include Woo PrettyPhoto to all pages
+add_action( 'wp_enqueue_scripts', 'frontend_scripts_include_lightbox' );
+ 
+function frontend_scripts_include_lightbox() {
+  global $woocommerce;
+ 
+  $suffix      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+  $lightbox_en = get_option( 'woocommerce_enable_lightbox' ) == 'yes' ? true : false;
+ 
+  if ( $lightbox_en ) {
+    wp_enqueue_script( 'prettyPhoto', $woocommerce->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto' . $suffix . '.js', array( 'jquery' ), '3.1.5', true );
+    wp_enqueue_script( 'prettyPhoto-init', $woocommerce->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto.init' . $suffix . '.js', array( 'jquery' ), $woocommerce->version, true );
+    wp_enqueue_style( 'woocommerce_prettyPhoto_css', $woocommerce->plugin_url() . '/assets/css/prettyPhoto.css' );
+  }
+}
+
