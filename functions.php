@@ -170,3 +170,9 @@ function frontend_scripts_include_lightbox() {
   }
 }
 
+// Remove Woo Breadcrumbs
+remove_action( 'woocommerce_before_main_content','woocommerce_breadcrumb', 20, 0);
+
+// Woo Number of Product before pagination
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 22;' ), 20 );
+
