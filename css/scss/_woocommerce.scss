@@ -19,7 +19,6 @@
 /* =Global styles/layout
 -------------------------------------------------------------- */
 
-
 #woocommerce {
 	@include device-width(8) {
 		padding-right: 10px;
@@ -197,7 +196,13 @@
 					&:nth-child(2n+2) {
 						clear: left !important;
 					}
-				}			
+				}	
+
+				a {
+					img {
+						@include box-shadow(none);
+					}
+				}		
 
 				h3 {
 					@include gillsans-medium;
@@ -287,7 +292,7 @@
 				background: #f6f6f5;
 				margin-bottom: -10%;
 				margin-top: 70px;
-				padding: 0 4.5em;
+				padding: 0 4.5em 3em;
 
 				@include device-width(10) {
 					padding: 0 .5em;
@@ -299,6 +304,7 @@
 					color: #333333;
 					@include gillsans;
 					padding: 40px 0;
+					letter-spacing: 2px;
 				}
 
 				ul.products {
@@ -341,6 +347,66 @@
 					}
 				}			
 			}
+
+			form.cart {
+				div.quantity {
+					margin: 0 1em 0 0;
+				}
+
+				.button {
+					@extend .button;
+					margin-top: 0 !important;
+				}
+			}
+
+	/* =Upcycle Products
+	-------------------------------------------------------------- */			
+
+			&#upcycle {
+				background: none;
+
+				.product-inner {
+
+					.summary {
+						@include american;
+
+						.product_title {
+							@include american;
+							font-weight: normal;
+						}
+
+						.price {
+							@include american;
+						}
+					}
+				}				
+
+
+
+				.related {
+					background: none;
+
+					h2 {
+						@include american;
+					}
+
+					ul.products {
+						li.product {						
+							h3 {
+								@include american;	
+							}
+
+							.price {
+								@include american;
+							}						
+
+							.add_to_cart_button {
+								display: none;
+							}
+						}
+					}						
+				}
+			}			
 		}
 	}
 

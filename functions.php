@@ -213,6 +213,14 @@ add_filter ( 'woocommerce_product_thumbnails_columns', 'xx_thumb_cols' );
      return 5; // .last class applied to every 4th thumbnail
  }
 
+//Change element priority on Product page
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 15 );
 
- remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
- add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 15 );
+
+//Change Add to Cart button text
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );    // 2.1 + 
+function woo_custom_cart_button_text() {
+ 
+        return __( '<i class="icon-basket"></i> Add to Bag', 'woocommerce' );
+}

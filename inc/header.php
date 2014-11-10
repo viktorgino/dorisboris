@@ -28,10 +28,6 @@
 				</div>
 			</div>
 		<?php else: ?>
-			<div class="page-header">
-				<div class="inner">
-					<?php single_post_title(); ?>
-				</div>			
 		<?php endif; ?>	
 	<?php endif; ?>
 </div>

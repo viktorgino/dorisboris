@@ -86,7 +86,7 @@ button {
 	}
 }
 
-a.button {
+.button {
 	background: #0258ad;
 	color: #FFF;
 	@include gillsans-medium;
@@ -96,6 +96,9 @@ a.button {
 	@include inline-block;
 	position: relative;
 	margin-top: 20px;
+	border: none;
+	@include box-shadow(none);
+	line-height: 22px;
 
 	&:after {
 		content: '';
@@ -107,6 +110,7 @@ a.button {
 		position: absolute;
 		right: -10px;
 		top: 0;		
+
 	}
 
 	&:before {

@@ -57,7 +57,59 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			?>
 
 		</div><!-- .summary -->
-	</div>		
+	</div>
+
+	
+
+	<?php 
+		$queried_object = get_queried_object();
+		$taxonomy = $queried_object->taxonomy;
+		$term_id = $queried_object->term_id;
+
+		$cat_description = get_field('category_description', $queried_object);		 
+		$cat_image = get_field('category_image', $taxonomy . '_' . $term_id);									
+	?>	
+
+	<?php 
+		$images = get_field('upcycling_gallery');
+		$i = 0;
+
+	if( $images ): ?>
+		<div class="" id="upcycling-diary">
+			<div class="span five"></div>
+			<div class="span five prepare">
+				<img src="<?php bloginfo('template_directory'); ?>/images/misc/prepare.png" alt="">
+				<span><?php _e('See how we upcycled this piece', 'woocommerce'); ?></span>
+			</div>
+			<div class="item span five up-title" >
+				<img src="<?php bloginfo('template_directory'); ?>/images/misc/upcycling.jpg" alt="">
+				<div class="inner">
+					<img src="<?php bloginfo('template_directory'); ?>/images/misc/diary.png" alt="">
+					<p><?php the_field('upcycling_gallery_title'); ?></p>
+				</div>
+			</div>
+	        <?php foreach( $images as $image ): ?>					
+            	 	<?php if ($image === end($images)): ?>
+            	 		<?php if( $i % 2 == 1): ?>
+	                		<div class="span item ten" >
+	                	 		<img src="<?php echo bfi_thumb( $image['url'], array('width' => 1200, 'height' => 645)); ?>" />
+                	 		</div>                	 			
+            	 		<?php else: ?>
+							<div class="span item five" >
+	                	 		<img src="<?php echo bfi_thumb( $image['url'], array('width' => 598, 'height' => 343)); ?>" />
+                	 		</div>                	 			
+            	 		<?php endif; ?>
+
+					<?php else: ?>
+						<div class="span item five" >
+                	 		<img src="<?php echo bfi_thumb( $image['url'], array('width' => 598, 'height' => 343)); ?>" />               	 	
+            	 		</div>
+                	 <?php endif; ?>  
+            	<?php $i++ ?>   
+	        <?php endforeach; ?>
+    	</div>	
+	<?php endif; ?>
+		
 
 	<?php
 		/**
