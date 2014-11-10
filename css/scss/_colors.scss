@@ -2,7 +2,7 @@ $red: #c1272d;
 
 .orange {
 	
-	a.button {
+	.button {
 		background: $red;
 
 		&:after {
@@ -39,6 +39,24 @@ $red: #c1272d;
 			}
 		}
 	}
+
+	.woocommerce, .woocommerce-page & {
+		#content {
+			div.product	{
+				.product-inner {
+					.summary {
+						.product_title {
+							color: $red;
+						}
+					}
+				}
+
+				form.cart .button {
+					@extend .button;
+				}
+			}
+		}	
+	} 
 
 	#footer {
 
