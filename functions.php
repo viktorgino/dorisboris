@@ -200,6 +200,7 @@ add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
 function sb_woo_remove_reviews_tab($tabs) {
 
  unset($tabs['reviews']);
+ unset($tabs['description']);
  unset( $tabs['additional_information'] );
 
  return $tabs;
@@ -209,7 +210,7 @@ function sb_woo_remove_reviews_tab($tabs) {
 //Change number of thumbnails per row in product galleries
 add_filter ( 'woocommerce_product_thumbnails_columns', 'xx_thumb_cols' );
  function xx_thumb_cols() {
-     return 4; // .last class applied to every 4th thumbnail
+     return 5; // .last class applied to every 4th thumbnail
  }
 
 

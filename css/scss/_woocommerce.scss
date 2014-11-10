@@ -285,6 +285,13 @@
 			.related {
 				@extend .clearfix;
 				background: #f6f6f5;
+				margin-bottom: -10%;
+				margin-top: 70px;
+				padding: 0 4.5em;
+
+				@include device-width(10) {
+					padding: 0 .5em;
+				}
 
 				h2 {
 					text-align: center;
@@ -300,13 +307,22 @@
 						margin: 1%;
 						float: left;
 
+						@media screen and (max-width:768px){
+							width: 48%;
+						}						
+
+						img {
+							@include box-shadow(none);
+						}
+
 						h3 {
 							@include gillsans-medium;
 							@include font-size(12);
 							color: #333333;
 							letter-spacing: 0;
 							padding: .5em 3em;
-							line-height: 1.4;		
+							line-height: 1.4;	
+							letter-spacing: 2px;	
 							
 							@include device-width(10) {
 								padding: .5em;
