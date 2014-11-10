@@ -92,3 +92,155 @@
 	}
 }
 
+#gifts {
+	#content {
+		>ul.products {
+			li {
+				margin: 3% 1%;
+
+				@include device-width(8) {
+					margin: 3% 2%;
+					width: 46%;		
+
+					clear: none;			
+				}
+
+				h3, .price {
+					color: #FFF;
+					padding: 0;
+				} 
+
+				// Colors
+				&:nth-child(5n+1) {
+					.gift-top {
+						background: #a29494;
+					}
+				} 
+
+				&:nth-child(5n+2) {
+					.gift-top {
+						background: #074879;
+					}
+				}
+
+				&:nth-child(5n+3) {
+					.gift-top {
+						background: #503d3d;
+					}
+				}
+
+				&:nth-child(5n+4) {
+					a {
+						margin-top: 20px;
+					}
+
+				 	.gift-top {
+						background: #bf1e2e;
+					}
+				}
+
+				&:nth-child(5n) {
+					.gift-top {
+						background: #102f46;
+					}					
+				} 
+
+				// Positions
+				&:nth-child(4n+2) {
+					a {
+						margin-top: 50px;
+					}
+				}
+
+				&:nth-child(4n+3) {
+					a {
+						margin-top: -65px;
+					}
+				}	
+
+				&:nth-child(4n+4) {
+					a {
+						margin-top: 20px;
+					}		
+				}
+
+				@include device-width(6) {
+					&:nth-child(2n+2) {
+						clear: none !important;
+					}
+				}	
+
+				@include device-width(4) {
+					width: 98%;
+					margin: 5% 2%;
+
+					a {
+						margin-top: 0 !important;
+					}
+				}							
+
+				&:nth-child(4) {	
+					clear: none;
+				}
+
+				&.first {	
+					clear: left;
+				}
+
+				.gift-top {
+					@extend .clearfix;
+					display: block;
+					padding: 70px 40px 35px;
+					position: relative;
+
+					@include device-width(6) {
+						padding: 60px 25px 25px;
+					}
+
+					&:before {
+						content: '';
+						width: 21px;
+						height: 21px;
+						background: url(../images/misc/gift-card-hole.png) left top no-repeat;
+						position: absolute;
+						margin-left: -10px;
+						left: 50%;
+						top: 18px;
+					}
+
+				}
+
+				//String
+				&:nth-child(1), &:nth-child(8n+7) {
+					.gift-top {
+						&:after {
+							content: '';
+							width: 60%;
+							height: 150%;
+							background-image: url(../images/misc/string.png);
+							background-size: 100% 100%;
+							position: absolute;
+							margin-left: -10px;
+							left: 15%;
+							top: -132%;	
+
+							@include device-width(5) {
+								display: none;
+							}									
+						}
+					}
+				} 				
+
+
+				img {
+					display: block;
+					margin: 0;
+					@include box-shadow(none);
+					position: relative;
+					z-index: 5;
+				}
+			}
+		}
+	}
+}
+

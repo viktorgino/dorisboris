@@ -172,10 +172,10 @@
 				}
 
 				&:nth-child(4) {
-					clear: left !important;
+					clear: left;
 
 					@include device-width(8) {
-						clear: none !important;
+						clear: none;
 					}				
 				}
 
@@ -183,10 +183,10 @@
 					width: 31%;
 
 					&:nth-child(3n+2) {
-						clear: left !important;
+						clear: left;
 
 						@include device-width(6) {
-							clear: none !important;
+							clear: none;
 						}
 					}
 				}	

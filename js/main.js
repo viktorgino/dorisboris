@@ -9,6 +9,11 @@
 			main.mobileNav.init();
 			main.footerNav.init();
 
+			if ($(window).width() > 400) {
+				main.equalHeight();	
+			}
+			
+
 			$('.owl-carousel').owlCarousel({
 			    loop:true,
 			    margin:0,

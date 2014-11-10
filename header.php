@@ -73,5 +73,9 @@
 			</div>
 		</div><!-- .bottom -->
 	</header><!-- #header -->
+
+	<!-- site header -->
+	<?php get_template_part('inc/header'); ?>
+
 	<div id="main" class="site-main" role="main">
 		<div class="container">
