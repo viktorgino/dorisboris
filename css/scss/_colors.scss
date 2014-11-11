@@ -41,6 +41,21 @@ $red: #c1272d;
 	}
 
 	.woocommerce, .woocommerce-page & {
+		.woocommerce-error,
+		.woocommerce-message,
+		.woocommerce-notice,
+		.woocommerce-info {
+
+			a {
+
+				&.button {
+					@extend .button;
+					background: $red;
+				}
+			}
+		}
+
+
 		#content {
 			div.product	{
 				.product-inner {

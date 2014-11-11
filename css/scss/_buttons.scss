@@ -99,6 +99,7 @@ button {
 	border: none;
 	@include box-shadow(none);
 	line-height: 22px;
+	text-shadow: none;
 
 	&:after {
 		content: '';
@@ -127,5 +128,21 @@ button {
 
 	&:hover {
 		margin-left: 10px;
+		background: #0258ad;
+	}
+
+	&.alt {
+		background: #FFF;
+		border: 1px solid #0258ad;
+		color: #0258ad;
+
+		&:after, &:before {
+			display: none;
+		}
+
+		&:hover {
+			background: #0258ad;
+			color: #FFF;
+		}
 	}
 }
