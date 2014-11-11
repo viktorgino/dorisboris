@@ -2041,7 +2041,8 @@ button {
   .woocommerce-page .orange .woocommerce-notice a.button:hover,
   .woocommerce-page .orange .woocommerce-info a.button:hover {
     margin-left: 10px;
-    background: #0258ad; }
+    background: #0258ad;
+    color: #d4e5f4; }
   .button.alt, .woocommerce a.alt.button, .woocommerce button.alt.button, .woocommerce input.alt.button, .woocommerce-page a.alt.button, .woocommerce-page button.alt.button, .woocommerce-page input.alt.button, .woocommerce #content div.product form.cart .alt.button, .woocommerce-page #content div.product form.cart .alt.button, .woocommerce .shop_table .actions a.alt.button, .woocommerce .shop_table .actions button.alt.button, .woocommerce .shop_table .actions input.alt.button, .woocommerce-page .shop_table .actions a.alt.button, .woocommerce-page .shop_table .actions button.alt.button, .woocommerce-page .shop_table .actions input.alt.button, .woocommerce.woocommerce-checkout form.login .lost_password a.alt, .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt, .orange .woocommerce .woocommerce-error a.alt.button,
   .orange .woocommerce .woocommerce-message a.alt.button,
   .orange .woocommerce .woocommerce-notice a.alt.button,

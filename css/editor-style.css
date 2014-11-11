@@ -1214,7 +1214,8 @@ button {
     top: 0; }
   .button:hover {
     margin-left: 10px;
-    background: #0258ad; }
+    background: #0258ad;
+    color: #d4e5f4; }
   .button.alt {
     background: #FFF;
     border: 1px solid #0258ad;
