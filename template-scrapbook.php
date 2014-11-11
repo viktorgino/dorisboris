@@ -30,10 +30,10 @@ get_header(); ?>
 							?> 
 					        <?php foreach( $images as $image ): ?>
 								<?php 
-								$size = ( in_array($i, $large_i) ) ? 'large' : 'small';
-								$tape = array('tape-top-left', 'tape-top-right', 'tape-bottom-left', 'tape-bottom-right');
-								$class = array('item', 'span');
-								$class[] = ($size == 'large') ? 'five' : 'two-and-half';
+									$size = ( in_array($i, $large_i) ) ? 'large' : 'small';
+									$tape = array('tape-top-left', 'tape-top-right', 'tape-bottom-left', 'tape-bottom-right');
+									$class = array('item', 'span');
+									$class[] = ($size == 'large') ? 'five' : 'two-and-half';
 								?>
 								<div class="<?php echo implode(' ', $class); ?>" >
 					                <a class="btn zoom <?php echo $tape[array_rand($tape)]; ?>" data-rel="prettyPhoto[product-gallery]" href="<?php echo $image['url']; ?>">

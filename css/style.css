@@ -1105,20 +1105,6 @@ fieldset {
       border: none;
       background: none; }
 
-input[type=checkbox] {
-  display: none; }
-  input[type=checkbox] + label:before {
-    content: '';
-    height: 13px;
-    width: 13px;
-    display: block;
-    padding: 0 0 0 0px;
-    background: url(../images/buttons/checkbox.jpg) left top no-repeat;
-    float: left;
-    margin: 0 8px 0 0; }
-  input[type=checkbox]:checked + label {
-    background-image: url(../images/buttons/checkbox.jpg); }
-
 /* =============================================================================
    Woocommerce
    ========================================================================== */
@@ -1141,21 +1127,23 @@ input[type=checkbox] {
     padding: 0 10px; } }
 
 .woocommerce, .woocommerce-page {
-  /* =Archives
-  -------------------------------------------------------------- */
-  /* =Single Product
-  -------------------------------------------------------------- */
-  /* =Tables
-  -------------------------------------------------------------- */
-  /* =Cart Page
-  -------------------------------------------------------------- */
-  /* =Forms
-  -------------------------------------------------------------- */
-  /* =Checkout
-  -------------------------------------------------------------- */
+    /* =Archives
+	-------------------------------------------------------------- */
+    /* =Single Product
+	-------------------------------------------------------------- */
+    /* =Tables
+	-------------------------------------------------------------- */
+    /* =Cart Page
+	-------------------------------------------------------------- */
+    /* =Forms
+	-------------------------------------------------------------- */
+    /* =Checkout
+	-------------------------------------------------------------- */
   /* Payment box - appears on checkout and page page */
-  /* =Order Page
-  -------------------------------------------------------------- */ }
+    /* =Order Page
+	-------------------------------------------------------------- */
+    /* = MY Account Page
+	-------------------------------------------------------------- */ }
   @media only screen and (max-width: 800px) {
     .woocommerce, .woocommerce-page {
       padding-top: 0; } }
@@ -1164,127 +1152,43 @@ input[type=checkbox] {
     font-size: 11px;
     line-height: 21px;
     margin-top: 10px; }
-  .woocommerce .woocommerce-error,
-  .woocommerce .woocommerce-message,
-  .woocommerce .woocommerce-notice,
-  .woocommerce .woocommerce-info, .woocommerce-page .woocommerce-error,
-  .woocommerce-page .woocommerce-message,
-  .woocommerce-page .woocommerce-notice,
-  .woocommerce-page .woocommerce-info {
+  .woocommerce .woocommerce-error, .woocommerce .woocommerce-message, .woocommerce .woocommerce-notice, .woocommerce .woocommerce-info, .woocommerce-page .woocommerce-error, .woocommerce-page .woocommerce-message, .woocommerce-page .woocommerce-notice, .woocommerce-page .woocommerce-info {
     margin: 0 0 3em 0;
     text-align: left;
     border-bottom: 1px solid #CCC;
     padding: 0 0 1em 0;
     list-style-position: inside; }
-    .woocommerce .woocommerce-error a,
-    .woocommerce .woocommerce-message a,
-    .woocommerce .woocommerce-notice a,
-    .woocommerce .woocommerce-info a, .woocommerce-page .woocommerce-error a,
-    .woocommerce-page .woocommerce-message a,
-    .woocommerce-page .woocommerce-notice a,
-    .woocommerce-page .woocommerce-info a {
+    .woocommerce .woocommerce-error a, .woocommerce .woocommerce-message a, .woocommerce .woocommerce-notice a, .woocommerce .woocommerce-info a, .woocommerce-page .woocommerce-error a, .woocommerce-page .woocommerce-message a, .woocommerce-page .woocommerce-notice a, .woocommerce-page .woocommerce-info a {
       float: right;
       padding-top: 0; }
       .woocommerce .woocommerce-error a.button, .woocommerce .woocommerce-error #content div.product form.cart a.button, .woocommerce #content div.product form.cart .woocommerce-error a.button, .woocommerce-page #content div.product form.cart .woocommerce .woocommerce-error a.button, .woocommerce .woocommerce-error .shop_table .actions a.button, .woocommerce .shop_table .actions .woocommerce-error a.button, .woocommerce-page .shop_table .actions .woocommerce .woocommerce-error a.button, .woocommerce.woocommerce-checkout .woocommerce-error form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-error a, .woocommerce .woocommerce-error .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .woocommerce-error a, .orange .woocommerce .woocommerce-error a.button, .woocommerce .woocommerce-page .orange .woocommerce-error a.button,
       .woocommerce .woocommerce-error .woocommerce-page .orange .woocommerce-message a.button,
       .woocommerce .woocommerce-error .woocommerce-page .orange .woocommerce-notice a.button,
-      .woocommerce .woocommerce-error .woocommerce-page .orange .woocommerce-info a.button,
-      .woocommerce .woocommerce-message a.button,
-      .woocommerce .woocommerce-message #content div.product form.cart a.button,
-      .woocommerce #content div.product form.cart .woocommerce-message a.button,
-      .woocommerce-page #content div.product form.cart .woocommerce .woocommerce-message a.button,
-      .woocommerce .woocommerce-message .shop_table .actions a.button,
-      .woocommerce .shop_table .actions .woocommerce-message a.button,
-      .woocommerce-page .shop_table .actions .woocommerce .woocommerce-message a.button,
-      .woocommerce.woocommerce-checkout .woocommerce-message form.login .lost_password a,
-      .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-message a,
-      .woocommerce .woocommerce-message .woocommerce-page.woocommerce-checkout form.login .lost_password a,
-      .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .woocommerce-message a,
-      .orange .woocommerce .woocommerce-message a.button,
-      .woocommerce .woocommerce-message .woocommerce-page .orange .woocommerce-error a.button,
+      .woocommerce .woocommerce-error .woocommerce-page .orange .woocommerce-info a.button, .woocommerce .woocommerce-message a.button, .woocommerce .woocommerce-message #content div.product form.cart a.button, .woocommerce #content div.product form.cart .woocommerce-message a.button, .woocommerce-page #content div.product form.cart .woocommerce .woocommerce-message a.button, .woocommerce .woocommerce-message .shop_table .actions a.button, .woocommerce .shop_table .actions .woocommerce-message a.button, .woocommerce-page .shop_table .actions .woocommerce .woocommerce-message a.button, .woocommerce.woocommerce-checkout .woocommerce-message form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-message a, .woocommerce .woocommerce-message .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .woocommerce-message a,
+      .orange .woocommerce .woocommerce-message a.button, .woocommerce .woocommerce-message .woocommerce-page .orange .woocommerce-error a.button,
       .woocommerce .woocommerce-page .orange .woocommerce-message a.button,
       .woocommerce .woocommerce-message .woocommerce-page .orange .woocommerce-notice a.button,
-      .woocommerce .woocommerce-message .woocommerce-page .orange .woocommerce-info a.button,
-      .woocommerce .woocommerce-notice a.button,
-      .woocommerce .woocommerce-notice #content div.product form.cart a.button,
-      .woocommerce #content div.product form.cart .woocommerce-notice a.button,
-      .woocommerce-page #content div.product form.cart .woocommerce .woocommerce-notice a.button,
-      .woocommerce .woocommerce-notice .shop_table .actions a.button,
-      .woocommerce .shop_table .actions .woocommerce-notice a.button,
-      .woocommerce-page .shop_table .actions .woocommerce .woocommerce-notice a.button,
-      .woocommerce.woocommerce-checkout .woocommerce-notice form.login .lost_password a,
-      .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-notice a,
-      .woocommerce .woocommerce-notice .woocommerce-page.woocommerce-checkout form.login .lost_password a,
-      .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .woocommerce-notice a,
-      .orange .woocommerce .woocommerce-notice a.button,
-      .woocommerce .woocommerce-notice .woocommerce-page .orange .woocommerce-error a.button,
+      .woocommerce .woocommerce-message .woocommerce-page .orange .woocommerce-info a.button, .woocommerce .woocommerce-notice a.button, .woocommerce .woocommerce-notice #content div.product form.cart a.button, .woocommerce #content div.product form.cart .woocommerce-notice a.button, .woocommerce-page #content div.product form.cart .woocommerce .woocommerce-notice a.button, .woocommerce .woocommerce-notice .shop_table .actions a.button, .woocommerce .shop_table .actions .woocommerce-notice a.button, .woocommerce-page .shop_table .actions .woocommerce .woocommerce-notice a.button, .woocommerce.woocommerce-checkout .woocommerce-notice form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-notice a, .woocommerce .woocommerce-notice .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .woocommerce-notice a,
+      .orange .woocommerce .woocommerce-notice a.button, .woocommerce .woocommerce-notice .woocommerce-page .orange .woocommerce-error a.button,
       .woocommerce .woocommerce-notice .woocommerce-page .orange .woocommerce-message a.button,
       .woocommerce .woocommerce-page .orange .woocommerce-notice a.button,
-      .woocommerce .woocommerce-notice .woocommerce-page .orange .woocommerce-info a.button,
-      .woocommerce .woocommerce-info a.button,
-      .woocommerce .woocommerce-info #content div.product form.cart a.button,
-      .woocommerce #content div.product form.cart .woocommerce-info a.button,
-      .woocommerce-page #content div.product form.cart .woocommerce .woocommerce-info a.button,
-      .woocommerce .woocommerce-info .shop_table .actions a.button,
-      .woocommerce .shop_table .actions .woocommerce-info a.button,
-      .woocommerce-page .shop_table .actions .woocommerce .woocommerce-info a.button,
-      .woocommerce.woocommerce-checkout .woocommerce-info form.login .lost_password a,
-      .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-info a,
-      .woocommerce .woocommerce-info .woocommerce-page.woocommerce-checkout form.login .lost_password a,
-      .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .woocommerce-info a,
-      .orange .woocommerce .woocommerce-info a.button,
-      .woocommerce .woocommerce-info .woocommerce-page .orange .woocommerce-error a.button,
+      .woocommerce .woocommerce-notice .woocommerce-page .orange .woocommerce-info a.button, .woocommerce .woocommerce-info a.button, .woocommerce .woocommerce-info #content div.product form.cart a.button, .woocommerce #content div.product form.cart .woocommerce-info a.button, .woocommerce-page #content div.product form.cart .woocommerce .woocommerce-info a.button, .woocommerce .woocommerce-info .shop_table .actions a.button, .woocommerce .shop_table .actions .woocommerce-info a.button, .woocommerce-page .shop_table .actions .woocommerce .woocommerce-info a.button, .woocommerce.woocommerce-checkout .woocommerce-info form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-info a, .woocommerce .woocommerce-info .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .woocommerce-info a,
+      .orange .woocommerce .woocommerce-info a.button, .woocommerce .woocommerce-info .woocommerce-page .orange .woocommerce-error a.button,
       .woocommerce .woocommerce-info .woocommerce-page .orange .woocommerce-message a.button,
       .woocommerce .woocommerce-info .woocommerce-page .orange .woocommerce-notice a.button,
       .woocommerce .woocommerce-page .orange .woocommerce-info a.button, .woocommerce-page .woocommerce-error a.button, .woocommerce #content div.product form.cart .woocommerce-page .woocommerce-error a.button, .woocommerce-page .woocommerce-error #content div.product form.cart a.button, .woocommerce-page #content div.product form.cart .woocommerce-error a.button, .woocommerce .shop_table .actions .woocommerce-page .woocommerce-error a.button, .woocommerce-page .woocommerce-error .shop_table .actions a.button, .woocommerce-page .shop_table .actions .woocommerce-error a.button, .woocommerce-page .woocommerce-error .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .woocommerce-error a, .woocommerce-page.woocommerce-checkout .woocommerce-error form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce-error a, .orange .woocommerce .woocommerce-page .woocommerce-error a.button, .woocommerce-page .orange .woocommerce-error a.button,
       .woocommerce-page .woocommerce-error .orange .woocommerce-message a.button,
       .woocommerce-page .woocommerce-error .orange .woocommerce-notice a.button,
-      .woocommerce-page .woocommerce-error .orange .woocommerce-info a.button,
-      .woocommerce-page .woocommerce-message a.button,
-      .woocommerce #content div.product form.cart .woocommerce-page .woocommerce-message a.button,
-      .woocommerce-page .woocommerce-message #content div.product form.cart a.button,
-      .woocommerce-page #content div.product form.cart .woocommerce-message a.button,
-      .woocommerce .shop_table .actions .woocommerce-page .woocommerce-message a.button,
-      .woocommerce-page .woocommerce-message .shop_table .actions a.button,
-      .woocommerce-page .shop_table .actions .woocommerce-message a.button,
-      .woocommerce-page .woocommerce-message .woocommerce.woocommerce-checkout form.login .lost_password a,
-      .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .woocommerce-message a,
-      .woocommerce-page.woocommerce-checkout .woocommerce-message form.login .lost_password a,
-      .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce-message a,
-      .orange .woocommerce .woocommerce-page .woocommerce-message a.button,
-      .woocommerce-page .woocommerce-message .orange .woocommerce-error a.button,
+      .woocommerce-page .woocommerce-error .orange .woocommerce-info a.button, .woocommerce-page .woocommerce-message a.button, .woocommerce #content div.product form.cart .woocommerce-page .woocommerce-message a.button, .woocommerce-page .woocommerce-message #content div.product form.cart a.button, .woocommerce-page #content div.product form.cart .woocommerce-message a.button, .woocommerce .shop_table .actions .woocommerce-page .woocommerce-message a.button, .woocommerce-page .woocommerce-message .shop_table .actions a.button, .woocommerce-page .shop_table .actions .woocommerce-message a.button, .woocommerce-page .woocommerce-message .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .woocommerce-message a, .woocommerce-page.woocommerce-checkout .woocommerce-message form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce-message a,
+      .orange .woocommerce .woocommerce-page .woocommerce-message a.button, .woocommerce-page .woocommerce-message .orange .woocommerce-error a.button,
       .woocommerce-page .orange .woocommerce-message a.button,
       .woocommerce-page .woocommerce-message .orange .woocommerce-notice a.button,
-      .woocommerce-page .woocommerce-message .orange .woocommerce-info a.button,
-      .woocommerce-page .woocommerce-notice a.button,
-      .woocommerce #content div.product form.cart .woocommerce-page .woocommerce-notice a.button,
-      .woocommerce-page .woocommerce-notice #content div.product form.cart a.button,
-      .woocommerce-page #content div.product form.cart .woocommerce-notice a.button,
-      .woocommerce .shop_table .actions .woocommerce-page .woocommerce-notice a.button,
-      .woocommerce-page .woocommerce-notice .shop_table .actions a.button,
-      .woocommerce-page .shop_table .actions .woocommerce-notice a.button,
-      .woocommerce-page .woocommerce-notice .woocommerce.woocommerce-checkout form.login .lost_password a,
-      .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .woocommerce-notice a,
-      .woocommerce-page.woocommerce-checkout .woocommerce-notice form.login .lost_password a,
-      .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce-notice a,
-      .orange .woocommerce .woocommerce-page .woocommerce-notice a.button,
-      .woocommerce-page .woocommerce-notice .orange .woocommerce-error a.button,
+      .woocommerce-page .woocommerce-message .orange .woocommerce-info a.button, .woocommerce-page .woocommerce-notice a.button, .woocommerce #content div.product form.cart .woocommerce-page .woocommerce-notice a.button, .woocommerce-page .woocommerce-notice #content div.product form.cart a.button, .woocommerce-page #content div.product form.cart .woocommerce-notice a.button, .woocommerce .shop_table .actions .woocommerce-page .woocommerce-notice a.button, .woocommerce-page .woocommerce-notice .shop_table .actions a.button, .woocommerce-page .shop_table .actions .woocommerce-notice a.button, .woocommerce-page .woocommerce-notice .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .woocommerce-notice a, .woocommerce-page.woocommerce-checkout .woocommerce-notice form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce-notice a,
+      .orange .woocommerce .woocommerce-page .woocommerce-notice a.button, .woocommerce-page .woocommerce-notice .orange .woocommerce-error a.button,
       .woocommerce-page .woocommerce-notice .orange .woocommerce-message a.button,
       .woocommerce-page .orange .woocommerce-notice a.button,
-      .woocommerce-page .woocommerce-notice .orange .woocommerce-info a.button,
-      .woocommerce-page .woocommerce-info a.button,
-      .woocommerce #content div.product form.cart .woocommerce-page .woocommerce-info a.button,
-      .woocommerce-page .woocommerce-info #content div.product form.cart a.button,
-      .woocommerce-page #content div.product form.cart .woocommerce-info a.button,
-      .woocommerce .shop_table .actions .woocommerce-page .woocommerce-info a.button,
-      .woocommerce-page .woocommerce-info .shop_table .actions a.button,
-      .woocommerce-page .shop_table .actions .woocommerce-info a.button,
-      .woocommerce-page .woocommerce-info .woocommerce.woocommerce-checkout form.login .lost_password a,
-      .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .woocommerce-info a,
-      .woocommerce-page.woocommerce-checkout .woocommerce-info form.login .lost_password a,
-      .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce-info a,
-      .orange .woocommerce .woocommerce-page .woocommerce-info a.button,
-      .woocommerce-page .woocommerce-info .orange .woocommerce-error a.button,
+      .woocommerce-page .woocommerce-notice .orange .woocommerce-info a.button, .woocommerce-page .woocommerce-info a.button, .woocommerce #content div.product form.cart .woocommerce-page .woocommerce-info a.button, .woocommerce-page .woocommerce-info #content div.product form.cart a.button, .woocommerce-page #content div.product form.cart .woocommerce-info a.button, .woocommerce .shop_table .actions .woocommerce-page .woocommerce-info a.button, .woocommerce-page .woocommerce-info .shop_table .actions a.button, .woocommerce-page .shop_table .actions .woocommerce-info a.button, .woocommerce-page .woocommerce-info .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .woocommerce-info a, .woocommerce-page.woocommerce-checkout .woocommerce-info form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce-info a,
+      .orange .woocommerce .woocommerce-page .woocommerce-info a.button, .woocommerce-page .woocommerce-info .orange .woocommerce-error a.button,
       .woocommerce-page .woocommerce-info .orange .woocommerce-message a.button,
       .woocommerce-page .woocommerce-info .orange .woocommerce-notice a.button,
       .woocommerce-page .orange .woocommerce-info a.button {
@@ -1318,13 +1222,9 @@ input[type=checkbox] {
         list-style: none; }
         .woocommerce #content .woocommerce-pagination .page-numbers li, .woocommerce-page #content .woocommerce-pagination .page-numbers li {
           float: left; }
-          .woocommerce #content .woocommerce-pagination .page-numbers li .prev,
-          .woocommerce #content .woocommerce-pagination .page-numbers li .next, .woocommerce-page #content .woocommerce-pagination .page-numbers li .prev,
-          .woocommerce-page #content .woocommerce-pagination .page-numbers li .next {
+          .woocommerce #content .woocommerce-pagination .page-numbers li .prev, .woocommerce #content .woocommerce-pagination .page-numbers li .next, .woocommerce-page #content .woocommerce-pagination .page-numbers li .prev, .woocommerce-page #content .woocommerce-pagination .page-numbers li .next {
             display: none; }
-        .woocommerce #content .woocommerce-pagination .page-numbers a,
-        .woocommerce #content .woocommerce-pagination .page-numbers span, .woocommerce-page #content .woocommerce-pagination .page-numbers a,
-        .woocommerce-page #content .woocommerce-pagination .page-numbers span {
+        .woocommerce #content .woocommerce-pagination .page-numbers a, .woocommerce #content .woocommerce-pagination .page-numbers span, .woocommerce-page #content .woocommerce-pagination .page-numbers a, .woocommerce-page #content .woocommerce-pagination .page-numbers span {
           padding: 1em; }
   .woocommerce nav.woocommerce-pagination, .woocommerce-page nav.woocommerce-pagination {
     text-align: center; }
@@ -1335,9 +1235,7 @@ input[type=checkbox] {
       list-style: none; }
       .woocommerce nav.woocommerce-pagination .page-numbers li, .woocommerce-page nav.woocommerce-pagination .page-numbers li {
         float: left; }
-        .woocommerce nav.woocommerce-pagination .page-numbers li a,
-        .woocommerce nav.woocommerce-pagination .page-numbers li span, .woocommerce-page nav.woocommerce-pagination .page-numbers li a,
-        .woocommerce-page nav.woocommerce-pagination .page-numbers li span {
+        .woocommerce nav.woocommerce-pagination .page-numbers li a, .woocommerce nav.woocommerce-pagination .page-numbers li span, .woocommerce-page nav.woocommerce-pagination .page-numbers li a, .woocommerce-page nav.woocommerce-pagination .page-numbers li span {
           padding: 1em;
           font-family: "ITC American Typewriter W01";
           background: none; }
@@ -1411,8 +1309,8 @@ input[type=checkbox] {
     .woocommerce #content > ul.products li .add_to_cart_button, .woocommerce #content > ul.products li.product .add_to_cart_button, .woocommerce-page #content > ul.products li .add_to_cart_button, .woocommerce-page #content > ul.products li.product .add_to_cart_button {
       display: none; }
   .woocommerce #content div.product, .woocommerce-page #content div.product {
-    /* =Upcycle Products
-    -------------------------------------------------------------- */ }
+            /* =Upcycle Products
+	-------------------------------------------------------------- */ }
     .woocommerce #content div.product .product-inner .images .thumbnails a, .woocommerce-page #content div.product .product-inner .images .thumbnails a {
       width: 18%;
       margin: 1%;
@@ -1551,9 +1449,7 @@ input[type=checkbox] {
       vertical-align: middle; }
     .woocommerce .shop_table tbody, .woocommerce-page .shop_table tbody {
       border-bottom: 1px solid #CCC; }
-    .woocommerce .shop_table thead th,
-    .woocommerce .shop_table tfoot th, .woocommerce-page .shop_table thead th,
-    .woocommerce-page .shop_table tfoot th {
+    .woocommerce .shop_table thead th, .woocommerce .shop_table tfoot th, .woocommerce-page .shop_table thead th, .woocommerce-page .shop_table tfoot th {
       color: #CCC; }
     .woocommerce .shop_table .actions, .woocommerce-page .shop_table .actions {
       text-align: right;
@@ -1613,12 +1509,14 @@ input[type=checkbox] {
     width: 150px; }
   .woocommerce .shop_table .actions, .woocommerce-page .shop_table .actions {
     padding: 1.5em 1em 2em; }
-    @media screen and (max-width: 768px) {
-      .woocommerce .shop_table .actions #content div.product form.cart a.button, .woocommerce #content div.product form.cart .shop_table .actions a.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions a.button, .woocommerce .shop_table .actions a.button, .woocommerce.woocommerce-checkout .shop_table .actions form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .shop_table .actions a, .woocommerce .shop_table .actions .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .shop_table .actions a, .woocommerce .shop_table .actions #content div.product form.cart button.button, .woocommerce #content div.product form.cart .shop_table .actions button.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions #content div.product form.cart input.button, .woocommerce #content div.product form.cart .shop_table .actions input.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions input.button, .woocommerce .shop_table .actions input.button, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions #content div.product form.cart a.button, .woocommerce-page #content div.product form.cart .shop_table .actions a.button, .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .shop_table .actions a, .woocommerce-page.woocommerce-checkout .shop_table .actions form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .shop_table .actions a, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions button.button, .woocommerce-page .shop_table .actions #content div.product form.cart button.button, .woocommerce-page #content div.product form.cart .shop_table .actions button.button, .woocommerce-page .shop_table .actions button.button, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions input.button, .woocommerce-page .shop_table .actions #content div.product form.cart input.button, .woocommerce-page #content div.product form.cart .shop_table .actions input.button, .woocommerce-page .shop_table .actions input.button {
-        font-size: 1rem !important;
-        padding: 3px 10px 3px !important; } }
-    .woocommerce .shop_table .actions #content div.product form.cart a.button:hover, .woocommerce #content div.product form.cart .shop_table .actions a.button:hover, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions a.button:hover, .woocommerce .shop_table .actions a.button:hover, .woocommerce.woocommerce-checkout .shop_table .actions form.login .lost_password a:hover, .woocommerce.woocommerce-checkout form.login .lost_password .shop_table .actions a:hover, .woocommerce .shop_table .actions .woocommerce-page.woocommerce-checkout form.login .lost_password a:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .shop_table .actions a:hover, .woocommerce .shop_table .actions #content div.product form.cart button.button:hover, .woocommerce #content div.product form.cart .shop_table .actions button.button:hover, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions button.button:hover, .woocommerce .shop_table .actions button.button:hover, .woocommerce .shop_table .actions #content div.product form.cart input.button:hover, .woocommerce #content div.product form.cart .shop_table .actions input.button:hover, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions input.button:hover, .woocommerce .shop_table .actions input.button:hover, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions a.button:hover, .woocommerce-page .shop_table .actions #content div.product form.cart a.button:hover, .woocommerce-page #content div.product form.cart .shop_table .actions a.button:hover, .woocommerce-page .shop_table .actions a.button:hover, .woocommerce-page .shop_table .actions .woocommerce.woocommerce-checkout form.login .lost_password a:hover, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .shop_table .actions a:hover, .woocommerce-page.woocommerce-checkout .shop_table .actions form.login .lost_password a:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password .shop_table .actions a:hover, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions button.button:hover, .woocommerce-page .shop_table .actions #content div.product form.cart button.button:hover, .woocommerce-page #content div.product form.cart .shop_table .actions button.button:hover, .woocommerce-page .shop_table .actions button.button:hover, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions input.button:hover, .woocommerce-page .shop_table .actions #content div.product form.cart input.button:hover, .woocommerce-page #content div.product form.cart .shop_table .actions input.button:hover, .woocommerce-page .shop_table .actions input.button:hover {
-      margin-left: 0px !important; }
+    .woocommerce .shop_table .actions #content div.product form.cart a.button, .woocommerce #content div.product form.cart .shop_table .actions a.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions a.button, .woocommerce .shop_table .actions a.button, .woocommerce.woocommerce-checkout .shop_table .actions form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .shop_table .actions a, .woocommerce .shop_table .actions .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .shop_table .actions a, .woocommerce .shop_table .actions #content div.product form.cart button.button, .woocommerce #content div.product form.cart .shop_table .actions button.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions #content div.product form.cart input.button, .woocommerce #content div.product form.cart .shop_table .actions input.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions input.button, .woocommerce .shop_table .actions input.button, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions #content div.product form.cart a.button, .woocommerce-page #content div.product form.cart .shop_table .actions a.button, .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .shop_table .actions a, .woocommerce-page.woocommerce-checkout .shop_table .actions form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .shop_table .actions a, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions button.button, .woocommerce-page .shop_table .actions #content div.product form.cart button.button, .woocommerce-page #content div.product form.cart .shop_table .actions button.button, .woocommerce-page .shop_table .actions button.button, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions input.button, .woocommerce-page .shop_table .actions #content div.product form.cart input.button, .woocommerce-page #content div.product form.cart .shop_table .actions input.button, .woocommerce-page .shop_table .actions input.button {
+      margin-top: 0 !important; }
+      @media screen and (max-width: 768px) {
+        .woocommerce .shop_table .actions #content div.product form.cart a.button, .woocommerce #content div.product form.cart .shop_table .actions a.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions a.button, .woocommerce .shop_table .actions a.button, .woocommerce.woocommerce-checkout .shop_table .actions form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .shop_table .actions a, .woocommerce .shop_table .actions .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .shop_table .actions a, .woocommerce .shop_table .actions #content div.product form.cart button.button, .woocommerce #content div.product form.cart .shop_table .actions button.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions #content div.product form.cart input.button, .woocommerce #content div.product form.cart .shop_table .actions input.button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions input.button, .woocommerce .shop_table .actions input.button, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions #content div.product form.cart a.button, .woocommerce-page #content div.product form.cart .shop_table .actions a.button, .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .shop_table .actions a, .woocommerce-page.woocommerce-checkout .shop_table .actions form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .shop_table .actions a, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions button.button, .woocommerce-page .shop_table .actions #content div.product form.cart button.button, .woocommerce-page #content div.product form.cart .shop_table .actions button.button, .woocommerce-page .shop_table .actions button.button, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions input.button, .woocommerce-page .shop_table .actions #content div.product form.cart input.button, .woocommerce-page #content div.product form.cart .shop_table .actions input.button, .woocommerce-page .shop_table .actions input.button {
+          font-size: 1rem !important;
+          padding: 3px 10px 3px !important; } }
+      .woocommerce .shop_table .actions #content div.product form.cart a.button:hover, .woocommerce #content div.product form.cart .shop_table .actions a.button:hover, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions a.button:hover, .woocommerce .shop_table .actions a.button:hover, .woocommerce.woocommerce-checkout .shop_table .actions form.login .lost_password a:hover, .woocommerce.woocommerce-checkout form.login .lost_password .shop_table .actions a:hover, .woocommerce .shop_table .actions .woocommerce-page.woocommerce-checkout form.login .lost_password a:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .shop_table .actions a:hover, .woocommerce .shop_table .actions #content div.product form.cart button.button:hover, .woocommerce #content div.product form.cart .shop_table .actions button.button:hover, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions button.button:hover, .woocommerce .shop_table .actions button.button:hover, .woocommerce .shop_table .actions #content div.product form.cart input.button:hover, .woocommerce #content div.product form.cart .shop_table .actions input.button:hover, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions input.button:hover, .woocommerce .shop_table .actions input.button:hover, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions a.button:hover, .woocommerce-page .shop_table .actions #content div.product form.cart a.button:hover, .woocommerce-page #content div.product form.cart .shop_table .actions a.button:hover, .woocommerce-page .shop_table .actions a.button:hover, .woocommerce-page .shop_table .actions .woocommerce.woocommerce-checkout form.login .lost_password a:hover, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .shop_table .actions a:hover, .woocommerce-page.woocommerce-checkout .shop_table .actions form.login .lost_password a:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password .shop_table .actions a:hover, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions button.button:hover, .woocommerce-page .shop_table .actions #content div.product form.cart button.button:hover, .woocommerce-page #content div.product form.cart .shop_table .actions button.button:hover, .woocommerce-page .shop_table .actions button.button:hover, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions input.button:hover, .woocommerce-page .shop_table .actions #content div.product form.cart input.button:hover, .woocommerce-page #content div.product form.cart .shop_table .actions input.button:hover, .woocommerce-page .shop_table .actions input.button:hover {
+        margin-left: 0px !important; }
     .woocommerce .shop_table .actions .coupon, .woocommerce-page .shop_table .actions .coupon {
       margin: 0;
       width: 50%; }
@@ -1626,8 +1524,7 @@ input[type=checkbox] {
         .woocommerce .shop_table .actions .coupon, .woocommerce-page .shop_table .actions .coupon {
           width: 100%; } }
       .woocommerce .shop_table .actions .coupon input#coupon_code, .woocommerce .shop_table .actions .coupon .button, .woocommerce .shop_table .actions .coupon #content div.product form.cart .button, .woocommerce #content div.product form.cart .shop_table .actions .coupon .button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions .coupon .button, .woocommerce.woocommerce-checkout .shop_table .actions .coupon form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .shop_table .actions .coupon a, .woocommerce .shop_table .actions .coupon .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .shop_table .actions .coupon a, .woocommerce-page .shop_table .actions .coupon input#coupon_code, .woocommerce-page .shop_table .actions .coupon .button, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions .coupon .button, .woocommerce-page .shop_table .actions .coupon #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .shop_table .actions .coupon .button, .woocommerce-page .shop_table .actions .coupon .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .shop_table .actions .coupon a, .woocommerce-page.woocommerce-checkout .shop_table .actions .coupon form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .shop_table .actions .coupon a {
-        width: 48%;
-        margin: 0; }
+        width: 48%; }
   .woocommerce .cart_totals table, .woocommerce-page .cart_totals table {
     border: 1px solid #CCC; }
     .woocommerce .cart_totals table td, .woocommerce-page .cart_totals table td {
@@ -1646,8 +1543,9 @@ input[type=checkbox] {
       opacity: 0; }
     .woocommerce form .form-row label, .woocommerce-page form .form-row label {
       display: block;
-      font-size: 8px;
-      font-size: 0.8rem; }
+      font-size: 13px;
+      font-size: 1.3rem;
+      font-family: "ITC American Typewriter W01"; }
       .woocommerce-checkout .woocommerce form .form-row label, .woocommerce-checkout .woocommerce-page form .form-row label {
         font-size: 10px;
         font-size: 1rem;
@@ -1715,13 +1613,12 @@ input[type=checkbox] {
     float: right; }
   .woocommerce form .form-row-wide, .woocommerce-page form .form-row-wide {
     clear: both; }
-  .woocommerce form.login, .woocommerce form.checkout_coupon, .woocommerce form.register, .woocommerce-page form.login, .woocommerce-page form.checkout_coupon, .woocommerce-page form.register {
-    padding: 0.2em 1em;
-    margin: 2em 0;
+  .woocommerce form.login, .woocommerce form.checkout_coupon, .woocommerce form.register, .woocommerce form.lost_reset_password, .woocommerce.woocommerce-account form, .woocommerce-page form.login, .woocommerce-page form.checkout_coupon, .woocommerce-page form.register, .woocommerce-page form.lost_reset_password, .woocommerce-page.woocommerce-account form {
+    padding: 4em;
+    margin: 3em auto 5em;
     text-align: left;
-    background: #f8f8f8; }
-    .woocommerce form.login .lost_password, .woocommerce form.checkout_coupon .lost_password, .woocommerce form.register .lost_password, .woocommerce-page form.login .lost_password, .woocommerce-page form.checkout_coupon .lost_password, .woocommerce-page form.register .lost_password {
-      padding-left: 0.5em; }
+    background: #f8f8f8;
+    max-width: 800px; }
   .woocommerce ul#shipping_method, .woocommerce-page ul#shipping_method {
     list-style: none outside;
     margin: 0;
@@ -1744,79 +1641,9 @@ input[type=checkbox] {
         .woocommerce .coupon input[type=text], .woocommerce-page .coupon input[type=text] {
           width: 6em; } }
     @media only screen and (max-width: 500px) {
-      .woocommerce .coupon input[type=text],
-      .woocommerce .coupon .button,
-      .woocommerce .coupon .woocommerce-error a.button,
-      .woocommerce .woocommerce-error .coupon a.button,
-      .woocommerce .coupon .woocommerce-message a.button,
-      .woocommerce .woocommerce-message .coupon a.button,
-      .woocommerce .coupon .woocommerce-notice a.button,
-      .woocommerce .woocommerce-notice .coupon a.button,
-      .woocommerce .coupon .woocommerce-info a.button,
-      .woocommerce .woocommerce-info .coupon a.button,
-      .woocommerce-page .woocommerce-error .woocommerce .coupon a.button,
-      .woocommerce-page .woocommerce-message .woocommerce .coupon a.button,
-      .woocommerce-page .woocommerce-notice .woocommerce .coupon a.button,
-      .woocommerce-page .woocommerce-info .woocommerce .coupon a.button,
-      .woocommerce .coupon #content div.product form.cart .button,
-      .woocommerce #content div.product form.cart .coupon .button,
-      .woocommerce-page #content div.product form.cart .woocommerce .coupon .button,
-      .woocommerce .coupon .shop_table .actions a.button,
-      .woocommerce .shop_table .actions .coupon a.button,
-      .woocommerce .coupon .shop_table .actions button.button,
-      .woocommerce .shop_table .actions .coupon button.button,
-      .woocommerce .coupon .shop_table .actions input.button,
-      .woocommerce .shop_table .actions .coupon input.button,
-      .woocommerce-page .shop_table .actions .woocommerce .coupon a.button,
-      .woocommerce-page .shop_table .actions .woocommerce .coupon button.button,
-      .woocommerce-page .shop_table .actions .woocommerce .coupon input.button,
-      .woocommerce.woocommerce-checkout .coupon form.login .lost_password a,
-      .woocommerce.woocommerce-checkout form.login .lost_password .coupon a,
-      .woocommerce .coupon .woocommerce-page.woocommerce-checkout form.login .lost_password a,
-      .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .coupon a, .woocommerce-page .coupon input[type=text],
-      .woocommerce-page .coupon .button,
-      .woocommerce .woocommerce-error .woocommerce-page .coupon a.button,
-      .woocommerce .woocommerce-message .woocommerce-page .coupon a.button,
-      .woocommerce .woocommerce-notice .woocommerce-page .coupon a.button,
-      .woocommerce .woocommerce-info .woocommerce-page .coupon a.button,
-      .woocommerce-page .coupon .woocommerce-error a.button,
-      .woocommerce-page .woocommerce-error .coupon a.button,
-      .woocommerce-page .coupon .woocommerce-message a.button,
-      .woocommerce-page .woocommerce-message .coupon a.button,
-      .woocommerce-page .coupon .woocommerce-notice a.button,
-      .woocommerce-page .woocommerce-notice .coupon a.button,
-      .woocommerce-page .coupon .woocommerce-info a.button,
-      .woocommerce-page .woocommerce-info .coupon a.button,
-      .woocommerce #content div.product form.cart .woocommerce-page .coupon .button,
-      .woocommerce-page .coupon #content div.product form.cart .button,
-      .woocommerce-page #content div.product form.cart .coupon .button,
-      .woocommerce .shop_table .actions .woocommerce-page .coupon a.button,
-      .woocommerce .shop_table .actions .woocommerce-page .coupon button.button,
-      .woocommerce .shop_table .actions .woocommerce-page .coupon input.button,
-      .woocommerce-page .coupon .shop_table .actions a.button,
-      .woocommerce-page .shop_table .actions .coupon a.button,
-      .woocommerce-page .coupon .shop_table .actions button.button,
-      .woocommerce-page .shop_table .actions .coupon button.button,
-      .woocommerce-page .coupon .shop_table .actions input.button,
-      .woocommerce-page .shop_table .actions .coupon input.button,
-      .woocommerce-page .coupon .woocommerce.woocommerce-checkout form.login .lost_password a,
-      .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .coupon a,
-      .woocommerce-page.woocommerce-checkout .coupon form.login .lost_password a,
-      .woocommerce-page.woocommerce-checkout form.login .lost_password .coupon a {
+      .woocommerce .coupon input[type=text], .woocommerce .coupon .button, .woocommerce .coupon .woocommerce-error a.button, .woocommerce .woocommerce-error .coupon a.button, .woocommerce .coupon .woocommerce-message a.button, .woocommerce .woocommerce-message .coupon a.button, .woocommerce .coupon .woocommerce-notice a.button, .woocommerce .woocommerce-notice .coupon a.button, .woocommerce .coupon .woocommerce-info a.button, .woocommerce .woocommerce-info .coupon a.button, .woocommerce-page .woocommerce-error .woocommerce .coupon a.button, .woocommerce-page .woocommerce-message .woocommerce .coupon a.button, .woocommerce-page .woocommerce-notice .woocommerce .coupon a.button, .woocommerce-page .woocommerce-info .woocommerce .coupon a.button, .woocommerce .coupon #content div.product form.cart .button, .woocommerce #content div.product form.cart .coupon .button, .woocommerce-page #content div.product form.cart .woocommerce .coupon .button, .woocommerce .coupon .shop_table .actions a.button, .woocommerce .shop_table .actions .coupon a.button, .woocommerce .coupon .shop_table .actions button.button, .woocommerce .shop_table .actions .coupon button.button, .woocommerce .coupon .shop_table .actions input.button, .woocommerce .shop_table .actions .coupon input.button, .woocommerce-page .shop_table .actions .woocommerce .coupon a.button, .woocommerce-page .shop_table .actions .woocommerce .coupon button.button, .woocommerce-page .shop_table .actions .woocommerce .coupon input.button, .woocommerce.woocommerce-checkout .coupon form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .coupon a, .woocommerce .coupon .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .coupon a, .woocommerce-page .coupon input[type=text], .woocommerce-page .coupon .button, .woocommerce .woocommerce-error .woocommerce-page .coupon a.button, .woocommerce .woocommerce-message .woocommerce-page .coupon a.button, .woocommerce .woocommerce-notice .woocommerce-page .coupon a.button, .woocommerce .woocommerce-info .woocommerce-page .coupon a.button, .woocommerce-page .coupon .woocommerce-error a.button, .woocommerce-page .woocommerce-error .coupon a.button, .woocommerce-page .coupon .woocommerce-message a.button, .woocommerce-page .woocommerce-message .coupon a.button, .woocommerce-page .coupon .woocommerce-notice a.button, .woocommerce-page .woocommerce-notice .coupon a.button, .woocommerce-page .coupon .woocommerce-info a.button, .woocommerce-page .woocommerce-info .coupon a.button, .woocommerce #content div.product form.cart .woocommerce-page .coupon .button, .woocommerce-page .coupon #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .coupon .button, .woocommerce .shop_table .actions .woocommerce-page .coupon a.button, .woocommerce .shop_table .actions .woocommerce-page .coupon button.button, .woocommerce .shop_table .actions .woocommerce-page .coupon input.button, .woocommerce-page .coupon .shop_table .actions a.button, .woocommerce-page .shop_table .actions .coupon a.button, .woocommerce-page .coupon .shop_table .actions button.button, .woocommerce-page .shop_table .actions .coupon button.button, .woocommerce-page .coupon .shop_table .actions input.button, .woocommerce-page .shop_table .actions .coupon input.button, .woocommerce-page .coupon .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .coupon a, .woocommerce-page.woocommerce-checkout .coupon form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .coupon a {
         float: none; } }
-  .woocommerce.woocommerce-checkout input[type=text],
-  .woocommerce.woocommerce-checkout input[type=email],
-  .woocommerce.woocommerce-checkout input[type=url],
-  .woocommerce.woocommerce-checkout input[type=tel],
-  .woocommerce.woocommerce-checkout input[type=number],
-  .woocommerce.woocommerce-checkout input[type=password],
-  .woocommerce.woocommerce-checkout textarea, .woocommerce-page.woocommerce-checkout input[type=text],
-  .woocommerce-page.woocommerce-checkout input[type=email],
-  .woocommerce-page.woocommerce-checkout input[type=url],
-  .woocommerce-page.woocommerce-checkout input[type=tel],
-  .woocommerce-page.woocommerce-checkout input[type=number],
-  .woocommerce-page.woocommerce-checkout input[type=password],
-  .woocommerce-page.woocommerce-checkout textarea {
+  .woocommerce.woocommerce-checkout input[type=text], .woocommerce.woocommerce-checkout input[type=email], .woocommerce.woocommerce-checkout input[type=url], .woocommerce.woocommerce-checkout input[type=tel], .woocommerce.woocommerce-checkout input[type=number], .woocommerce.woocommerce-checkout input[type=password], .woocommerce.woocommerce-checkout textarea, .woocommerce-page.woocommerce-checkout input[type=text], .woocommerce-page.woocommerce-checkout input[type=email], .woocommerce-page.woocommerce-checkout input[type=url], .woocommerce-page.woocommerce-checkout input[type=tel], .woocommerce-page.woocommerce-checkout input[type=number], .woocommerce-page.woocommerce-checkout input[type=password], .woocommerce-page.woocommerce-checkout textarea {
     border: 1px solid #ccc;
     color: #000;
     font-size: 12px;
@@ -1854,7 +1681,7 @@ input[type=checkbox] {
       border-top: 1px solid #dcdcdc;
       text-transform: uppercase;
       padding: 2em 0;
-      float: none; }
+      float: none !important; }
       .woocommerce .checkout h3 label, .woocommerce-page .checkout h3 label {
         font-size: 12px;
         font-size: 1.2rem; }
@@ -1924,9 +1751,9 @@ input[type=checkbox] {
       border-radius: 2px;
       line-height: 1.5em;
       background: #FFF;
-      color: #333; }
-      .woocommerce #payment div.payment_box p:last-child, .woocommerce-page #payment div.payment_box p:last-child {
-        margin-bottom: 0; }
+      color: #333;
+      p: last-child;
+        p-margin-bottom: 0; }
       .woocommerce #payment div.payment_box #cc-expire-month, .woocommerce #payment div.payment_box #cc-expire-year, .woocommerce-page #payment div.payment_box #cc-expire-month, .woocommerce-page #payment div.payment_box #cc-expire-year {
         width: 48%;
         float: left; }
@@ -1955,13 +1782,7 @@ input[type=checkbox] {
     border: none; }
     .woocommerce table.order_details td, .woocommerce table.order_details th, .woocommerce-page table.order_details td, .woocommerce-page table.order_details th {
       padding: 25px 0; }
-    .woocommerce table.order_details th.product-total,
-    .woocommerce table.order_details td.product-total,
-    .woocommerce table.order_details th.order-quantity,
-    .woocommerce table.order_details td.order-quantity, .woocommerce-page table.order_details th.product-total,
-    .woocommerce-page table.order_details td.product-total,
-    .woocommerce-page table.order_details th.order-quantity,
-    .woocommerce-page table.order_details td.order-quantity {
+    .woocommerce table.order_details th.product-total, .woocommerce table.order_details td.product-total, .woocommerce table.order_details th.order-quantity, .woocommerce table.order_details td.order-quantity, .woocommerce-page table.order_details th.product-total, .woocommerce-page table.order_details td.product-total, .woocommerce-page table.order_details th.order-quantity, .woocommerce-page table.order_details td.order-quantity {
       text-align: right; }
     .woocommerce table.order_details thead tr, .woocommerce-page table.order_details thead tr {
       border-top: 1px solid #ccc;
@@ -1994,6 +1815,10 @@ input[type=checkbox] {
         line-height: 1.5em; }
       .woocommerce .order_details li:last-of-type, .woocommerce-page .order_details li:last-of-type {
         border: none; }
+  .woocommerce.woocommerce-account .myaccount_user, .woocommerce-page.woocommerce-account .myaccount_user {
+    margin: 3em 0; }
+  .woocommerce.woocommerce-account .addresses, .woocommerce-page.woocommerce-account .addresses {
+    margin: 3em; }
 
 .products {
   margin: 0;
@@ -2018,8 +1843,7 @@ input[type=checkbox] {
       position: absolute;
       top: 0;
       left: 0; }
-    .products .product h3,
-    .products .product .price {
+    .products .product h3, .products .product .price {
       margin: 0.4em 0;
       font-size: 10px;
       font-size: 1rem; }
@@ -2028,12 +1852,10 @@ input[type=checkbox] {
   background: #FFF;
   padding: 0.5em; }
 
-.quantity .plus,
-.quantity .minus {
+.quantity .plus, .quantity .minus {
   border: none;
   padding: 1em; }
-  .quantity .plus:hover,
-  .quantity .minus:hover {
+  .quantity .plus:hover, .quantity .minus:hover {
     border: none; }
 .quantity .qty {
   width: 40px;
@@ -2114,13 +1936,7 @@ button {
   .overlay-btn > img {
     display: block; }
 
-.button, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce .woocommerce-error a.button,
-.woocommerce .woocommerce-message a.button,
-.woocommerce .woocommerce-notice a.button,
-.woocommerce .woocommerce-info a.button, .woocommerce-page .woocommerce-error a.button,
-.woocommerce-page .woocommerce-message a.button,
-.woocommerce-page .woocommerce-notice a.button,
-.woocommerce-page .woocommerce-info a.button, .woocommerce #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .button, .woocommerce .shop_table .actions a.button, .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions input.button, .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions button.button, .woocommerce-page .shop_table .actions input.button, .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password a, .orange .woocommerce .woocommerce-error a.button,
+.button, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce .woocommerce-error a.button, .woocommerce .woocommerce-message a.button, .woocommerce .woocommerce-notice a.button, .woocommerce .woocommerce-info a.button, .woocommerce-page .woocommerce-error a.button, .woocommerce-page .woocommerce-message a.button, .woocommerce-page .woocommerce-notice a.button, .woocommerce-page .woocommerce-info a.button, .woocommerce #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .button, .woocommerce .shop_table .actions a.button, .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions input.button, .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions button.button, .woocommerce-page .shop_table .actions input.button, .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password a, .orange .woocommerce .woocommerce-error a.button,
 .orange .woocommerce .woocommerce-message a.button,
 .orange .woocommerce .woocommerce-notice a.button,
 .orange .woocommerce .woocommerce-info a.button, .woocommerce-page .orange .woocommerce-error a.button,
@@ -2148,13 +1964,7 @@ button {
   box-shadow: none;
   line-height: 22px;
   text-shadow: none; }
-  .button:after, .woocommerce a.button:after, .woocommerce button.button:after, .woocommerce input.button:after, .woocommerce-page a.button:after, .woocommerce-page button.button:after, .woocommerce-page input.button:after, .woocommerce .woocommerce-error a.button:after,
-  .woocommerce .woocommerce-message a.button:after,
-  .woocommerce .woocommerce-notice a.button:after,
-  .woocommerce .woocommerce-info a.button:after, .woocommerce-page .woocommerce-error a.button:after,
-  .woocommerce-page .woocommerce-message a.button:after,
-  .woocommerce-page .woocommerce-notice a.button:after,
-  .woocommerce-page .woocommerce-info a.button:after, .woocommerce #content div.product form.cart .button:after, .woocommerce-page #content div.product form.cart .button:after, .woocommerce .shop_table .actions a.button:after, .woocommerce .shop_table .actions button.button:after, .woocommerce .shop_table .actions input.button:after, .woocommerce-page .shop_table .actions a.button:after, .woocommerce-page .shop_table .actions button.button:after, .woocommerce-page .shop_table .actions input.button:after, .woocommerce.woocommerce-checkout form.login .lost_password a:after, .woocommerce-page.woocommerce-checkout form.login .lost_password a:after, .orange .woocommerce .woocommerce-error a.button:after,
+  .button:after, .woocommerce a.button:after, .woocommerce button.button:after, .woocommerce input.button:after, .woocommerce-page a.button:after, .woocommerce-page button.button:after, .woocommerce-page input.button:after, .woocommerce .woocommerce-error a.button:after, .woocommerce .woocommerce-message a.button:after, .woocommerce .woocommerce-notice a.button:after, .woocommerce .woocommerce-info a.button:after, .woocommerce-page .woocommerce-error a.button:after, .woocommerce-page .woocommerce-message a.button:after, .woocommerce-page .woocommerce-notice a.button:after, .woocommerce-page .woocommerce-info a.button:after, .woocommerce #content div.product form.cart .button:after, .woocommerce-page #content div.product form.cart .button:after, .woocommerce .shop_table .actions a.button:after, .woocommerce .shop_table .actions button.button:after, .woocommerce .shop_table .actions input.button:after, .woocommerce-page .shop_table .actions a.button:after, .woocommerce-page .shop_table .actions button.button:after, .woocommerce-page .shop_table .actions input.button:after, .woocommerce.woocommerce-checkout form.login .lost_password a:after, .woocommerce-page.woocommerce-checkout form.login .lost_password a:after, .orange .woocommerce .woocommerce-error a.button:after,
   .orange .woocommerce .woocommerce-message a.button:after,
   .orange .woocommerce .woocommerce-notice a.button:after,
   .orange .woocommerce .woocommerce-info a.button:after, .woocommerce-page .orange .woocommerce-error a.button:after,
@@ -2170,13 +1980,7 @@ button {
     position: absolute;
     right: -10px;
     top: 0; }
-  .button:before, .woocommerce a.button:before, .woocommerce button.button:before, .woocommerce input.button:before, .woocommerce-page a.button:before, .woocommerce-page button.button:before, .woocommerce-page input.button:before, .woocommerce .woocommerce-error a.button:before,
-  .woocommerce .woocommerce-message a.button:before,
-  .woocommerce .woocommerce-notice a.button:before,
-  .woocommerce .woocommerce-info a.button:before, .woocommerce-page .woocommerce-error a.button:before,
-  .woocommerce-page .woocommerce-message a.button:before,
-  .woocommerce-page .woocommerce-notice a.button:before,
-  .woocommerce-page .woocommerce-info a.button:before, .woocommerce #content div.product form.cart .button:before, .woocommerce-page #content div.product form.cart .button:before, .woocommerce .shop_table .actions a.button:before, .woocommerce .shop_table .actions button.button:before, .woocommerce .shop_table .actions input.button:before, .woocommerce-page .shop_table .actions a.button:before, .woocommerce-page .shop_table .actions button.button:before, .woocommerce-page .shop_table .actions input.button:before, .woocommerce.woocommerce-checkout form.login .lost_password a:before, .woocommerce-page.woocommerce-checkout form.login .lost_password a:before, .orange .woocommerce .woocommerce-error a.button:before,
+  .button:before, .woocommerce a.button:before, .woocommerce button.button:before, .woocommerce input.button:before, .woocommerce-page a.button:before, .woocommerce-page button.button:before, .woocommerce-page input.button:before, .woocommerce .woocommerce-error a.button:before, .woocommerce .woocommerce-message a.button:before, .woocommerce .woocommerce-notice a.button:before, .woocommerce .woocommerce-info a.button:before, .woocommerce-page .woocommerce-error a.button:before, .woocommerce-page .woocommerce-message a.button:before, .woocommerce-page .woocommerce-notice a.button:before, .woocommerce-page .woocommerce-info a.button:before, .woocommerce #content div.product form.cart .button:before, .woocommerce-page #content div.product form.cart .button:before, .woocommerce .shop_table .actions a.button:before, .woocommerce .shop_table .actions button.button:before, .woocommerce .shop_table .actions input.button:before, .woocommerce-page .shop_table .actions a.button:before, .woocommerce-page .shop_table .actions button.button:before, .woocommerce-page .shop_table .actions input.button:before, .woocommerce.woocommerce-checkout form.login .lost_password a:before, .woocommerce-page.woocommerce-checkout form.login .lost_password a:before, .orange .woocommerce .woocommerce-error a.button:before,
   .orange .woocommerce .woocommerce-message a.button:before,
   .orange .woocommerce .woocommerce-notice a.button:before,
   .orange .woocommerce .woocommerce-info a.button:before, .woocommerce-page .orange .woocommerce-error a.button:before,
@@ -2211,27 +2015,9 @@ button {
     background: #FFF;
     border: 1px solid #0258ad;
     color: #0258ad; }
-    .button.alt:after, .woocommerce .woocommerce-error a.alt.button:after,
-    .woocommerce .woocommerce-message a.alt.button:after,
-    .woocommerce .woocommerce-notice a.alt.button:after,
-    .woocommerce .woocommerce-info a.alt.button:after, .woocommerce-page .woocommerce-error a.alt.button:after,
-    .woocommerce-page .woocommerce-message a.alt.button:after,
-    .woocommerce-page .woocommerce-notice a.alt.button:after,
-    .woocommerce-page .woocommerce-info a.alt.button:after, .woocommerce #content div.product form.cart .alt.button:after, .woocommerce-page #content div.product form.cart .alt.button:after, .woocommerce .shop_table .actions a.alt.button:after, .woocommerce .shop_table .actions button.alt.button:after, .woocommerce .shop_table .actions input.alt.button:after, .woocommerce-page .shop_table .actions a.alt.button:after, .woocommerce-page .shop_table .actions button.alt.button:after, .woocommerce-page .shop_table .actions input.alt.button:after, .woocommerce.woocommerce-checkout form.login .lost_password a.alt:after, .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:after, .button.alt:before, .woocommerce .woocommerce-error a.alt.button:before,
-    .woocommerce .woocommerce-message a.alt.button:before,
-    .woocommerce .woocommerce-notice a.alt.button:before,
-    .woocommerce .woocommerce-info a.alt.button:before, .woocommerce-page .woocommerce-error a.alt.button:before,
-    .woocommerce-page .woocommerce-message a.alt.button:before,
-    .woocommerce-page .woocommerce-notice a.alt.button:before,
-    .woocommerce-page .woocommerce-info a.alt.button:before, .woocommerce #content div.product form.cart .alt.button:before, .woocommerce-page #content div.product form.cart .alt.button:before, .woocommerce .shop_table .actions a.alt.button:before, .woocommerce .shop_table .actions button.alt.button:before, .woocommerce .shop_table .actions input.alt.button:before, .woocommerce-page .shop_table .actions a.alt.button:before, .woocommerce-page .shop_table .actions button.alt.button:before, .woocommerce-page .shop_table .actions input.alt.button:before, .woocommerce.woocommerce-checkout form.login .lost_password a.alt:before, .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:before {
+    .button.alt:after, .woocommerce .woocommerce-error a.alt.button:after, .woocommerce .woocommerce-message a.alt.button:after, .woocommerce .woocommerce-notice a.alt.button:after, .woocommerce .woocommerce-info a.alt.button:after, .woocommerce-page .woocommerce-error a.alt.button:after, .woocommerce-page .woocommerce-message a.alt.button:after, .woocommerce-page .woocommerce-notice a.alt.button:after, .woocommerce-page .woocommerce-info a.alt.button:after, .woocommerce #content div.product form.cart .alt.button:after, .woocommerce-page #content div.product form.cart .alt.button:after, .woocommerce .shop_table .actions a.alt.button:after, .woocommerce .shop_table .actions button.alt.button:after, .woocommerce .shop_table .actions input.alt.button:after, .woocommerce-page .shop_table .actions a.alt.button:after, .woocommerce-page .shop_table .actions button.alt.button:after, .woocommerce-page .shop_table .actions input.alt.button:after, .woocommerce.woocommerce-checkout form.login .lost_password a.alt:after, .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:after, .button.alt:before, .woocommerce .woocommerce-error a.alt.button:before, .woocommerce .woocommerce-message a.alt.button:before, .woocommerce .woocommerce-notice a.alt.button:before, .woocommerce .woocommerce-info a.alt.button:before, .woocommerce-page .woocommerce-error a.alt.button:before, .woocommerce-page .woocommerce-message a.alt.button:before, .woocommerce-page .woocommerce-notice a.alt.button:before, .woocommerce-page .woocommerce-info a.alt.button:before, .woocommerce #content div.product form.cart .alt.button:before, .woocommerce-page #content div.product form.cart .alt.button:before, .woocommerce .shop_table .actions a.alt.button:before, .woocommerce .shop_table .actions button.alt.button:before, .woocommerce .shop_table .actions input.alt.button:before, .woocommerce-page .shop_table .actions a.alt.button:before, .woocommerce-page .shop_table .actions button.alt.button:before, .woocommerce-page .shop_table .actions input.alt.button:before, .woocommerce.woocommerce-checkout form.login .lost_password a.alt:before, .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:before {
       display: none; }
-    .button.alt:hover, .woocommerce .woocommerce-error a.alt.button:hover,
-    .woocommerce .woocommerce-message a.alt.button:hover,
-    .woocommerce .woocommerce-notice a.alt.button:hover,
-    .woocommerce .woocommerce-info a.alt.button:hover, .woocommerce-page .woocommerce-error a.alt.button:hover,
-    .woocommerce-page .woocommerce-message a.alt.button:hover,
-    .woocommerce-page .woocommerce-notice a.alt.button:hover,
-    .woocommerce-page .woocommerce-info a.alt.button:hover, .woocommerce #content div.product form.cart .alt.button:hover, .woocommerce-page #content div.product form.cart .alt.button:hover, .woocommerce .shop_table .actions a.alt.button:hover, .woocommerce .shop_table .actions button.alt.button:hover, .woocommerce .shop_table .actions input.alt.button:hover, .woocommerce-page .shop_table .actions a.alt.button:hover, .woocommerce-page .shop_table .actions button.alt.button:hover, .woocommerce-page .shop_table .actions input.alt.button:hover, .woocommerce.woocommerce-checkout form.login .lost_password a.alt:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:hover {
+    .button.alt:hover, .woocommerce .woocommerce-error a.alt.button:hover, .woocommerce .woocommerce-message a.alt.button:hover, .woocommerce .woocommerce-notice a.alt.button:hover, .woocommerce .woocommerce-info a.alt.button:hover, .woocommerce-page .woocommerce-error a.alt.button:hover, .woocommerce-page .woocommerce-message a.alt.button:hover, .woocommerce-page .woocommerce-notice a.alt.button:hover, .woocommerce-page .woocommerce-info a.alt.button:hover, .woocommerce #content div.product form.cart .alt.button:hover, .woocommerce-page #content div.product form.cart .alt.button:hover, .woocommerce .shop_table .actions a.alt.button:hover, .woocommerce .shop_table .actions button.alt.button:hover, .woocommerce .shop_table .actions input.alt.button:hover, .woocommerce-page .shop_table .actions a.alt.button:hover, .woocommerce-page .shop_table .actions button.alt.button:hover, .woocommerce-page .shop_table .actions input.alt.button:hover, .woocommerce.woocommerce-checkout form.login .lost_password a.alt:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:hover {
       background: #0258ad;
       color: #FFF; }
 
@@ -3557,16 +3343,7 @@ body {
 .woocommerce-page .orange .woocommerce-notice a.button,
 .woocommerce-page .orange .woocommerce-info a.button, .orange .woocommerce #content div.product form.cart .button, .woocommerce-page .orange #content div.product form.cart .button {
   background: #c1272d; }
-  .orange .button:after, .woocommerce .woocommerce-error .orange a.button:after,
-  .woocommerce .woocommerce-message .orange a.button:after,
-  .woocommerce .woocommerce-notice .orange a.button:after,
-  .woocommerce .woocommerce-info .orange a.button:after, .orange .woocommerce-page .woocommerce-error a.button:after, .woocommerce-page .woocommerce-error .orange a.button:after,
-  .orange .woocommerce-page .woocommerce-message a.button:after,
-  .woocommerce-page .woocommerce-message .orange a.button:after,
-  .orange .woocommerce-page .woocommerce-notice a.button:after,
-  .woocommerce-page .woocommerce-notice .orange a.button:after,
-  .orange .woocommerce-page .woocommerce-info a.button:after,
-  .woocommerce-page .woocommerce-info .orange a.button:after, .woocommerce #content div.product form.cart .orange .button:after, .orange .woocommerce-page #content div.product form.cart .button:after, .woocommerce-page #content div.product form.cart .orange .button:after, .orange .woocommerce .shop_table .actions a.button:after, .woocommerce .shop_table .actions .orange a.button:after, .orange .woocommerce .shop_table .actions button.button:after, .woocommerce .shop_table .actions .orange button.button:after, .orange .woocommerce .shop_table .actions input.button:after, .woocommerce .shop_table .actions .orange input.button:after, .orange .woocommerce-page .shop_table .actions a.button:after, .woocommerce-page .shop_table .actions .orange a.button:after, .orange .woocommerce-page .shop_table .actions button.button:after, .woocommerce-page .shop_table .actions .orange button.button:after, .orange .woocommerce-page .shop_table .actions input.button:after, .woocommerce-page .shop_table .actions .orange input.button:after, .orange .woocommerce.woocommerce-checkout form.login .lost_password a:after, .woocommerce.woocommerce-checkout form.login .lost_password .orange a:after, .orange .woocommerce-page.woocommerce-checkout form.login .lost_password a:after, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange a:after, .orange .woocommerce .woocommerce-error a.button:after,
+  .orange .button:after, .woocommerce .woocommerce-error .orange a.button:after, .woocommerce .woocommerce-message .orange a.button:after, .woocommerce .woocommerce-notice .orange a.button:after, .woocommerce .woocommerce-info .orange a.button:after, .orange .woocommerce-page .woocommerce-error a.button:after, .woocommerce-page .woocommerce-error .orange a.button:after, .orange .woocommerce-page .woocommerce-message a.button:after, .woocommerce-page .woocommerce-message .orange a.button:after, .orange .woocommerce-page .woocommerce-notice a.button:after, .woocommerce-page .woocommerce-notice .orange a.button:after, .orange .woocommerce-page .woocommerce-info a.button:after, .woocommerce-page .woocommerce-info .orange a.button:after, .woocommerce #content div.product form.cart .orange .button:after, .orange .woocommerce-page #content div.product form.cart .button:after, .woocommerce-page #content div.product form.cart .orange .button:after, .orange .woocommerce .shop_table .actions a.button:after, .woocommerce .shop_table .actions .orange a.button:after, .orange .woocommerce .shop_table .actions button.button:after, .woocommerce .shop_table .actions .orange button.button:after, .orange .woocommerce .shop_table .actions input.button:after, .woocommerce .shop_table .actions .orange input.button:after, .orange .woocommerce-page .shop_table .actions a.button:after, .woocommerce-page .shop_table .actions .orange a.button:after, .orange .woocommerce-page .shop_table .actions button.button:after, .woocommerce-page .shop_table .actions .orange button.button:after, .orange .woocommerce-page .shop_table .actions input.button:after, .woocommerce-page .shop_table .actions .orange input.button:after, .orange .woocommerce.woocommerce-checkout form.login .lost_password a:after, .woocommerce.woocommerce-checkout form.login .lost_password .orange a:after, .orange .woocommerce-page.woocommerce-checkout form.login .lost_password a:after, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange a:after, .orange .woocommerce .woocommerce-error a.button:after,
   .orange .woocommerce .woocommerce-message a.button:after,
   .orange .woocommerce .woocommerce-notice a.button:after,
   .orange .woocommerce .woocommerce-info a.button:after, .woocommerce-page .orange .woocommerce-error a.button:after,

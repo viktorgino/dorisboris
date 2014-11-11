@@ -274,24 +274,3 @@ fieldset {
 	 	}
 	}
 }
-input[type=checkbox] {
-	display: none;
-	& + label {
-
-		&:before {
-			content: '';
-	       	height: 13px;
-	       	width: 13px;
-	       	display: block;
-	       	padding: 0 0 0 0px;		
-	       	background: url(../images/buttons/checkbox.jpg) left top no-repeat;
-	       	float: left;
-	       	margin: 0 8px 0 0;
-
-		}
-	}
-
-	&:checked + label {
-		background-image: url(../images/buttons/checkbox.jpg);
-	}
-}
