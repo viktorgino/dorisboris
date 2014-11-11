@@ -64,7 +64,7 @@ input[type=submit],
 input[type=reset],
 input[type=button]{
 	@include transition(all 0.3s ease);
-	background: none;
+	//background: none;
 	border: 0;
 
 	&:focus {
@@ -142,7 +142,6 @@ fieldset {
 				&.top_label {
 					.gfield_label {
 						margin: 0.5em 0;
-						display: none;
 					}
 				}
 
@@ -268,8 +267,7 @@ fieldset {
 			}	 		
 
 	 		.button {
-				border: none;
-				background: none;
+	 			margin: 0;
 	 		}
 	 	}
 	}

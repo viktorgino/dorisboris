@@ -78,6 +78,11 @@
             }
         }
     }
+
+    .content {
+    	margin: 3em auto 5em;
+    }
+    
     #content {
         padding: 1em 0 10%;
         .woocommerce-pagination {
@@ -603,7 +608,7 @@
     }
     form.login, form.checkout_coupon, form.register, form.lost_reset_password, &.woocommerce-account form {
 		padding: 4em;
-		margin: 3em auto 5em;
+		margin: 0 auto;
 		text-align: left;
 		background: #f8f8f8;
 		max-width: 800px;
@@ -887,7 +892,12 @@
     	}
 
     	.addresses {
-    		margin: 3em;
+    		margin: 3em 0;
+
+    		address {
+    			background: #f6f6f5;
+    			padding: 2em;
+    		}
     	}
 
     }

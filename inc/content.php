@@ -57,7 +57,9 @@
 					<div class="break-on-tablet span <?php echo $class; ?>">
 						<?php the_sub_field('column-content'); ?>
 						<?php if(get_sub_field('cta_link')): ?>
-							<a class="button" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_text'); ?></a>
+							<p>
+								<a class="button" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_text'); ?></a>
+							</p>
 						<?php endif; ?>
 
 					</div>

@@ -1,30 +1,25 @@
-<?php
-/**
- * The template for displaying 404 pages (Not Found).
- *
- * @package epigeum
- * @since epigeum 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
-
-<section id="error">
-	<div class="container">
-		<div class="row">
-			<div id="content">
-				<div class="inner">
-					<br />
-					<h4 class="uppercase red text-center"><?php _e("404 error - Page not found", THEME_NAME); ?></h4>
-					<h1 class="uppercase text-center"><?php _e("You appear to have taken a wrong turn...", THEME_NAME); ?></h1>
-					<p class=" text-center"><?php _e("The page you are looking for is not here. It may have been deleted, or the address might have been miss-typed. Either way, let’s get you back on track...", THEME_NAME); ?></p>
-					<p class=" text-center"><?php _e("You can use the navigation bar above, or:", THEME_NAME); ?></p>
-					<p class=" text-center">
-						<a class="black-btn" href="<?php bloginfo('url') ?>"><?php _e("Go to the Homepage", THEME_NAME); ?> </a>
-					</p>
-
+	<div id="error" >
+		<div id="content">
+			<div class="row">
+				<div class="container inner">
+					<div class="span column seven break">
+						<div class="error">
+							<h1>Oops!</h1>                     
+							<h2>It’s looking like you may have taken a wrong turn.
+							Don’t worry... it happens to the best of us.</h2>
+							<p>Theres’s a little help on the top that might help you get back on track.</p>
+							<span>404</span>
+						</div>						
+					</div>
+					<div class="span column three break">
+						<img  class="hide-on-mobile" src="<?php echo get_template_directory_uri(); ?>/images/misc/404-sad-face.png" alt="">
+					</div>
 				</div>
-			</div><!-- #content .site-content -->
-		</div>
-	</div>
-</section><!-- #error -->
+			</div>
+
+		</div><!-- #content -->
+	</div><!-- #error -->
+
 <?php get_footer(); ?>

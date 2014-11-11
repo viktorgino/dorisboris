@@ -447,7 +447,7 @@ blockquote {
 				.ginput_container {
 					input {
 						@include box-shadow(0px 2px 0px #e3e3e3 inset);
-					}
+					}					
 				}
 
 				.gform_footer {
@@ -459,6 +459,24 @@ blockquote {
 					}
 				}
 			}
+
+		 	.gform_body {
+		 		position: relative;
+
+				.gform_fields {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					@extend .clearfix;
+
+					&.top_label {
+						.gfield_label {
+							margin: 0.5em 0;
+							display: none;
+						}
+					}	
+				}
+			}		
 
 			.stamp {
 				@include inline-block;
