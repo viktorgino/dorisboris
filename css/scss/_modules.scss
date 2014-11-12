@@ -97,7 +97,7 @@ blockquote {
 
 		&:after {
 			@include icon(logo);
-			@include font-size(62);
+			@include font-size(120);
 			color: #000;
 			@include transition(all 0.3s ease);
 		}
@@ -219,7 +219,7 @@ blockquote {
 			}	
 		}
 
-		.current-menu-item {
+		.current-menu-item, .current-product_cat-ancestor {
 
 			&.menu-item-has-children {
 				margin-bottom: 59px;
@@ -672,7 +672,11 @@ blockquote {
 		position: relative;
 		cursor: pointer;
 		outline: none;
-		margin-right: 20px;		
+		margin-right: 20px;	
+
+		@include device-width(8) {
+			top: -13px;
+		}	
 
 		&:after {
 			content: '';
@@ -732,7 +736,7 @@ blockquote {
 
 		&.dl-back {
 			> a {
-				padding-left: 30px;
+				padding-left: 40px;
 				background: rgba(0,0,0,0.1);
 			}
 
@@ -749,6 +753,7 @@ blockquote {
 			position: absolute;
 			top: 0;
 			line-height: 50px;
+			@include font-size(10);
 			@include icon(arrow-right);
 			speak: none;
 			-webkit-font-smoothing: antialiased;

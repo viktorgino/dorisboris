@@ -136,14 +136,18 @@
                 margin: 1%;
                 float: left !important;
                 clear: none;
+
                 &.description {
                     width: 48%;
                     float: left;
                     padding: 2%;
                     background-size: cover;
+
                     @include device-width(8) {
                         width: 98%;
-                    }
+                        margin-bottom: 2em;
+                    }                 
+
                     > img {
                         display: block;
                     }
@@ -160,7 +164,7 @@
                 &.first {
                     clear: none;
                 }
-                &:nth-child(4) {
+                &:nth-child(4n) {
                     clear: left;
                     @include device-width(8) {
                         clear: none;
@@ -202,7 +206,7 @@
                     @include font-size(16);
                     @include gillsans-medium;
                 }
-                .add_to_cart_button {
+                .button {
                     display: none;
                 }
             }
@@ -252,6 +256,18 @@
                         @include font-size(18);
                         @include gillsans-medium;
                         padding: 1.3em 0;
+                    }
+
+                    .product_meta {
+                        margin-top: 2em;
+
+                        .posted_in {
+                            display: block;
+                        }
+
+                        .tagged_as {
+                            display: block;
+                        }
                     }
                 }
             }

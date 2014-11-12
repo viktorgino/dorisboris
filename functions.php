@@ -31,7 +31,7 @@ add_action( 'wp_print_styles', 'custom_styles', 30);
 
 // Custom Filters
 
-add_filter( 'pre_get_posts', 'custom_pre_get_posts');
+add_action( 'woocommerce_product_query', 'custom_woocommerce_product_query', 105);
 
 add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
 
@@ -142,14 +142,6 @@ function custom_styles() {
 	wp_enqueue_style( 'fonts', '//fast.fonts.net/cssapi/ba131fe1-e71a-4fd6-83e4-29c24022bc46.css' );	
 }
 
-function custom_pre_get_posts( $query ) {
-	
-	if ( $query->get('post_type') == 'press_release' ) {
-		$query->set('posts_per_page', 4);
-	}
-
-	return $query;
-}
 
 //remove Woocommerce Default Sorting Dropdown
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
@@ -223,4 +215,18 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_butt
 function woo_custom_cart_button_text() {
  
         return __( '<i class="icon-basket"></i> Add to Bag', 'woocommerce' );
+}
+
+
+function custom_woocommerce_product_query( $query ) {
+
+	$query->set('posts_per_page', 20);
+	if ( !is_admin() && $query->is_main_query() && ( is_tax('product_cat') ) ) {
+
+		//if( is_tax('product_cat', 'gifts') )
+
+			
+	}
+
+	//return $query;
 }

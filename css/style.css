@@ -461,8 +461,8 @@ table {
 
 @font-face {
   font-family: 'icons';
-  src: url("fonts/icons.eot?6w4gf");
-  src: url("fonts/icons.eot?#iefix6w4gf") format("embedded-opentype"), url("fonts/icons.woff?6w4gf") format("woff"), url("fonts/icons.ttf?6w4gf") format("truetype"), url("fonts/icons.svg?6w4gf#icons") format("svg");
+  src: url("fonts/icons.eot?-xn7nk4");
+  src: url("fonts/icons.eot?#iefix-xn7nk4") format("embedded-opentype"), url("fonts/icons.woff?-xn7nk4") format("woff"), url("fonts/icons.ttf?-xn7nk4") format("truetype"), url("fonts/icons.svg?-xn7nk4#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], .owl-nav .owl-prev:before,
@@ -478,6 +478,9 @@ table {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-logo:before, .logo-container .logo:after {
+  content: "\e603"; }
 
 .icon-chevron-left:before, .owl-nav .owl-prev:before {
   content: "\e607"; }
@@ -500,9 +503,6 @@ table {
 
 .icon-basket:before {
   content: "\e602"; }
-
-.icon-logo:before, .logo-container .logo:after {
-  content: "\e603"; }
 
 .icon-tel:before {
   content: "\e604"; }
@@ -1288,7 +1288,8 @@ fieldset {
       background-size: cover; }
       @media only screen and (max-width: 800px) {
         .woocommerce #content > ul.products li.description, .woocommerce #content > ul.products li.product.description, .woocommerce-page #content > ul.products li.description, .woocommerce-page #content > ul.products li.product.description {
-          width: 98%; } }
+          width: 98%;
+          margin-bottom: 2em; } }
       .woocommerce #content > ul.products li.description > img, .woocommerce #content > ul.products li.product.description > img, .woocommerce-page #content > ul.products li.description > img, .woocommerce-page #content > ul.products li.product.description > img {
         display: block; }
       .woocommerce #content > ul.products li.description .inner, .woocommerce #content > ul.products li.product.description .inner, .woocommerce-page #content > ul.products li.description .inner, .woocommerce-page #content > ul.products li.product.description .inner {
@@ -1300,10 +1301,10 @@ fieldset {
           width: 70%; }
     .woocommerce #content > ul.products li.first, .woocommerce #content > ul.products li.product.first, .woocommerce-page #content > ul.products li.first, .woocommerce-page #content > ul.products li.product.first {
       clear: none; }
-    .woocommerce #content > ul.products li:nth-child(4), .woocommerce #content > ul.products li.product:nth-child(4), .woocommerce-page #content > ul.products li:nth-child(4), .woocommerce-page #content > ul.products li.product:nth-child(4) {
+    .woocommerce #content > ul.products li:nth-child(4n), .woocommerce #content > ul.products li.product:nth-child(4n), .woocommerce-page #content > ul.products li:nth-child(4n), .woocommerce-page #content > ul.products li.product:nth-child(4n) {
       clear: left; }
       @media only screen and (max-width: 800px) {
-        .woocommerce #content > ul.products li:nth-child(4), .woocommerce #content > ul.products li.product:nth-child(4), .woocommerce-page #content > ul.products li:nth-child(4), .woocommerce-page #content > ul.products li.product:nth-child(4) {
+        .woocommerce #content > ul.products li:nth-child(4n), .woocommerce #content > ul.products li.product:nth-child(4n), .woocommerce-page #content > ul.products li:nth-child(4n), .woocommerce-page #content > ul.products li.product:nth-child(4n) {
           clear: none; } }
     @media only screen and (max-width: 800px) {
       .woocommerce #content > ul.products li, .woocommerce #content > ul.products li.product, .woocommerce-page #content > ul.products li, .woocommerce-page #content > ul.products li.product {
@@ -1341,7 +1342,7 @@ fieldset {
       font-size: 1.6rem;
       font-family: "Gill Sans W01";
       font-weight: 700; }
-    .woocommerce #content > ul.products li .add_to_cart_button, .woocommerce #content > ul.products li.product .add_to_cart_button, .woocommerce-page #content > ul.products li .add_to_cart_button, .woocommerce-page #content > ul.products li.product .add_to_cart_button {
+    .woocommerce #content > ul.products li .button, .woocommerce #content > ul.products li div.product form.cart .button, .woocommerce #content > ul.products div.product form.cart li .button, .woocommerce.woocommerce-checkout #content > ul.products li form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password #content > ul.products li a, .woocommerce #content > ul.products li .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce #content > ul.products li a, .woocommerce #content > ul.products li.product .button, .woocommerce.woocommerce-checkout #content > ul.products li.product form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password #content > ul.products li.product a, .woocommerce #content > ul.products li.product .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce #content > ul.products li.product a, .orange .woocommerce #content > ul.products li.product div.product form.cart .button, .orange .woocommerce #content > ul.products div.product form.cart li.product .button, .woocommerce .woocommerce-page .orange #content > ul.products li.product div.product form.cart .button, .woocommerce .woocommerce-page .orange #content > ul.products div.product form.cart li.product .button, .woocommerce-page #content > ul.products li .button, .woocommerce-page #content > ul.products li div.product form.cart .button, .woocommerce-page #content > ul.products div.product form.cart li .button, .woocommerce-page #content > ul.products li .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page #content > ul.products li a, .woocommerce-page.woocommerce-checkout #content > ul.products li form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password #content > ul.products li a, .woocommerce-page #content > ul.products li.product .button, .woocommerce-page #content > ul.products li.product .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page #content > ul.products li.product a, .woocommerce-page.woocommerce-checkout #content > ul.products li.product form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password #content > ul.products li.product a, .orange .woocommerce .woocommerce-page #content > ul.products li.product div.product form.cart .button, .orange .woocommerce .woocommerce-page #content > ul.products div.product form.cart li.product .button, .woocommerce-page .orange #content > ul.products li.product div.product form.cart .button, .woocommerce-page .orange #content > ul.products div.product form.cart li.product .button {
       display: none; }
   .woocommerce #content div.product, .woocommerce-page #content div.product {
             /* =Upcycle Products
@@ -1377,6 +1378,12 @@ fieldset {
       font-family: "Gill Sans W01";
       font-weight: 700;
       padding: 1.3em 0; }
+    .woocommerce #content div.product .product-inner .summary .product_meta, .woocommerce-page #content div.product .product-inner .summary .product_meta {
+      margin-top: 2em; }
+      .woocommerce #content div.product .product-inner .summary .product_meta .posted_in, .woocommerce-page #content div.product .product-inner .summary .product_meta .posted_in {
+        display: block; }
+      .woocommerce #content div.product .product-inner .summary .product_meta .tagged_as, .woocommerce-page #content div.product .product-inner .summary .product_meta .tagged_as {
+        display: block; }
     .woocommerce #content div.product .related, .woocommerce-page #content div.product .related {
       background: #f6f6f5;
       margin-bottom: -10%;
@@ -2497,8 +2504,8 @@ blockquote {
 .logo-container {
   text-align: center; }
   .logo-container .logo:after {
-    font-size: 62px;
-    font-size: 6.2rem;
+    font-size: 120px;
+    font-size: 12rem;
     color: #000;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -2590,9 +2597,9 @@ blockquote {
       text-align: center; }
       #header #header-navigation ul.sub-menu li {
         float: none; }
-    #header #header-navigation .current-menu-item.menu-item-has-children {
+    #header #header-navigation .current-menu-item.menu-item-has-children, #header #header-navigation .current-product_cat-ancestor.menu-item-has-children {
       margin-bottom: 59px; }
-      #header #header-navigation .current-menu-item.menu-item-has-children ul.sub-menu {
+      #header #header-navigation .current-menu-item.menu-item-has-children ul.sub-menu, #header #header-navigation .current-product_cat-ancestor.menu-item-has-children ul.sub-menu {
         display: block; }
 
 /* =============================================================================
@@ -2924,6 +2931,9 @@ blockquote {
     cursor: pointer;
     outline: none;
     margin-right: 20px; }
+    @media only screen and (max-width: 800px) {
+      .mobile-navigation button {
+        top: -13px; } }
     .mobile-navigation button:after {
       content: '';
       position: absolute;
@@ -2963,7 +2973,7 @@ blockquote {
   .dl-menuwrapper li {
     /* Hide the inner submenus */ }
     .dl-menuwrapper li.dl-back > a {
-      padding-left: 30px;
+      padding-left: 40px;
       background: rgba(0, 0, 0, 0.1); }
     .dl-menuwrapper li.dl-back:after {
       left: 10px;
@@ -2975,6 +2985,8 @@ blockquote {
       position: absolute;
       top: 0;
       line-height: 50px;
+      font-size: 10px;
+      font-size: 1rem;
       speak: none;
       -webkit-font-smoothing: antialiased;
       color: #FFF; }
@@ -3159,7 +3171,10 @@ body {
       font-size: 12px;
       font-size: 1.2rem; }
   #header .top .ecommerce-options, #header .top .phone {
-    padding-top: 1.5em; }
+    padding-top: 3.5em; }
+    @media only screen and (max-width: 600px) {
+      #header .top .ecommerce-options, #header .top .phone {
+        padding-top: 2.5em; } }
   #header .top .ecommerce-options {
     text-align: right; }
     #header .top .ecommerce-options a {
@@ -3186,8 +3201,15 @@ body {
   padding: 27px 0;
   text-align: center;
   position: relative; }
+  @media only screen and (max-width: 800px) {
+    #header .bottom {
+      padding: 0;
+      background: none; } }
   #header .bottom .container, #header .bottom #error #content, #error #header .bottom #content {
     position: static; }
+    @media only screen and (max-width: 800px) {
+      #header .bottom .container, #header .bottom #error #content, #error #header .bottom #content {
+        margin-top: -50px; } }
 
 #page-header {
   background-color: #FCFCFC; }

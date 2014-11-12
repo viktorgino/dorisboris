@@ -58,11 +58,15 @@ body {
 		}		
 
 		.ecommerce-options, .phone {
-			padding-top: 1.5em;
+			padding-top: 3.5em;
+
+			@include device-width(6) {
+				padding-top: 2.5em;
+			}
 		}
 
 		.ecommerce-options {
-			text-align: right;		
+			text-align: right;	
 
 			a {
 				@include font-size(13);
@@ -99,8 +103,17 @@ body {
 		text-align: center;
 		position: relative;
 
+		@include device-width(8) {
+			padding: 0;
+			background: none;
+		}
+
 		.container {
 			position: static;
+			@include device-width(8) {
+				margin-top: -50px;
+			}
+			
 		}
 	}
 }
