@@ -14,7 +14,13 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<?php
 		global $product;
 		$dimensions = $product->get_dimensions();
+		$weight = $product->get_weight();
 	?>
+	<?php if ($weight !='0.0000'): ?>
+		<div class="weight">
+			<?php _e( 'Weight: ', 'woocommerce' ) ?> <?php echo $weight; ?> <?php _e('kg','woocommerce'); ?>
+		</div>
+	<?php endif; ?>	
 	<?php if ($dimensions != '0.0000 x 0.0000 cm' ): ?>
 		<div class="dimensions">
 			<?php _e( 'Dimensions: ', 'woocommerce' ) ?>

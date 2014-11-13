@@ -245,11 +245,11 @@
                         color: #0063a1;
                         @include font-size(27);
                         line-height: 1.4;
+                        margin-bottom: 20px;
                     }
                     .dimensions {
                         color: #333333;
                         @include font-size(15);
-                        margin-top: 10px;
                     }
                     .price {
                         color: #333333;

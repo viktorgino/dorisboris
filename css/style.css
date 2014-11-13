@@ -1365,12 +1365,12 @@ fieldset {
       color: #0063a1;
       font-size: 27px;
       font-size: 2.7rem;
-      line-height: 1.4; }
+      line-height: 1.4;
+      margin-bottom: 20px; }
     .woocommerce #content div.product .product-inner .summary .dimensions, .woocommerce-page #content div.product .product-inner .summary .dimensions {
       color: #333333;
       font-size: 15px;
-      font-size: 1.5rem;
-      margin-top: 10px; }
+      font-size: 1.5rem; }
     .woocommerce #content div.product .product-inner .summary .price, .woocommerce-page #content div.product .product-inner .summary .price {
       color: #333333;
       font-size: 18px;
