@@ -1,4 +1,5 @@
 $red: #c1272d;
+$orange: #fff0e3;
 
 .orange {
 	
@@ -17,7 +18,7 @@ $red: #c1272d;
 
 	#header {
 		.top {
-			background: #fff0e3;
+			background: $orange;
 		}
 	}
 
@@ -29,13 +30,24 @@ $red: #c1272d;
 					color: $red;
 				}
 			}
+
+			&:hover {
+				.caption {
+					background-color: $red;
+
+					h1, p, .link {
+						color: #FFF;
+					}
+				}
+			}
 		}
 	}
 
 	#quick-links {
 		a:hover {
 			h1 {
-				color: $red;
+				color: #FFF;
+				background: $red;
 			}
 		}
 	}
@@ -70,8 +82,17 @@ $red: #c1272d;
 					@extend .button;
 				}
 			}
+
+	        > ul.products {
+	            li, li.product {	
+
+		            a:hover {
+		            	background: $orange;
+		            }	
+	        	}
+			}			
 		}	
-	} 
+	}
 
 	#footer {
 

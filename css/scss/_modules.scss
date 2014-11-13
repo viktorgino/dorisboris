@@ -253,12 +253,13 @@ blockquote {
 			bottom: 2em;
 			left: 3em;
 			background-color: #fff;
-		    background-image: url(../images/backgrounds/strip.jpg);
+		    background-image: url(../images/backgrounds/strip.png);
 		    background-repeat:repeat-x;
 		    background-position: 100% 95%;				
 			padding: 40px;	
 			text-align: center;
 			max-width: 375px;
+			@include transition(all 0.3s ease);
 
 			@include device-width(9) {
 				position: static;
@@ -296,6 +297,16 @@ blockquote {
 
 				&:hover {
 					color: #0258ad;
+				}
+			}
+		}
+
+		&:hover {
+			.caption {
+				background-color: #0258ad;
+
+				h1, p, .link {
+					color: #FFF;
 				}
 			}
 		}
@@ -375,7 +386,8 @@ blockquote {
 
 			&:hover {
 				h1 {
-					color: #0258ad;
+					color: #FFF;
+					background: #0258ad;
 				}
 			}
 		}

@@ -82,6 +82,11 @@
     .content {
     	margin: 3em auto 5em;
     }
+
+    span.onsale {
+        background: #52A82E;
+        padding: 5px 7px;
+    }
     
     #content {
         padding: 1em 0 10%;
@@ -189,6 +194,11 @@
                     img {
                         @include box-shadow(none);
                     }
+
+                    &:hover {
+                        @include box-shadow(0px 1px 5px #ccc);
+                        background: #d4e5f4;
+                    }
                 }
                 h3 {
                     @include gillsans-medium;
@@ -247,6 +257,7 @@
                         line-height: 1.4;
                         margin-bottom: 20px;
                     }
+
                     .dimensions {
                         color: #333333;
                         @include font-size(15);
@@ -296,29 +307,40 @@
                         @media screen and (max-width: 768px) {
                             width: 48%;
                         }
-                        img {
-                            @include box-shadow(none);
-                        }
-                        h3 {
-                            @include gillsans-medium;
-                            @include font-size(12);
-                            color: #333333;
-                            letter-spacing: 0;
-                            padding: .5em 3em;
-                            line-height: 1.4;
-                            letter-spacing: 2px;
-                            @include device-width(10) {
-                                padding: .5em;
+
+                        a {
+                            img {
+                                @include box-shadow(none);
+                                @include transition(all 0.3s ease);
                             }
+                            h3 {
+                                @include gillsans-medium;
+                                @include font-size(12);
+                                color: #333333;
+                                letter-spacing: 0;
+                                padding: .5em 3em;
+                                line-height: 1.4;
+                                letter-spacing: 2px;
+                                @include device-width(10) {
+                                    padding: .5em;
+                                }
+                            }
+                            .price {
+                                color: #333333;
+                                @include font-size(16);
+                                @include gillsans-medium;
+                            }  
+
+                            &:hover {
+                                img {
+                                    @include box-shadow(0px 2px 5px #5A5A5A);
+                                }
+                            }                     
                         }
-                        .price {
-                            color: #333333;
-                            @include font-size(16);
-                            @include gillsans-medium;
-                        }
+
                         .add_to_cart_button {
                             display: none;
-                        }
+                        }                         
                     }
                 }
             }

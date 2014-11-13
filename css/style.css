@@ -587,7 +587,8 @@ b {
   position: relative;
   padding-bottom: 75%;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 4em; }
   .content .map iframe {
     position: absolute;
     top: 0;
@@ -1246,6 +1247,9 @@ fieldset {
           width: 100%; } }
   .woocommerce .content, .woocommerce-page .content {
     margin: 3em auto 5em; }
+  .woocommerce span.onsale, .woocommerce-page span.onsale {
+    background: #52A82E;
+    padding: 5px 7px; }
   .woocommerce #content, .woocommerce-page #content {
     padding: 1em 0 10%; }
     .woocommerce #content .woocommerce-pagination, .woocommerce-page #content .woocommerce-pagination {
@@ -1324,6 +1328,11 @@ fieldset {
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
+    .woocommerce #content > ul.products li a:hover, .woocommerce #content > ul.products li.product a:hover, .woocommerce-page #content > ul.products li a:hover, .woocommerce-page #content > ul.products li.product a:hover {
+      -moz-box-shadow: 0px 1px 5px #ccc;
+      -webkit-box-shadow: 0px 1px 5px #ccc;
+      box-shadow: 0px 1px 5px #ccc;
+      background: #d4e5f4; }
     .woocommerce #content > ul.products li h3, .woocommerce #content > ul.products li.product h3, .woocommerce-page #content > ul.products li h3, .woocommerce-page #content > ul.products li.product h3 {
       font-family: "Gill Sans W01";
       font-weight: 700;
@@ -1407,11 +1416,15 @@ fieldset {
         @media screen and (max-width: 768px) {
           .woocommerce #content div.product .related ul.products li.product, .woocommerce-page #content div.product .related ul.products li.product {
             width: 48%; } }
-        .woocommerce #content div.product .related ul.products li.product img, .woocommerce-page #content div.product .related ul.products li.product img {
+        .woocommerce #content div.product .related ul.products li.product a img, .woocommerce-page #content div.product .related ul.products li.product a img {
           -moz-box-shadow: none;
           -webkit-box-shadow: none;
-          box-shadow: none; }
-        .woocommerce #content div.product .related ul.products li.product h3, .woocommerce-page #content div.product .related ul.products li.product h3 {
+          box-shadow: none;
+          -moz-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+        .woocommerce #content div.product .related ul.products li.product a h3, .woocommerce-page #content div.product .related ul.products li.product a h3 {
           font-family: "Gill Sans W01";
           font-weight: 700;
           font-size: 12px;
@@ -1422,14 +1435,18 @@ fieldset {
           line-height: 1.4;
           letter-spacing: 2px; }
           @media only screen and (max-width: 1000px) {
-            .woocommerce #content div.product .related ul.products li.product h3, .woocommerce-page #content div.product .related ul.products li.product h3 {
+            .woocommerce #content div.product .related ul.products li.product a h3, .woocommerce-page #content div.product .related ul.products li.product a h3 {
               padding: .5em; } }
-        .woocommerce #content div.product .related ul.products li.product .price, .woocommerce-page #content div.product .related ul.products li.product .price {
+        .woocommerce #content div.product .related ul.products li.product a .price, .woocommerce-page #content div.product .related ul.products li.product a .price {
           color: #333333;
           font-size: 16px;
           font-size: 1.6rem;
           font-family: "Gill Sans W01";
           font-weight: 700; }
+        .woocommerce #content div.product .related ul.products li.product a:hover img, .woocommerce-page #content div.product .related ul.products li.product a:hover img {
+          -moz-box-shadow: 0px 2px 5px #5A5A5A;
+          -webkit-box-shadow: 0px 2px 5px #5A5A5A;
+          box-shadow: 0px 2px 5px #5A5A5A; }
         .woocommerce #content div.product .related ul.products li.product .add_to_cart_button, .woocommerce-page #content div.product .related ul.products li.product .add_to_cart_button {
           display: none; }
     .woocommerce #content div.product form.cart div.quantity, .woocommerce-page #content div.product form.cart div.quantity {
@@ -2068,6 +2085,9 @@ button {
       background: #0258ad;
       color: #FFF; }
 
+input.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #content div.product form.cart input.button, .woocommerce-page #content div.product form.cart input.button, .woocommerce .shop_table .actions input.button, .woocommerce-page .shop_table .actions input.button, .orange .woocommerce #content div.product form.cart input.button, .woocommerce-page .orange #content div.product form.cart input.button, button.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce #content div.product form.cart button.button, .woocommerce-page #content div.product form.cart button.button, .woocommerce .shop_table .actions button.button, .woocommerce-page .shop_table .actions button.button, .orange .woocommerce #content div.product form.cart button.button, .woocommerce-page .orange #content div.product form.cart button.button {
+  padding: 3px 25px 3px; }
+
 /* =============================================================================
    Misc
    ========================================================================== */
@@ -2618,12 +2638,16 @@ blockquote {
     bottom: 2em;
     left: 3em;
     background-color: #fff;
-    background-image: url(../images/backgrounds/strip.jpg);
+    background-image: url(../images/backgrounds/strip.png);
     background-repeat: repeat-x;
     background-position: 100% 95%;
     padding: 40px;
     text-align: center;
-    max-width: 375px; }
+    max-width: 375px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     @media only screen and (max-width: 900px) {
       .owl-carousel .item .caption {
         position: static;
@@ -2658,6 +2682,10 @@ blockquote {
         margin-left: 6px; }
       .owl-carousel .item .caption a.link:hover {
         color: #0258ad; }
+  .owl-carousel .item:hover .caption {
+    background-color: #0258ad; }
+    .owl-carousel .item:hover .caption h1, .owl-carousel .item:hover .caption p, .owl-carousel .item:hover .caption .link {
+      color: #FFF; }
 
 #quick-links {
   margin: 15px 0; }
@@ -2720,7 +2748,8 @@ blockquote {
             #quick-links .span a h1:after {
               float: none; } }
       #quick-links .span a:hover h1 {
-        color: #0258ad; }
+        color: #FFF;
+        background: #0258ad; }
 
 /* =============================================================================
    Widgets
@@ -3496,8 +3525,13 @@ body {
   background: #fff0e3; }
 .orange .owl-carousel .item .caption a.link:hover {
   color: #c1272d; }
+.orange .owl-carousel .item:hover .caption {
+  background-color: #c1272d; }
+  .orange .owl-carousel .item:hover .caption h1, .orange .owl-carousel .item:hover .caption p, .orange .owl-carousel .item:hover .caption .link {
+    color: #FFF; }
 .orange #quick-links a:hover h1 {
-  color: #c1272d; }
+  color: #FFF;
+  background: #c1272d; }
 .woocommerce-page #content div.product form.cart .orange .woocommerce .woocommerce-error a.button, .orange .woocommerce.woocommerce-checkout .woocommerce-error form.login .lost_password a, .orange .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-error a, .orange .woocommerce .woocommerce-error .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange .woocommerce .woocommerce-error a, .orange .woocommerce .woocommerce-error a.button, .orange .woocommerce .woocommerce-error #content div.product form.cart a.button, .orange .woocommerce #content div.product form.cart .woocommerce-error a.button, .woocommerce-page .orange #content div.product form.cart .woocommerce .woocommerce-error a.button,
 .woocommerce-page #content div.product form.cart .orange .woocommerce .woocommerce-message a.button,
 .orange .woocommerce.woocommerce-checkout .woocommerce-message form.login .lost_password a,
@@ -3556,6 +3590,8 @@ body {
   background: #c1272d; }
 .orange .woocommerce #content div.product .product-inner .summary .product_title, .woocommerce-page .orange #content div.product .product-inner .summary .product_title {
   color: #c1272d; }
+.orange .woocommerce #content > ul.products li a:hover, .orange .woocommerce #content > ul.products li.product a:hover, .woocommerce-page .orange #content > ul.products li a:hover, .woocommerce-page .orange #content > ul.products li.product a:hover {
+  background: #fff0e3; }
 .orange #footer aside ul li a:hover {
   color: #c1272d; }
 .orange #footer .footer-navigation ul.menu li a:hover {

@@ -586,7 +586,8 @@ b {
   position: relative;
   padding-bottom: 75%;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 4em; }
   .content .map iframe {
     position: absolute;
     top: 0;
@@ -1226,6 +1227,9 @@ button {
       background: #0258ad;
       color: #FFF; }
 
+input.button, button.button {
+  padding: 3px 25px 3px; }
+
 /* =============================================================================
    Misc
    ========================================================================== */
@@ -1511,12 +1515,16 @@ blockquote {
     bottom: 2em;
     left: 3em;
     background-color: #fff;
-    background-image: url(../images/backgrounds/strip.jpg);
+    background-image: url(../images/backgrounds/strip.png);
     background-repeat: repeat-x;
     background-position: 100% 95%;
     padding: 40px;
     text-align: center;
-    max-width: 375px; }
+    max-width: 375px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     @media only screen and (max-width: 900px) {
       .owl-carousel .item .caption {
         position: static;
@@ -1551,6 +1559,10 @@ blockquote {
         margin-left: 6px; }
       .owl-carousel .item .caption a.link:hover {
         color: #0258ad; }
+  .owl-carousel .item:hover .caption {
+    background-color: #0258ad; }
+    .owl-carousel .item:hover .caption h1, .owl-carousel .item:hover .caption p, .owl-carousel .item:hover .caption .link {
+      color: #FFF; }
 
 #quick-links {
   margin: 15px 0; }
@@ -1613,7 +1625,8 @@ blockquote {
             #quick-links .span a h1:after {
               float: none; } }
       #quick-links .span a:hover h1 {
-        color: #0258ad; }
+        color: #FFF;
+        background: #0258ad; }
 
 /* =============================================================================
    Widgets
