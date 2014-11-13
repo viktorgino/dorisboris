@@ -1492,6 +1492,8 @@ blockquote {
       text-align: center; }
       #header #header-navigation ul.sub-menu li {
         float: none; }
+    #header #header-navigation .current-menu-item > a, #header #header-navigation .current-product_cat-ancestor > a {
+      color: #000; }
     #header #header-navigation .current-menu-item.menu-item-has-children, #header #header-navigation .current-product_cat-ancestor.menu-item-has-children {
       margin-bottom: 59px; }
       #header #header-navigation .current-menu-item.menu-item-has-children ul.sub-menu, #header #header-navigation .current-product_cat-ancestor.menu-item-has-children ul.sub-menu {
@@ -2228,8 +2230,10 @@ body {
       margin: 5% 2%; }
       #gifts #content > ul.products li a {
         margin-top: 0 !important; } }
-  #gifts #content > ul.products li:nth-child(4) {
+  #gifts #content > ul.products li:nth-child(4n) {
     clear: none; }
+  #gifts #content > ul.products li:nth-child(4n+1) {
+    clear: left; }
   #gifts #content > ul.products li.first {
     clear: left; }
   #gifts #content > ul.products li .gift-top {

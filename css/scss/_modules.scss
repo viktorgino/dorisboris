@@ -221,6 +221,10 @@ blockquote {
 
 		.current-menu-item, .current-product_cat-ancestor {
 
+			> a {
+				color: #000;
+			}
+
 			&.menu-item-has-children {
 				margin-bottom: 59px;
 

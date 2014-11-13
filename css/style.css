@@ -1436,6 +1436,8 @@ fieldset {
       margin: 0 1em 0 0; }
     .woocommerce #content div.product form.cart .button, .woocommerce.woocommerce-checkout #content div.product form.cart form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password #content div.product form.cart a, .woocommerce #content div.product form.cart .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce #content div.product form.cart a, .orange .woocommerce #content div.product form.cart .button, .woocommerce .woocommerce-page .orange #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page #content div.product form.cart a, .woocommerce-page.woocommerce-checkout #content div.product form.cart form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password #content div.product form.cart a, .orange .woocommerce .woocommerce-page #content div.product form.cart .button, .woocommerce-page .orange #content div.product form.cart .button {
       margin-top: 0 !important; }
+    .woocommerce #content div.product form.cart .variations td, .woocommerce-page #content div.product form.cart .variations td {
+      vertical-align: middle; }
     .woocommerce #content div.product#upcycle, .woocommerce-page #content div.product#upcycle {
       background: none; }
       .woocommerce #content div.product#upcycle .product-inner .summary, .woocommerce-page #content div.product#upcycle .product-inner .summary {
@@ -2597,6 +2599,8 @@ blockquote {
       text-align: center; }
       #header #header-navigation ul.sub-menu li {
         float: none; }
+    #header #header-navigation .current-menu-item > a, #header #header-navigation .current-product_cat-ancestor > a {
+      color: #000; }
     #header #header-navigation .current-menu-item.menu-item-has-children, #header #header-navigation .current-product_cat-ancestor.menu-item-has-children {
       margin-bottom: 59px; }
       #header #header-navigation .current-menu-item.menu-item-has-children ul.sub-menu, #header #header-navigation .current-product_cat-ancestor.menu-item-has-children ul.sub-menu {
@@ -3333,8 +3337,10 @@ body {
       margin: 5% 2%; }
       #gifts #content > ul.products li a {
         margin-top: 0 !important; } }
-  #gifts #content > ul.products li:nth-child(4) {
+  #gifts #content > ul.products li:nth-child(4n) {
     clear: none; }
+  #gifts #content > ul.products li:nth-child(4n+1) {
+    clear: left; }
   #gifts #content > ul.products li.first {
     clear: left; }
   #gifts #content > ul.products li .gift-top {

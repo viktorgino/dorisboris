@@ -31,7 +31,7 @@ add_action( 'wp_print_styles', 'custom_styles', 30);
 
 // Custom Filters
 
-add_action( 'woocommerce_product_query', 'custom_woocommerce_product_query', 105);
+add_filter( 'pre_get_posts', 'custom_pre_get_posts');
 
 add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
 
@@ -176,6 +176,18 @@ function woo_related_products_limit() {
 	return $args;
 }
 
+// Woo Number of Product before pagination on Gifts page
+function custom_pre_get_posts( $query ) {
+
+	if ( !is_admin() && $query->is_main_query() && ( is_tax('product_cat') ) ) {
+
+		if( is_tax('product_cat', 'gifts') )
+			$query->set('posts_per_page', 20);
+	}
+
+	return $query;
+}
+
 
 //Change number of related items on Product Page
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
@@ -215,18 +227,4 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_butt
 function woo_custom_cart_button_text() {
  
         return __( '<i class="icon-basket"></i> Add to Bag', 'woocommerce' );
-}
-
-
-function custom_woocommerce_product_query( $query ) {
-
-	$query->set('posts_per_page', 20);
-	if ( !is_admin() && $query->is_main_query() && ( is_tax('product_cat') ) ) {
-
-		//if( is_tax('product_cat', 'gifts') )
-
-			
-	}
-
-	//return $query;
 }

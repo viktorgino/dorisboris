@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		global $product;
 		$dimensions = $product->get_dimensions();
 	?>
-	<?php if ( $dimensions ): ?>
+	<?php if ($dimensions != '0.0000 x 0.0000 cm' ): ?>
 		<div class="dimensions">
-			<?php _e( 'Dimensions', 'woocommerce' ) ?>
+			<?php _e( 'Dimensions: ', 'woocommerce' ) ?>
 			<?php echo $dimensions; ?>
 		</div>
 	<?php endif; ?>

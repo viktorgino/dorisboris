@@ -330,6 +330,10 @@
                     @extend .button;
                     margin-top: 0 !important;
                 }
+
+                .variations td {
+                    vertical-align: middle;
+                }
             }
             /* =Upcycle Products
 	-------------------------------------------------------------- */
