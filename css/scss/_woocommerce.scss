@@ -14,6 +14,10 @@
 /* =Global styles/layout
 -------------------------------------------------------------- */
 
+body.single-product .ppt, body.single-product .pp_description {
+    display: none !important;
+}
+
 #woocommerce {
     @include device-width(8) {
         padding-right: 10px;
@@ -338,7 +342,7 @@
                             }                     
                         }
 
-                        .add_to_cart_button {
+                        .button {
                             display: none;
                         }                         
                     }
@@ -648,7 +652,7 @@
             clear: both;
         }
     }
-    form.login, form.checkout_coupon, form.register, form.lost_reset_password, &.woocommerce-account form {
+    form.login, form.checkout_coupon, form.register, form.lost_reset_password, &.woocommerce-account .content form {
 		padding: 4em;
 		margin: 0 auto;
 		text-align: left;

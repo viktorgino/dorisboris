@@ -20,8 +20,8 @@
 				</div>
 				<div class="span six social">
 					<span><?php _e('Find us on:') ?></span>
-					<a href="<?php the_field('facebook_url', 'options'); ?>"><img src="<?php the_field('facebook_icon', 'options'); ?>" alt=""></a>
-					<a href="<?php the_field('ebay_url', 'options'); ?>"><img src="<?php the_field('ebay_icon', 'options'); ?>" alt=""></a>
+					<a href="<?php the_field('facebook_url', 'options'); ?>" target="_blank"><img src="<?php the_field('facebook_icon', 'options'); ?>" alt=""></a>
+					<a href="<?php the_field('ebay_url', 'options'); ?>" target="_blank"><img src="<?php the_field('ebay_icon', 'options'); ?>" alt=""></a>
 				</div>
 			</div>
 		</div>

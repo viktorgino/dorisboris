@@ -1152,6 +1152,9 @@ fieldset {
   font-style: normal; }
 /* =Global styles/layout
 -------------------------------------------------------------- */
+body.single-product .ppt, body.single-product .pp_description {
+  display: none !important; }
+
 @media only screen and (max-width: 800px) {
   #woocommerce {
     padding-right: 10px; } }
@@ -1447,7 +1450,7 @@ fieldset {
           -moz-box-shadow: 0px 2px 5px #5A5A5A;
           -webkit-box-shadow: 0px 2px 5px #5A5A5A;
           box-shadow: 0px 2px 5px #5A5A5A; }
-        .woocommerce #content div.product .related ul.products li.product .add_to_cart_button, .woocommerce-page #content div.product .related ul.products li.product .add_to_cart_button {
+        .woocommerce #content div.product .related ul.products li.product .button, .woocommerce.woocommerce-checkout #content div.product .related ul.products li.product form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password #content div.product .related ul.products li.product a, .woocommerce #content div.product .related ul.products li.product .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce #content div.product .related ul.products li.product a, .woocommerce-page #content div.product .related ul.products li.product .button, .woocommerce-page #content div.product .related ul.products li.product .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page #content div.product .related ul.products li.product a, .woocommerce-page.woocommerce-checkout #content div.product .related ul.products li.product form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password #content div.product .related ul.products li.product a {
           display: none; }
     .woocommerce #content div.product form.cart div.quantity, .woocommerce-page #content div.product form.cart div.quantity {
       margin: 0 1em 0 0; }
@@ -1674,7 +1677,7 @@ fieldset {
     float: right; }
   .woocommerce form .form-row-wide, .woocommerce-page form .form-row-wide {
     clear: both; }
-  .woocommerce form.login, .woocommerce form.checkout_coupon, .woocommerce form.register, .woocommerce form.lost_reset_password, .woocommerce.woocommerce-account form, .woocommerce-page form.login, .woocommerce-page form.checkout_coupon, .woocommerce-page form.register, .woocommerce-page form.lost_reset_password, .woocommerce-page.woocommerce-account form {
+  .woocommerce form.login, .woocommerce form.checkout_coupon, .woocommerce form.register, .woocommerce form.lost_reset_password, .woocommerce.woocommerce-account .content form, .woocommerce-page form.login, .woocommerce-page form.checkout_coupon, .woocommerce-page form.register, .woocommerce-page form.lost_reset_password, .woocommerce-page.woocommerce-account .content form {
     padding: 4em;
     margin: 0 auto;
     text-align: left;
