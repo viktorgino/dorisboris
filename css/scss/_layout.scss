@@ -60,6 +60,17 @@ body {
 		.ecommerce-options, .phone {
 			padding-top: 3.5em;
 
+			a {
+
+				&:hover {
+					color: #0258ad;
+					
+					i {
+						background: #0258ad;
+					}					
+				}
+			}
+
 			@include device-width(6) {
 				padding-top: 2.5em;
 			}

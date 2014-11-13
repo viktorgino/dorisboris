@@ -2082,6 +2082,10 @@ body {
       font-size: 1.2rem; }
   #header .top .ecommerce-options, #header .top .phone {
     padding-top: 3.5em; }
+    #header .top .ecommerce-options a:hover, #header .top .phone a:hover {
+      color: #0258ad; }
+      #header .top .ecommerce-options a:hover i, #header .top .phone a:hover i {
+        background: #0258ad; }
     @media only screen and (max-width: 600px) {
       #header .top .ecommerce-options, #header .top .phone {
         padding-top: 2.5em; } }

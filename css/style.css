@@ -3205,6 +3205,10 @@ body {
       font-size: 1.2rem; }
   #header .top .ecommerce-options, #header .top .phone {
     padding-top: 3.5em; }
+    #header .top .ecommerce-options a:hover, #header .top .phone a:hover {
+      color: #0258ad; }
+      #header .top .ecommerce-options a:hover i, #header .top .phone a:hover i {
+        background: #0258ad; }
     @media only screen and (max-width: 600px) {
       #header .top .ecommerce-options, #header .top .phone {
         padding-top: 2.5em; } }
@@ -3519,10 +3523,35 @@ body {
   .woocommerce-page .orange .woocommerce-notice a.button:after,
   .woocommerce-page .orange .woocommerce-info a.button:after, .orange .woocommerce #content div.product form.cart .button:after, .woocommerce-page .orange #content div.product form.cart .button:after {
     border-color: transparent transparent transparent #c1272d; }
+  .orange .button.alt, .woocommerce .woocommerce-error .orange a.alt.button, .woocommerce .woocommerce-message .orange a.alt.button, .woocommerce .woocommerce-notice .orange a.alt.button, .woocommerce .woocommerce-info .orange a.alt.button, .orange .woocommerce-page .woocommerce-error a.alt.button, .woocommerce-page .woocommerce-error .orange a.alt.button, .orange .woocommerce-page .woocommerce-message a.alt.button, .woocommerce-page .woocommerce-message .orange a.alt.button, .orange .woocommerce-page .woocommerce-notice a.alt.button, .woocommerce-page .woocommerce-notice .orange a.alt.button, .orange .woocommerce-page .woocommerce-info a.alt.button, .woocommerce-page .woocommerce-info .orange a.alt.button, .woocommerce #content div.product form.cart .orange .alt.button, .orange .woocommerce-page #content div.product form.cart .alt.button, .woocommerce-page #content div.product form.cart .orange .alt.button, .orange .woocommerce .shop_table .actions a.alt.button, .woocommerce .shop_table .actions .orange a.alt.button, .orange .woocommerce .shop_table .actions button.alt.button, .woocommerce .shop_table .actions .orange button.alt.button, .orange .woocommerce .shop_table .actions input.alt.button, .woocommerce .shop_table .actions .orange input.alt.button, .orange .woocommerce-page .shop_table .actions a.alt.button, .woocommerce-page .shop_table .actions .orange a.alt.button, .orange .woocommerce-page .shop_table .actions button.alt.button, .woocommerce-page .shop_table .actions .orange button.alt.button, .orange .woocommerce-page .shop_table .actions input.alt.button, .woocommerce-page .shop_table .actions .orange input.alt.button, .orange .woocommerce.woocommerce-checkout form.login .lost_password a.alt, .woocommerce.woocommerce-checkout form.login .lost_password .orange a.alt, .orange .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange a.alt, .orange .woocommerce .woocommerce-error a.alt.button,
+  .orange .woocommerce .woocommerce-message a.alt.button,
+  .orange .woocommerce .woocommerce-notice a.alt.button,
+  .orange .woocommerce .woocommerce-info a.alt.button, .woocommerce-page .orange .woocommerce-error a.alt.button,
+  .woocommerce-page .orange .woocommerce-message a.alt.button,
+  .woocommerce-page .orange .woocommerce-notice a.alt.button,
+  .woocommerce-page .orange .woocommerce-info a.alt.button, .orange .woocommerce #content div.product form.cart .alt.button, .woocommerce-page .orange #content div.product form.cart .alt.button {
+    background: #FFF;
+    border: 1px solid #c1272d;
+    color: #c1272d; }
+    .orange .button.alt:hover, .woocommerce #content div.product form.cart .orange .alt.button:hover, .orange .woocommerce-page #content div.product form.cart .alt.button:hover, .woocommerce-page #content div.product form.cart .orange .alt.button:hover, .orange .woocommerce .shop_table .actions a.alt.button:hover, .woocommerce .shop_table .actions .orange a.alt.button:hover, .orange .woocommerce .shop_table .actions button.alt.button:hover, .woocommerce .shop_table .actions .orange button.alt.button:hover, .orange .woocommerce .shop_table .actions input.alt.button:hover, .woocommerce .shop_table .actions .orange input.alt.button:hover, .orange .woocommerce-page .shop_table .actions a.alt.button:hover, .woocommerce-page .shop_table .actions .orange a.alt.button:hover, .orange .woocommerce-page .shop_table .actions button.alt.button:hover, .woocommerce-page .shop_table .actions .orange button.alt.button:hover, .orange .woocommerce-page .shop_table .actions input.alt.button:hover, .woocommerce-page .shop_table .actions .orange input.alt.button:hover, .orange .woocommerce.woocommerce-checkout form.login .lost_password a.alt:hover, .woocommerce.woocommerce-checkout form.login .lost_password .orange a.alt:hover, .orange .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange a.alt:hover, .orange .woocommerce .woocommerce-error a.alt.button:hover,
+    .orange .woocommerce .woocommerce-message a.alt.button:hover,
+    .orange .woocommerce .woocommerce-notice a.alt.button:hover,
+    .orange .woocommerce .woocommerce-info a.alt.button:hover, .woocommerce-page .orange .woocommerce-error a.alt.button:hover,
+    .woocommerce-page .orange .woocommerce-message a.alt.button:hover,
+    .woocommerce-page .orange .woocommerce-notice a.alt.button:hover,
+    .woocommerce-page .orange .woocommerce-info a.alt.button:hover, .orange .woocommerce #content div.product form.cart .alt.button:hover, .woocommerce-page .orange #content div.product form.cart .alt.button:hover {
+      background: #c1272d;
+      color: #FFF; }
 .orange h1, .orange h3, .orange h3, .orange h4 {
   color: #bf1e2e; }
 .orange #header .top {
   background: #fff0e3; }
+  .orange #header .top .ecommerce-options, .orange #header .top .phone {
+    padding-top: 3.5em; }
+    .orange #header .top .ecommerce-options a:hover, .orange #header .top .phone a:hover {
+      color: #c1272d; }
+      .orange #header .top .ecommerce-options a:hover i, .orange #header .top .phone a:hover i {
+        background: #c1272d; }
 .orange .owl-carousel .item .caption a.link:hover {
   color: #c1272d; }
 .orange .owl-carousel .item:hover .caption {
