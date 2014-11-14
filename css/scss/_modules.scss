@@ -163,7 +163,7 @@ blockquote {
 				border-right: 1px solid #555555;
 
 				&:hover {
-					color: #000;
+					color: #0258ad;
 				}		
 
 				@include device-width(10) {
@@ -222,7 +222,7 @@ blockquote {
 		.current-menu-item, .current-product_cat-ancestor {
 
 			> a {
-				color: #000;
+				color: #0258ad;
 			}
 
 			&.menu-item-has-children {

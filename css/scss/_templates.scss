@@ -197,6 +197,7 @@
 					display: block;
 					padding: 70px 40px 35px;
 					position: relative;
+					@include transition(all 0.3s ease);
 
 					@include device-width(6) {
 						padding: 60px 25px 25px;
@@ -244,6 +245,20 @@
 					position: relative;
 					z-index: 5;
 				}
+
+				a {
+					padding-bottom: 0;
+
+					&:hover {
+						.gift-top {
+							background: #d4e5f4;
+
+							h3, .price {
+								color: #333;
+							}
+						}
+					}
+				}				
 			}
 		}
 	}
@@ -363,6 +378,7 @@
 			@include font-size(22);
 			line-height: 1.2;
 			@include american;
+			text-transform: none;
 		}
 
 		.image, .content {

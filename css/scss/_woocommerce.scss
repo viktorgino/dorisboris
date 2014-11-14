@@ -95,6 +95,8 @@ body.single-product .ppt, body.single-product .pp_description {
     #content {
         padding: 1em 0 10%;
         .woocommerce-pagination {
+            margin-top: 4em;
+
             text-align: center;
             .page-numbers {
                 display: inline-block;
@@ -110,6 +112,11 @@ body.single-product .ppt, body.single-product .pp_description {
                 }
                 a, span {
                     padding: 1em;
+                }
+
+                &.current {
+                    background: #999;
+                    color: #fff;
                 }
             }
         }
@@ -195,6 +202,8 @@ body.single-product .ppt, body.single-product .pp_description {
                     }
                 }
                 a {
+                    padding-bottom: .5em;
+
                     img {
                         @include box-shadow(none);
                     }
@@ -273,16 +282,8 @@ body.single-product .ppt, body.single-product .pp_description {
                         padding: 1.3em 0;
                     }
 
-                    .product_meta {
-                        margin-top: 2em;
-
-                        .posted_in {
-                            display: block;
-                        }
-
-                        .tagged_as {
-                            display: block;
-                        }
+                    .stock, .product_meta {
+                        display: none;
                     }
                 }
             }

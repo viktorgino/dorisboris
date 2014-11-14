@@ -61,6 +61,22 @@
 			}
 		},
 
+		stickyNav: {
+			element: $('#header .bottom'),
+
+			init: function() {
+				var stickyNavTop = $(main.stickyNav.element).offset().top;  
+				  
+				var scrollTop = $(window).scrollTop();  
+				       
+				// if (scrollTop > stickyNavTop) {   
+				//     $(main.stickyNav.element).addClass('sticky');  
+				// } else {  
+				//     $(main.stickyNav.element).removeClass('sticky');   
+				// }    				
+			}
+		},
+
 		mobileNav: {
 			element: $('#dl-menu'),
 
@@ -134,6 +150,10 @@
 	$(function(){
 		window.main.init();
 	});
+
+	$(window).scroll(function() {  
+	    main.stickyNav.init();
+	}); 	
 
 })(jQuery);
 

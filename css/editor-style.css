@@ -1464,7 +1464,7 @@ blockquote {
         padding: 0 18px;
         border-right: 1px solid #555555; }
         #header .navigation li a:hover {
-          color: #000; }
+          color: #0258ad; }
         @media only screen and (max-width: 1000px) {
           #header .navigation li a {
             font-size: 10px;
@@ -1497,7 +1497,7 @@ blockquote {
       #header #header-navigation ul.sub-menu li {
         float: none; }
     #header #header-navigation .current-menu-item > a, #header #header-navigation .current-product_cat-ancestor > a {
-      color: #000; }
+      color: #0258ad; }
     #header #header-navigation .current-menu-item.menu-item-has-children, #header #header-navigation .current-product_cat-ancestor.menu-item-has-children {
       margin-bottom: 59px; }
       #header #header-navigation .current-menu-item.menu-item-has-children ul.sub-menu, #header #header-navigation .current-product_cat-ancestor.menu-item-has-children ul.sub-menu {
@@ -2115,6 +2115,11 @@ body {
   padding: 27px 0;
   text-align: center;
   position: relative; }
+  #header .bottom.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; }
   @media only screen and (max-width: 800px) {
     #header .bottom {
       padding: 0;
@@ -2256,7 +2261,11 @@ body {
   #gifts #content > ul.products li .gift-top {
     display: block;
     padding: 70px 40px 35px;
-    position: relative; }
+    position: relative;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     @media only screen and (max-width: 600px) {
       #gifts #content > ul.products li .gift-top {
         padding: 60px 25px 25px; } }
@@ -2290,6 +2299,12 @@ body {
     box-shadow: none;
     position: relative;
     z-index: 5; }
+  #gifts #content > ul.products li a {
+    padding-bottom: 0; }
+    #gifts #content > ul.products li a:hover .gift-top {
+      background: #d4e5f4; }
+      #gifts #content > ul.products li a:hover .gift-top h3, #gifts #content > ul.products li a:hover .gift-top .price {
+        color: #333; }
 
 #upcycling-diary .span {
   padding: 0; }
@@ -2365,7 +2380,8 @@ body {
       font-size: 22px;
       font-size: 2.2rem;
       line-height: 1.2;
-      font-family: "ITC American Typewriter W01"; }
+      font-family: "ITC American Typewriter W01";
+      text-transform: none; }
     @media only screen and (max-width: 800px) {
       #blog article.blog .image, #blog article.blog .content {
         width: 100%; } }

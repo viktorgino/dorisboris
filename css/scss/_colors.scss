@@ -46,6 +46,28 @@ $orange: #fff0e3;
 				}
 			}			
 		}
+
+		.navigation { 
+
+			li {
+
+				a {
+
+					&:hover {
+						color: $red;
+					}							
+				}
+			}
+		}
+
+		#header-navigation {
+			.current-menu-item, .current-product_cat-ancestor {
+
+				> a {
+					color: $red;
+				}			
+			}
+		}
 	}
 
 	.owl-carousel {
