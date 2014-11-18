@@ -1018,3 +1018,14 @@ body.single-product .ppt, body.single-product .pp_description {
         padding: 0.5em;
     }
 }
+
+.content {
+    p.cart-empty {
+        @include font-size(20);
+        margin: 2em 0;
+    }
+
+    .return-to-shop, .cart-empty {
+        text-align: center;
+    }
+}

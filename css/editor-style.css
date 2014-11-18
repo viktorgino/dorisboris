@@ -2121,7 +2121,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
     -moz-box-shadow: 0px 0px 10px #282828;
     -webkit-box-shadow: 0px 0px 10px #282828;
     box-shadow: 0px 0px 10px #282828; }
