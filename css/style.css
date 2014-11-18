@@ -1379,25 +1379,30 @@ body.single-product .ppt, body.single-product .pp_description {
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         box-shadow: none; }
-    .woocommerce #content div.product .product-inner .summary .product_title, .woocommerce-page #content div.product .product-inner .summary .product_title {
-      color: #0063a1;
-      font-size: 27px;
-      font-size: 2.7rem;
-      line-height: 1.4;
-      margin-bottom: 20px; }
-    .woocommerce #content div.product .product-inner .summary .dimensions, .woocommerce-page #content div.product .product-inner .summary .dimensions {
-      color: #333333;
-      font-size: 15px;
-      font-size: 1.5rem; }
-    .woocommerce #content div.product .product-inner .summary .price, .woocommerce-page #content div.product .product-inner .summary .price {
-      color: #333333;
-      font-size: 18px;
-      font-size: 1.8rem;
-      font-family: "Gill Sans W01";
-      font-weight: 700;
-      padding: 1.3em 0; }
-    .woocommerce #content div.product .product-inner .summary .stock, .woocommerce #content div.product .product-inner .summary .product_meta, .woocommerce-page #content div.product .product-inner .summary .stock, .woocommerce-page #content div.product .product-inner .summary .product_meta {
-      display: none; }
+    .woocommerce #content div.product .product-inner .summary, .woocommerce-page #content div.product .product-inner .summary {
+      padding: 0 3em; }
+      @media only screen and (max-width: 800px) {
+        .woocommerce #content div.product .product-inner .summary, .woocommerce-page #content div.product .product-inner .summary {
+          padding: 0 2em; } }
+      .woocommerce #content div.product .product-inner .summary .product_title, .woocommerce-page #content div.product .product-inner .summary .product_title {
+        color: #0063a1;
+        font-size: 27px;
+        font-size: 2.7rem;
+        line-height: 1.4;
+        margin-bottom: 20px; }
+      .woocommerce #content div.product .product-inner .summary .dimensions, .woocommerce-page #content div.product .product-inner .summary .dimensions {
+        color: #333333;
+        font-size: 15px;
+        font-size: 1.5rem; }
+      .woocommerce #content div.product .product-inner .summary .price, .woocommerce-page #content div.product .product-inner .summary .price {
+        color: #333333;
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-family: "Gill Sans W01";
+        font-weight: 700;
+        padding: 1.3em 0; }
+      .woocommerce #content div.product .product-inner .summary .stock, .woocommerce #content div.product .product-inner .summary .product_meta, .woocommerce-page #content div.product .product-inner .summary .stock, .woocommerce-page #content div.product .product-inner .summary .product_meta {
+        display: none; }
     .woocommerce #content div.product .related, .woocommerce-page #content div.product .related {
       background: #f6f6f5;
       margin-bottom: -10%;
@@ -3034,7 +3039,7 @@ blockquote {
     .dl-menuwrapper li .sub-menu {
       display: none; }
   .dl-menuwrapper .dl-menu {
-    margin: 5px 0 0 0;
+    margin: 0;
     position: absolute;
     width: 100%;
     opacity: 0;
@@ -3050,6 +3055,8 @@ blockquote {
     The opened submenu will get the class "dl-subviewopen".
     All this is done for any sub-level being entered.
     */ }
+    .home .dl-menuwrapper .dl-menu {
+      margin: 5px 0 0 0; }
     .dl-menuwrapper .dl-menu.dl-menu-toggle {
       transition: all 0.3s ease; }
     .dl-menuwrapper .dl-menu.dl-menuopen {

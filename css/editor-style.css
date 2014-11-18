@@ -1906,7 +1906,7 @@ blockquote {
     .dl-menuwrapper li .sub-menu {
       display: none; }
   .dl-menuwrapper .dl-menu {
-    margin: 5px 0 0 0;
+    margin: 0;
     position: absolute;
     width: 100%;
     opacity: 0;
@@ -1922,6 +1922,8 @@ blockquote {
     The opened submenu will get the class "dl-subviewopen".
     All this is done for any sub-level being entered.
     */ }
+    .home .dl-menuwrapper .dl-menu {
+      margin: 5px 0 0 0; }
     .dl-menuwrapper .dl-menu.dl-menu-toggle {
       transition: all 0.3s ease; }
     .dl-menuwrapper .dl-menu.dl-menuopen {

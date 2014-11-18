@@ -788,7 +788,7 @@ blockquote {
 	}
 
 	.dl-menu {
-		margin: 5px 0 0 0;
+		margin: 0;
 		position: absolute;
 		width: 100%;
 		opacity: 0;
@@ -797,6 +797,10 @@ blockquote {
 		transform: translateY(10px);
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
+
+		.home & {
+			margin: 5px 0 0 0;
+		}
 
 		&.dl-menu-toggle {
 			transition: all 0.3s ease;

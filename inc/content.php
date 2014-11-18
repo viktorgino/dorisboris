@@ -54,7 +54,7 @@
 							$class = 'ten';
 							break;
 					} ?>
-					<div class="break-on-tablet span <?php echo $class; ?>">
+					<div class="break-on-tablet span <?php echo $class; ?>" <?php if(get_sub_field('column_width')): ?>style=" width: <?php the_sub_field('column_width'); ?>"<?php endif; ?>>
 						<?php the_sub_field('column-content'); ?>
 						<?php if(get_sub_field('cta_link')): ?>
 							<p>
