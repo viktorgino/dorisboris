@@ -2302,6 +2302,9 @@ body {
     position: relative;
     z-index: 5; }
   #gifts #content > ul.products li a {
+    -moz-box-shadow: 0px 1px 5px #ccc;
+    -webkit-box-shadow: 0px 1px 5px #ccc;
+    box-shadow: 0px 1px 5px #ccc;
     padding-bottom: 0; }
     #gifts #content > ul.products li a:hover .gift-top {
       background: #d4e5f4; }

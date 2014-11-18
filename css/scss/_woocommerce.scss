@@ -540,8 +540,20 @@ body.single-product .ppt, body.single-product .pp_description {
     .cart_totals {
         table {
             border: 1px solid #CCC;
-            td {
+            float: right;
+
+            th, td {
                 padding: 6px 10px !important;
+
+                @media screen and (max-width: 768px) {
+                    width: 50%;
+                }                 
+            }
+
+            td {
+                @media screen and (max-width: 768px) {
+                    text-align: right;
+                }                
             }
         }
     }

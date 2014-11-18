@@ -1597,9 +1597,16 @@ body.single-product .ppt, body.single-product .pp_description {
       .woocommerce .shop_table .actions .coupon input#coupon_code, .woocommerce .shop_table .actions .coupon .button, .woocommerce .shop_table .actions .coupon #content div.product form.cart .button, .woocommerce #content div.product form.cart .shop_table .actions .coupon .button, .woocommerce-page #content div.product form.cart .woocommerce .shop_table .actions .coupon .button, .woocommerce.woocommerce-checkout .shop_table .actions .coupon form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .shop_table .actions .coupon a, .woocommerce .shop_table .actions .coupon .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .woocommerce .shop_table .actions .coupon a, .woocommerce-page .shop_table .actions .coupon input#coupon_code, .woocommerce-page .shop_table .actions .coupon .button, .woocommerce #content div.product form.cart .woocommerce-page .shop_table .actions .coupon .button, .woocommerce-page .shop_table .actions .coupon #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .shop_table .actions .coupon .button, .woocommerce-page .shop_table .actions .coupon .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-page .shop_table .actions .coupon a, .woocommerce-page.woocommerce-checkout .shop_table .actions .coupon form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .shop_table .actions .coupon a {
         width: 48%; }
   .woocommerce .cart_totals table, .woocommerce-page .cart_totals table {
-    border: 1px solid #CCC; }
-    .woocommerce .cart_totals table td, .woocommerce-page .cart_totals table td {
+    border: 1px solid #CCC;
+    float: right; }
+    .woocommerce .cart_totals table th, .woocommerce .cart_totals table td, .woocommerce-page .cart_totals table th, .woocommerce-page .cart_totals table td {
       padding: 6px 10px !important; }
+      @media screen and (max-width: 768px) {
+        .woocommerce .cart_totals table th, .woocommerce .cart_totals table td, .woocommerce-page .cart_totals table th, .woocommerce-page .cart_totals table td {
+          width: 50%; } }
+    @media screen and (max-width: 768px) {
+      .woocommerce .cart_totals table td, .woocommerce-page .cart_totals table td {
+        text-align: right; } }
   .woocommerce .shipping_calculator, .woocommerce-page .shipping_calculator {
     margin: 4em 0; }
     .woocommerce .shipping_calculator h2, .woocommerce-page .shipping_calculator h2 {
@@ -3435,6 +3442,9 @@ body {
     position: relative;
     z-index: 5; }
   #gifts #content > ul.products li a {
+    -moz-box-shadow: 0px 1px 5px #ccc;
+    -webkit-box-shadow: 0px 1px 5px #ccc;
+    box-shadow: 0px 1px 5px #ccc;
     padding-bottom: 0; }
     #gifts #content > ul.products li a:hover .gift-top {
       background: #d4e5f4; }
