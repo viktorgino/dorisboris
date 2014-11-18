@@ -63,17 +63,17 @@
 
 		stickyNav: {
 			element: $('#header .bottom'),
+			stickyNavTop: $('#header .bottom').offset().top,
 
 			init: function() {
-				var stickyNavTop = $(main.stickyNav.element).offset().top;  
-				  
+				 
 				var scrollTop = $(window).scrollTop();  
 				       
-				// if (scrollTop > stickyNavTop) {   
-				//     $(main.stickyNav.element).addClass('sticky');  
-				// } else {  
-				//     $(main.stickyNav.element).removeClass('sticky');   
-				// }    				
+				if (scrollTop > main.stickyNav.stickyNavTop) {   
+				    $(main.stickyNav.element).addClass('sticky');  
+				} else {  
+				    $(main.stickyNav.element).removeClass('sticky');   
+				}    				
 			}
 		},
 
@@ -152,7 +152,9 @@
 	});
 
 	$(window).scroll(function() {  
-	    main.stickyNav.init();
+		if ($(window).width() > 800) {
+			main.stickyNav.init();
+		}		
 	}); 	
 
 })(jQuery);
