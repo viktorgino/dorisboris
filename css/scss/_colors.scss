@@ -26,6 +26,17 @@ $orange: #fff0e3;
 		color: #bf1e2e;
 	}	
 
+	.logo-container {
+
+		.logo {
+
+			&:hover {
+				&:after {
+					color: $red;
+				}
+			}		
+		}	
+	}	
 
 	#header {
 		.top {

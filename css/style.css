@@ -3592,6 +3592,8 @@ body {
       color: #FFF; }
 .orange h1, .orange h3, .orange h3, .orange h4 {
   color: #bf1e2e; }
+.orange .logo-container .logo:hover:after {
+  color: #c1272d; }
 .orange #header .top {
   background: #fff0e3; }
   .orange #header .top .ecommerce-options, .orange #header .top .phone {
