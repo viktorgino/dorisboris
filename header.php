@@ -31,7 +31,7 @@
 <body <?php body_class(); ?>>
 <div id="tortilla" class="<?php the_field('colour_scheme', 'options'); ?>">
 	<header id="header" role="banner">
-		<div class="top">
+		<div class="top" <?php if(get_field('header_color', 'options')): ?>style="background-color: <?php the_field('header_color','options'); ?>" <?php endif; ?>>
 			<div class="container">		
 				<div class="span one-third phone">
 					<i class="icon icon-tel"></i>
