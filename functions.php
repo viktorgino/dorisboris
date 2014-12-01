@@ -226,5 +226,5 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_a
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );    // 2.1 + 
 function woo_custom_cart_button_text() {
  
-        return __( '<i class="icon-basket"></i> Add to Bag', 'woocommerce' );
+        return __( '<i class="icon-basket"></i> Add to Basket', 'woocommerce' );
 }

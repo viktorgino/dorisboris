@@ -14,14 +14,10 @@
 	<footer id="footer" class="site-footer" role="contentinfo">
 		<div class="share">
 			<div class="container">
-				<div class="span four phone break-on-mobile">
-					<i class="icon icon-tel"></i>
-					<?php the_field('global_phone_number', 'options'); ?>	
-				</div>
-				<div class="span six social">
+				<div class="span ten social">
 					<span><?php _e('Find us on:') ?></span>
 					<a href="<?php the_field('facebook_url', 'options'); ?>" target="_blank"><img src="<?php the_field('facebook_icon', 'options'); ?>" alt=""></a>
-					<a href="<?php the_field('ebay_url', 'options'); ?>" target="_blank"><img src="<?php the_field('ebay_icon', 'options'); ?>" alt=""></a>
+					<!-- <a href="<?php the_field('ebay_url', 'options'); ?>" target="_blank"><img src="<?php the_field('ebay_icon', 'options'); ?>" alt=""></a> -->
 				</div>
 			</div>
 		</div>

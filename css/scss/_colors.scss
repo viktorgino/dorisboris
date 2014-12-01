@@ -1,5 +1,6 @@
 $red: #c1272d;
 $orange: #fff0e3;
+$sage: #90A681;
 
 .orange {
 	
@@ -170,6 +171,189 @@ $orange: #fff0e3;
 				li {
 					a:hover {
 						color: $red;
+					}					
+				}
+			}
+		}
+	}
+}
+
+$sage: #689167;
+$lightsage: #a0d6b6;
+
+.sage {
+	
+	.button {
+		background: $sage;
+
+		&:after {
+			border-color: transparent transparent transparent $sage;
+		}
+
+		&.alt {
+			background: #FFF;
+			border: 1px solid $sage;
+			color: $sage;
+
+			&:hover {
+				background: $sage;
+				color: #FFF;
+			}
+		}		
+	}
+
+	h1, h3, h3, h4 {
+		color: #bf1e2e;
+	}	
+
+	.logo-container {
+
+		.logo {
+
+			&:hover {
+				&:after {
+					color: $sage;
+				}
+			}		
+		}	
+	}	
+
+	#header {
+		.top {
+			background: $lightsage;
+
+			.ecommerce-options, .phone {
+				padding-top: 3.5em;
+
+				a {
+
+					&:hover {
+						color: $sage;
+						
+						i {
+							background: $sage;
+						}					
+					}
+				}
+			}			
+		}
+
+		.navigation { 
+
+			li {
+
+				a {
+
+					&:hover {
+						color: $sage;
+					}							
+				}
+			}
+		}
+
+		#header-navigation {
+			.current-menu-item, .current-product_cat-ancestor {
+
+				> a {
+					color: $sage;
+				}			
+			}
+		}
+	}
+
+	.owl-carousel {
+
+		.item {
+			.caption {
+				a.link:hover {
+					color: $sage;
+				}
+			}
+
+			&:hover {
+				.caption {
+					background-color: $sage;
+
+					h1, p, .link {
+						color: #FFF;
+					}
+				}
+			}
+		}
+	}
+
+	#quick-links {
+		a:hover {
+			h1 {
+				color: #FFF;
+				background: $sage;
+			}
+		}
+	}
+
+	.woocommerce, .woocommerce-page & {
+		.woocommerce-error,
+		.woocommerce-message,
+		.woocommerce-notice,
+		.woocommerce-info {
+
+			a {
+
+				&.button {
+					@extend .button;
+					background: $sage;
+				}
+			}
+		}
+
+
+		#content {
+			div.product	{
+				.product-inner {
+					.summary {
+						.product_title {
+							color: $sage;
+						}
+					}
+				}
+
+				form.cart .button {
+					@extend .button;
+				}
+			}
+
+	        > ul.products {
+	            li, li.product {	
+
+		            a:hover {
+		            	background: $lightsage;
+		            }	
+	        	}
+			}			
+		}
+
+		#gifts #content > ul.products li a:hover .gift-top{
+			background: $lightsage;
+		}	
+	}
+
+	#footer {
+
+		aside {
+			ul {
+				li {
+					a:hover {
+						color: $sage;
+					}
+				}				
+			} 
+		} 
+		.footer-navigation {
+
+			ul.menu {
+				li {
+					a:hover {
+						color: $sage;
 					}					
 				}
 			}
