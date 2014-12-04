@@ -178,7 +178,7 @@ $sage: #90A681;
 	}
 }
 
-$sage: #689167;
+$sage: #4d5645;
 $lightsage: #a0d6b6;
 
 .sage {
@@ -203,16 +203,19 @@ $lightsage: #a0d6b6;
 	}
 
 	h1, h3, h3, h4 {
-		color: #bf1e2e;
+		color: $sage;
 	}	
 
 	.logo-container {
 
 		.logo {
+			&:after {
+				color: #FFF;
+			}
 
 			&:hover {
 				&:after {
-					color: $sage;
+					color: $lightsage;
 				}
 			}		
 		}	
@@ -220,18 +223,25 @@ $lightsage: #a0d6b6;
 
 	#header {
 		.top {
-			background: $lightsage;
+			background: $sage;
 
 			.ecommerce-options, .phone {
 				padding-top: 3.5em;
 
 				a {
+					color: #FFF;
+
+					i {
+						background: #FFF;
+						color: $sage;
+					}
 
 					&:hover {
-						color: $sage;
+						color: $lightsage;
 						
 						i {
-							background: $sage;
+							background: $lightsage;
+							color: #FFF;
 						}					
 					}
 				}
@@ -326,7 +336,11 @@ $lightsage: #a0d6b6;
 	            li, li.product {	
 
 		            a:hover {
-		            	background: $lightsage;
+		            	background: $sage;
+
+		            	h3, span {
+		            		color: #FFF;
+		            	}
 		            }	
 	        	}
 			}			
