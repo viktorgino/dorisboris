@@ -4400,7 +4400,7 @@ body {
   #links .gallery a img {
     display: block; }
 
-/* line 7, scss/_colors.scss */
+/* line 6, scss/_colors.scss */
 .orange .button, .orange .woocommerce a.button, .woocommerce .orange a.button, .orange .woocommerce button.button, .woocommerce .orange button.button, .orange .woocommerce input.button, .woocommerce .orange input.button, .orange .woocommerce-page a.button, .woocommerce-page .orange a.button, .orange .woocommerce-page button.button, .woocommerce-page .orange button.button, .orange .woocommerce-page input.button, .woocommerce-page .orange input.button, .woocommerce #content div.product form.cart .orange .button, .orange .woocommerce-page #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .orange .button, .orange .woocommerce .shop_table .actions a.button, .woocommerce .shop_table .actions .orange a.button, .orange .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions .orange button.button, .orange .woocommerce .shop_table .actions input.button, .woocommerce .shop_table .actions .orange input.button, .orange .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions .orange a.button, .orange .woocommerce-page .shop_table .actions button.button, .woocommerce-page .shop_table .actions .orange button.button, .orange .woocommerce-page .shop_table .actions input.button, .woocommerce-page .shop_table .actions .orange input.button, .orange .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .orange a, .orange .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange a, .orange .woocommerce .woocommerce-error a.button,
 .orange .woocommerce .woocommerce-message a.button,
 .orange .woocommerce .woocommerce-notice a.button,
@@ -4418,7 +4418,7 @@ body {
 .orange .woocommerce-page .sage .woocommerce-info a.button,
 .woocommerce-page .sage .woocommerce-info .orange a.button {
   background: #c1272d; }
-  /* line 10, scss/_colors.scss */
+  /* line 9, scss/_colors.scss */
   .orange .button:after, .woocommerce .woocommerce-error .orange a.button:after, .woocommerce .woocommerce-message .orange a.button:after, .woocommerce .woocommerce-notice .orange a.button:after, .woocommerce .woocommerce-info .orange a.button:after, .orange .woocommerce-page .woocommerce-error a.button:after, .woocommerce-page .woocommerce-error .orange a.button:after, .orange .woocommerce-page .woocommerce-message a.button:after, .woocommerce-page .woocommerce-message .orange a.button:after, .orange .woocommerce-page .woocommerce-notice a.button:after, .woocommerce-page .woocommerce-notice .orange a.button:after, .orange .woocommerce-page .woocommerce-info a.button:after, .woocommerce-page .woocommerce-info .orange a.button:after, .woocommerce #content div.product form.cart .orange .button:after, .orange .woocommerce-page #content div.product form.cart .button:after, .woocommerce-page #content div.product form.cart .orange .button:after, .orange .woocommerce .shop_table .actions a.button:after, .woocommerce .shop_table .actions .orange a.button:after, .orange .woocommerce .shop_table .actions button.button:after, .woocommerce .shop_table .actions .orange button.button:after, .orange .woocommerce .shop_table .actions input.button:after, .woocommerce .shop_table .actions .orange input.button:after, .orange .woocommerce-page .shop_table .actions a.button:after, .woocommerce-page .shop_table .actions .orange a.button:after, .orange .woocommerce-page .shop_table .actions button.button:after, .woocommerce-page .shop_table .actions .orange button.button:after, .orange .woocommerce-page .shop_table .actions input.button:after, .woocommerce-page .shop_table .actions .orange input.button:after, .orange .woocommerce.woocommerce-checkout form.login .lost_password a:after, .woocommerce.woocommerce-checkout form.login .lost_password .orange a:after, .orange .woocommerce-page.woocommerce-checkout form.login .lost_password a:after, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange a:after, .orange .woocommerce .woocommerce-error a.button:after,
   .orange .woocommerce .woocommerce-message a.button:after,
   .orange .woocommerce .woocommerce-notice a.button:after,
@@ -4427,7 +4427,7 @@ body {
   .woocommerce-page .orange .woocommerce-notice a.button:after,
   .woocommerce-page .orange .woocommerce-info a.button:after, .orange .woocommerce #content div.product form.cart .button:after, .woocommerce-page .orange #content div.product form.cart .button:after {
     border-color: transparent transparent transparent #c1272d; }
-  /* line 14, scss/_colors.scss */
+  /* line 13, scss/_colors.scss */
   .orange .button.alt, .woocommerce .woocommerce-error .orange a.alt.button, .woocommerce .woocommerce-message .orange a.alt.button, .woocommerce .woocommerce-notice .orange a.alt.button, .woocommerce .woocommerce-info .orange a.alt.button, .orange .woocommerce-page .woocommerce-error a.alt.button, .woocommerce-page .woocommerce-error .orange a.alt.button, .orange .woocommerce-page .woocommerce-message a.alt.button, .woocommerce-page .woocommerce-message .orange a.alt.button, .orange .woocommerce-page .woocommerce-notice a.alt.button, .woocommerce-page .woocommerce-notice .orange a.alt.button, .orange .woocommerce-page .woocommerce-info a.alt.button, .woocommerce-page .woocommerce-info .orange a.alt.button, .woocommerce #content div.product form.cart .orange .alt.button, .orange .woocommerce-page #content div.product form.cart .alt.button, .woocommerce-page #content div.product form.cart .orange .alt.button, .orange .woocommerce .shop_table .actions a.alt.button, .woocommerce .shop_table .actions .orange a.alt.button, .orange .woocommerce .shop_table .actions button.alt.button, .woocommerce .shop_table .actions .orange button.alt.button, .orange .woocommerce .shop_table .actions input.alt.button, .woocommerce .shop_table .actions .orange input.alt.button, .orange .woocommerce-page .shop_table .actions a.alt.button, .woocommerce-page .shop_table .actions .orange a.alt.button, .orange .woocommerce-page .shop_table .actions button.alt.button, .woocommerce-page .shop_table .actions .orange button.alt.button, .orange .woocommerce-page .shop_table .actions input.alt.button, .woocommerce-page .shop_table .actions .orange input.alt.button, .orange .woocommerce.woocommerce-checkout form.login .lost_password a.alt, .woocommerce.woocommerce-checkout form.login .lost_password .orange a.alt, .orange .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange a.alt, .orange .woocommerce .woocommerce-error a.alt.button,
   .orange .woocommerce .woocommerce-message a.alt.button,
   .orange .woocommerce .woocommerce-notice a.alt.button,
@@ -4438,7 +4438,7 @@ body {
     background: #FFF;
     border: 1px solid #c1272d;
     color: #c1272d; }
-    /* line 19, scss/_colors.scss */
+    /* line 18, scss/_colors.scss */
     .orange .button.alt:hover, .woocommerce #content div.product form.cart .orange .alt.button:hover, .orange .woocommerce-page #content div.product form.cart .alt.button:hover, .woocommerce-page #content div.product form.cart .orange .alt.button:hover, .orange .woocommerce .shop_table .actions a.alt.button:hover, .woocommerce .shop_table .actions .orange a.alt.button:hover, .orange .woocommerce .shop_table .actions button.alt.button:hover, .woocommerce .shop_table .actions .orange button.alt.button:hover, .orange .woocommerce .shop_table .actions input.alt.button:hover, .woocommerce .shop_table .actions .orange input.alt.button:hover, .orange .woocommerce-page .shop_table .actions a.alt.button:hover, .woocommerce-page .shop_table .actions .orange a.alt.button:hover, .orange .woocommerce-page .shop_table .actions button.alt.button:hover, .woocommerce-page .shop_table .actions .orange button.alt.button:hover, .orange .woocommerce-page .shop_table .actions input.alt.button:hover, .woocommerce-page .shop_table .actions .orange input.alt.button:hover, .orange .woocommerce.woocommerce-checkout form.login .lost_password a.alt:hover, .woocommerce.woocommerce-checkout form.login .lost_password .orange a.alt:hover, .orange .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange a.alt:hover, .orange .woocommerce .woocommerce-error a.alt.button:hover,
     .orange .woocommerce .woocommerce-message a.alt.button:hover,
     .orange .woocommerce .woocommerce-notice a.alt.button:hover,
@@ -4457,44 +4457,44 @@ body {
     .woocommerce-page .sage .woocommerce-info .orange a.alt.button:hover {
       background: #c1272d;
       color: #FFF; }
-/* line 26, scss/_colors.scss */
+/* line 25, scss/_colors.scss */
 .orange h1, .orange h3, .orange h3, .orange h4 {
   color: #bf1e2e; }
-/* line 35, scss/_colors.scss */
+/* line 34, scss/_colors.scss */
 .orange .logo-container .logo:hover:after {
   color: #c1272d; }
-/* line 43, scss/_colors.scss */
+/* line 42, scss/_colors.scss */
 .orange #header .top {
   background: #fff0e3; }
-  /* line 46, scss/_colors.scss */
+  /* line 45, scss/_colors.scss */
   .orange #header .top .ecommerce-options, .orange #header .top .phone {
     padding-top: 3.5em; }
-    /* line 51, scss/_colors.scss */
+    /* line 50, scss/_colors.scss */
     .orange #header .top .ecommerce-options a:hover, .orange #header .top .phone a:hover {
       color: #c1272d; }
-      /* line 54, scss/_colors.scss */
+      /* line 53, scss/_colors.scss */
       .orange #header .top .ecommerce-options a:hover i, .orange #header .top .phone a:hover i {
         background: #c1272d; }
-/* line 68, scss/_colors.scss */
+/* line 67, scss/_colors.scss */
 .orange #header .navigation li a:hover {
   color: #c1272d; }
-/* line 78, scss/_colors.scss */
+/* line 77, scss/_colors.scss */
 .orange #header #header-navigation .current-menu-item > a, .orange #header #header-navigation .current-product_cat-ancestor > a {
   color: #c1272d; }
-/* line 89, scss/_colors.scss */
+/* line 88, scss/_colors.scss */
 .orange .owl-carousel .item .caption a.link:hover {
   color: #c1272d; }
-/* line 95, scss/_colors.scss */
+/* line 94, scss/_colors.scss */
 .orange .owl-carousel .item:hover .caption {
   background-color: #c1272d; }
-  /* line 98, scss/_colors.scss */
+  /* line 97, scss/_colors.scss */
   .orange .owl-carousel .item:hover .caption h1, .orange .owl-carousel .item:hover .caption p, .orange .owl-carousel .item:hover .caption .link {
     color: #FFF; }
-/* line 108, scss/_colors.scss */
+/* line 107, scss/_colors.scss */
 .orange #quick-links a:hover h1 {
   color: #FFF;
   background: #c1272d; }
-/* line 123, scss/_colors.scss */
+/* line 122, scss/_colors.scss */
 .woocommerce-page #content div.product form.cart .orange .woocommerce .woocommerce-error a.button, .orange .woocommerce.woocommerce-checkout .woocommerce-error form.login .lost_password a, .orange .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-error a, .orange .woocommerce .woocommerce-error .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .orange .woocommerce .woocommerce-error a, .orange .woocommerce .woocommerce-error a.button, .orange .woocommerce .woocommerce-error #content div.product form.cart a.button, .orange .woocommerce #content div.product form.cart .woocommerce-error a.button, .woocommerce-page .orange #content div.product form.cart .woocommerce .woocommerce-error a.button,
 .woocommerce-page #content div.product form.cart .orange .woocommerce .woocommerce-message a.button,
 .orange .woocommerce.woocommerce-checkout .woocommerce-message form.login .lost_password a,
@@ -4551,20 +4551,20 @@ body {
 .woocommerce-page .orange .woocommerce-info #content div.product form.cart a.button,
 .woocommerce-page .orange #content div.product form.cart .woocommerce-info a.button {
   background: #c1272d; }
-/* line 135, scss/_colors.scss */
+/* line 134, scss/_colors.scss */
 .orange .woocommerce #content div.product .product-inner .summary .product_title, .woocommerce-page .orange #content div.product .product-inner .summary .product_title {
   color: #c1272d; }
-/* line 149, scss/_colors.scss */
+/* line 148, scss/_colors.scss */
 .orange .woocommerce #content > ul.products li a:hover, .orange .woocommerce #content > ul.products li.product a:hover, .woocommerce-page .orange #content > ul.products li a:hover, .woocommerce-page .orange #content > ul.products li.product a:hover {
   background: #fff0e3; }
-/* line 162, scss/_colors.scss */
+/* line 161, scss/_colors.scss */
 .orange #footer aside ul li a:hover {
   color: #c1272d; }
-/* line 172, scss/_colors.scss */
+/* line 171, scss/_colors.scss */
 .orange #footer .footer-navigation ul.menu li a:hover {
   color: #c1272d; }
 
-/* line 186, scss/_colors.scss */
+/* line 185, scss/_colors.scss */
 .sage .button, .sage .woocommerce a.button, .woocommerce .sage a.button, .sage .woocommerce button.button, .woocommerce .sage button.button, .sage .woocommerce input.button, .woocommerce .sage input.button, .sage .woocommerce-page a.button, .woocommerce-page .sage a.button, .sage .woocommerce-page button.button, .woocommerce-page .sage button.button, .sage .woocommerce-page input.button, .woocommerce-page .sage input.button, .woocommerce #content div.product form.cart .sage .button, .sage .woocommerce-page #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .sage .button, .sage .woocommerce .shop_table .actions a.button, .woocommerce .shop_table .actions .sage a.button, .sage .woocommerce .shop_table .actions button.button, .woocommerce .shop_table .actions .sage button.button, .sage .woocommerce .shop_table .actions input.button, .woocommerce .shop_table .actions .sage input.button, .sage .woocommerce-page .shop_table .actions a.button, .woocommerce-page .shop_table .actions .sage a.button, .sage .woocommerce-page .shop_table .actions button.button, .woocommerce-page .shop_table .actions .sage button.button, .sage .woocommerce-page .shop_table .actions input.button, .woocommerce-page .shop_table .actions .sage input.button, .sage .woocommerce.woocommerce-checkout form.login .lost_password a, .woocommerce.woocommerce-checkout form.login .lost_password .sage a, .sage .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .sage a, .orange .woocommerce .woocommerce-error .sage a.button,
 .orange .woocommerce .woocommerce-message .sage a.button,
 .orange .woocommerce .woocommerce-notice .sage a.button,
@@ -4582,7 +4582,7 @@ body {
 .woocommerce-page .sage .woocommerce-notice a.button,
 .woocommerce-page .sage .woocommerce-info a.button, .sage .woocommerce #content div.product form.cart .button, .woocommerce-page .sage #content div.product form.cart .button {
   background: #689167; }
-  /* line 189, scss/_colors.scss */
+  /* line 188, scss/_colors.scss */
   .sage .button:after, .woocommerce .woocommerce-error .sage a.button:after, .woocommerce .woocommerce-message .sage a.button:after, .woocommerce .woocommerce-notice .sage a.button:after, .woocommerce .woocommerce-info .sage a.button:after, .sage .woocommerce-page .woocommerce-error a.button:after, .woocommerce-page .woocommerce-error .sage a.button:after, .sage .woocommerce-page .woocommerce-message a.button:after, .woocommerce-page .woocommerce-message .sage a.button:after, .sage .woocommerce-page .woocommerce-notice a.button:after, .woocommerce-page .woocommerce-notice .sage a.button:after, .sage .woocommerce-page .woocommerce-info a.button:after, .woocommerce-page .woocommerce-info .sage a.button:after, .woocommerce #content div.product form.cart .sage .button:after, .sage .woocommerce-page #content div.product form.cart .button:after, .woocommerce-page #content div.product form.cart .sage .button:after, .sage .woocommerce .shop_table .actions a.button:after, .woocommerce .shop_table .actions .sage a.button:after, .sage .woocommerce .shop_table .actions button.button:after, .woocommerce .shop_table .actions .sage button.button:after, .sage .woocommerce .shop_table .actions input.button:after, .woocommerce .shop_table .actions .sage input.button:after, .sage .woocommerce-page .shop_table .actions a.button:after, .woocommerce-page .shop_table .actions .sage a.button:after, .sage .woocommerce-page .shop_table .actions button.button:after, .woocommerce-page .shop_table .actions .sage button.button:after, .sage .woocommerce-page .shop_table .actions input.button:after, .woocommerce-page .shop_table .actions .sage input.button:after, .sage .woocommerce.woocommerce-checkout form.login .lost_password a:after, .woocommerce.woocommerce-checkout form.login .lost_password .sage a:after, .sage .woocommerce-page.woocommerce-checkout form.login .lost_password a:after, .woocommerce-page.woocommerce-checkout form.login .lost_password .sage a:after, .sage .woocommerce .woocommerce-error a.button:after,
   .sage .woocommerce .woocommerce-message a.button:after,
   .sage .woocommerce .woocommerce-notice a.button:after,
@@ -4590,8 +4590,8 @@ body {
   .woocommerce-page .sage .woocommerce-message a.button:after,
   .woocommerce-page .sage .woocommerce-notice a.button:after,
   .woocommerce-page .sage .woocommerce-info a.button:after, .sage .woocommerce #content div.product form.cart .button:after, .woocommerce-page .sage #content div.product form.cart .button:after {
-    border-color: transparent transparent transparent #689167; }
-  /* line 193, scss/_colors.scss */
+    border-color: transparent transparent transparent #689167 !important; }
+  /* line 192, scss/_colors.scss */
   .sage .button.alt, .woocommerce .woocommerce-error .sage a.alt.button, .woocommerce .woocommerce-message .sage a.alt.button, .woocommerce .woocommerce-notice .sage a.alt.button, .woocommerce .woocommerce-info .sage a.alt.button, .sage .woocommerce-page .woocommerce-error a.alt.button, .woocommerce-page .woocommerce-error .sage a.alt.button, .sage .woocommerce-page .woocommerce-message a.alt.button, .woocommerce-page .woocommerce-message .sage a.alt.button, .sage .woocommerce-page .woocommerce-notice a.alt.button, .woocommerce-page .woocommerce-notice .sage a.alt.button, .sage .woocommerce-page .woocommerce-info a.alt.button, .woocommerce-page .woocommerce-info .sage a.alt.button, .woocommerce #content div.product form.cart .sage .alt.button, .sage .woocommerce-page #content div.product form.cart .alt.button, .woocommerce-page #content div.product form.cart .sage .alt.button, .sage .woocommerce .shop_table .actions a.alt.button, .woocommerce .shop_table .actions .sage a.alt.button, .sage .woocommerce .shop_table .actions button.alt.button, .woocommerce .shop_table .actions .sage button.alt.button, .sage .woocommerce .shop_table .actions input.alt.button, .woocommerce .shop_table .actions .sage input.alt.button, .sage .woocommerce-page .shop_table .actions a.alt.button, .woocommerce-page .shop_table .actions .sage a.alt.button, .sage .woocommerce-page .shop_table .actions button.alt.button, .woocommerce-page .shop_table .actions .sage button.alt.button, .sage .woocommerce-page .shop_table .actions input.alt.button, .woocommerce-page .shop_table .actions .sage input.alt.button, .sage .woocommerce.woocommerce-checkout form.login .lost_password a.alt, .woocommerce.woocommerce-checkout form.login .lost_password .sage a.alt, .sage .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt, .woocommerce-page.woocommerce-checkout form.login .lost_password .sage a.alt, .sage .woocommerce .woocommerce-error a.alt.button,
   .sage .woocommerce .woocommerce-message a.alt.button,
   .sage .woocommerce .woocommerce-notice a.alt.button,
@@ -4602,7 +4602,7 @@ body {
     background: #FFF;
     border: 1px solid #689167;
     color: #689167; }
-    /* line 198, scss/_colors.scss */
+    /* line 197, scss/_colors.scss */
     .sage .button.alt:hover, .woocommerce #content div.product form.cart .sage .alt.button:hover, .sage .woocommerce-page #content div.product form.cart .alt.button:hover, .woocommerce-page #content div.product form.cart .sage .alt.button:hover, .sage .woocommerce .shop_table .actions a.alt.button:hover, .woocommerce .shop_table .actions .sage a.alt.button:hover, .sage .woocommerce .shop_table .actions button.alt.button:hover, .woocommerce .shop_table .actions .sage button.alt.button:hover, .sage .woocommerce .shop_table .actions input.alt.button:hover, .woocommerce .shop_table .actions .sage input.alt.button:hover, .sage .woocommerce-page .shop_table .actions a.alt.button:hover, .woocommerce-page .shop_table .actions .sage a.alt.button:hover, .sage .woocommerce-page .shop_table .actions button.alt.button:hover, .woocommerce-page .shop_table .actions .sage button.alt.button:hover, .sage .woocommerce-page .shop_table .actions input.alt.button:hover, .woocommerce-page .shop_table .actions .sage input.alt.button:hover, .sage .woocommerce.woocommerce-checkout form.login .lost_password a.alt:hover, .woocommerce.woocommerce-checkout form.login .lost_password .sage a.alt:hover, .sage .woocommerce-page.woocommerce-checkout form.login .lost_password a.alt:hover, .woocommerce-page.woocommerce-checkout form.login .lost_password .sage a.alt:hover, .orange .woocommerce .woocommerce-error .sage a.alt.button:hover,
     .orange .woocommerce .woocommerce-message .sage a.alt.button:hover,
     .orange .woocommerce .woocommerce-notice .sage a.alt.button:hover,
@@ -4621,44 +4621,51 @@ body {
     .woocommerce-page .sage .woocommerce-info a.alt.button:hover, .sage .woocommerce #content div.product form.cart .alt.button:hover, .woocommerce-page .sage #content div.product form.cart .alt.button:hover {
       background: #689167;
       color: #FFF; }
-/* line 205, scss/_colors.scss */
+/* line 204, scss/_colors.scss */
 .sage h1, .sage h3, .sage h3, .sage h4 {
   color: #bf1e2e; }
-/* line 214, scss/_colors.scss */
+/* line 211, scss/_colors.scss */
+.sage .logo-container .logo:after {
+  color: #fff; }
+/* line 216, scss/_colors.scss */
 .sage .logo-container .logo:hover:after {
   color: #689167; }
-/* line 222, scss/_colors.scss */
+/* line 224, scss/_colors.scss */
 .sage #header .top {
-  background: #a0d6b6; }
-  /* line 225, scss/_colors.scss */
+  background: #4d5645; }
+  /* line 227, scss/_colors.scss */
   .sage #header .top .ecommerce-options, .sage #header .top .phone {
+    color: #fff;
     padding-top: 3.5em; }
-    /* line 230, scss/_colors.scss */
-    .sage #header .top .ecommerce-options a:hover, .sage #header .top .phone a:hover {
-      color: #689167; }
-      /* line 233, scss/_colors.scss */
-      .sage #header .top .ecommerce-options a:hover i, .sage #header .top .phone a:hover i {
-        background: #689167; }
-/* line 247, scss/_colors.scss */
+    /* line 231, scss/_colors.scss */
+    .sage #header .top .ecommerce-options a, .sage #header .top .phone a {
+      color: #fff; }
+      /* line 234, scss/_colors.scss */
+      .sage #header .top .ecommerce-options a:hover, .sage #header .top .phone a:hover {
+        color: #689167; }
+        /* line 237, scss/_colors.scss */
+        .sage #header .top .ecommerce-options a:hover i, .sage #header .top .phone a:hover i {
+          background: #689167; }
+/* line 251, scss/_colors.scss */
 .sage #header .navigation li a:hover {
   color: #689167; }
-/* line 257, scss/_colors.scss */
+/* line 261, scss/_colors.scss */
 .sage #header #header-navigation .current-menu-item > a, .sage #header #header-navigation .current-product_cat-ancestor > a {
   color: #689167; }
-/* line 268, scss/_colors.scss */
+/* line 272, scss/_colors.scss */
 .sage .owl-carousel .item .caption a.link:hover {
   color: #689167; }
-/* line 274, scss/_colors.scss */
+/* line 278, scss/_colors.scss */
 .sage .owl-carousel .item:hover .caption {
   background-color: #689167; }
-  /* line 277, scss/_colors.scss */
+  /* line 281, scss/_colors.scss */
   .sage .owl-carousel .item:hover .caption h1, .sage .owl-carousel .item:hover .caption p, .sage .owl-carousel .item:hover .caption .link {
     color: #FFF; }
-/* line 287, scss/_colors.scss */
+/* line 291, scss/_colors.scss */
 .sage #quick-links a:hover h1 {
   color: #FFF;
   background: #689167; }
-/* line 302, scss/_colors.scss */
+/* line 306, scss/_colors.scss */
 .woocommerce-page #content div.product form.cart .sage .woocommerce .woocommerce-error a.button, .sage .woocommerce.woocommerce-checkout .woocommerce-error form.login .lost_password a, .sage .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-error a, .sage .woocommerce .woocommerce-error .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .sage .woocommerce .woocommerce-error a, .sage .woocommerce .woocommerce-error a.button, .sage .woocommerce .woocommerce-error #content div.product form.cart a.button, .sage .woocommerce #content div.product form.cart .woocommerce-error a.button, .woocommerce-page .sage #content div.product form.cart .woocommerce .woocommerce-error a.button,
 .woocommerce-page #content div.product form.cart .sage .woocommerce .woocommerce-message a.button,
 .sage .woocommerce.woocommerce-checkout .woocommerce-message form.login .lost_password a,
@@ -4715,18 +4722,30 @@ body {
 .woocommerce-page .sage .woocommerce-info #content div.product form.cart a.button,
 .woocommerce-page .sage #content div.product form.cart .woocommerce-info a.button {
   background: #689167; }
-/* line 314, scss/_colors.scss */
+/* line 318, scss/_colors.scss */
 .sage .woocommerce #content div.product .product-inner .summary .product_title, .woocommerce-page .sage #content div.product .product-inner .summary .product_title {
   color: #689167; }
-/* line 328, scss/_colors.scss */
+/* line 332, scss/_colors.scss */
 .sage .woocommerce #content > ul.products li a:hover, .sage .woocommerce #content > ul.products li.product a:hover, .woocommerce-page .sage #content > ul.products li a:hover, .woocommerce-page .sage #content > ul.products li.product a:hover {
-  background: #a0d6b6; }
-/* line 335, scss/_colors.scss */
+  background: #4d5645; }
+  /* line 335, scss/_colors.scss */
+  .sage .woocommerce #content > ul.products li a:hover h3, .sage .woocommerce #content > ul.products li.product a:hover h3, .woocommerce-page .sage #content > ul.products li a:hover h3, .woocommerce-page .sage #content > ul.products li.product a:hover h3 {
+    color: #fff; }
+  /* line 338, scss/_colors.scss */
+  .sage .woocommerce #content > ul.products li a:hover .price, .sage .woocommerce #content > ul.products li.product a:hover .price, .woocommerce-page .sage #content > ul.products li a:hover .price, .woocommerce-page .sage #content > ul.products li.product a:hover .price {
+    color: #fff; }
+/* line 346, scss/_colors.scss */
 .sage .woocommerce #gifts #content > ul.products li a:hover .gift-top, .woocommerce-page .sage #gifts #content > ul.products li a:hover .gift-top {
-  background: #a0d6b6; }
-/* line 345, scss/_colors.scss */
+  background: #4d5645; }
+  /* line 349, scss/_colors.scss */
+  .sage .woocommerce #gifts #content > ul.products li a:hover .gift-top h3, .woocommerce-page .sage #gifts #content > ul.products li a:hover .gift-top h3 {
+    color: #fff; }
+  /* line 352, scss/_colors.scss */
+  .sage .woocommerce #gifts #content > ul.products li a:hover .gift-top .price, .woocommerce-page .sage #gifts #content > ul.products li a:hover .gift-top .price {
+    color: #fff; }
+/* line 363, scss/_colors.scss */
 .sage #footer aside ul li a:hover {
   color: #689167; }
-/* line 355, scss/_colors.scss */
+/* line 373, scss/_colors.scss */
 .sage #footer .footer-navigation ul.menu li a:hover {
   color: #689167; }

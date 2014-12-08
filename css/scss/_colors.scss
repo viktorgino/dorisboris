@@ -1,6 +1,5 @@
 $red: #c1272d;
 $orange: #fff0e3;
-$sage: #90A681;
 
 .orange {
 	
@@ -179,7 +178,7 @@ $sage: #90A681;
 }
 
 $sage: #689167;
-$lightsage: #a0d6b6;
+$lightsage: #4d5645;
 
 .sage {
 	
@@ -187,7 +186,7 @@ $lightsage: #a0d6b6;
 		background: $sage;
 
 		&:after {
-			border-color: transparent transparent transparent $sage;
+			border-color: transparent transparent transparent $sage !important;
 		}
 
 		&.alt {
@@ -209,6 +208,9 @@ $lightsage: #a0d6b6;
 	.logo-container {
 
 		.logo {
+			&:after{
+				color: #fff;
+			}
 
 			&:hover {
 				&:after {
@@ -223,9 +225,11 @@ $lightsage: #a0d6b6;
 			background: $lightsage;
 
 			.ecommerce-options, .phone {
+				color: #fff;
 				padding-top: 3.5em;
 
 				a {
+					color: #fff;
 
 					&:hover {
 						color: $sage;
@@ -324,9 +328,16 @@ $lightsage: #a0d6b6;
 
 	        > ul.products {
 	            li, li.product {	
-
+					
 		            a:hover {
 		            	background: $lightsage;
+
+		            	h3{
+		            		color: #fff;
+		            	}
+		            	.price{
+		            		color: #fff;
+		            	}
 		            }	
 	        	}
 			}			
@@ -334,6 +345,13 @@ $lightsage: #a0d6b6;
 
 		#gifts #content > ul.products li a:hover .gift-top{
 			background: $lightsage;
+
+			h3{
+				color: #fff;
+			}
+			.price{
+				color: #fff;
+			}
 		}	
 	}
 
