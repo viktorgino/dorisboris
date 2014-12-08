@@ -33,16 +33,7 @@
 	<header id="header" role="banner">
 		<div class="top" <?php if(get_field('header_color', 'options')): ?>style="background-color: <?php the_field('header_color','options'); ?>" <?php endif; ?>>
 			<div class="container">		
-				<div class="span one-third phone">
-					<i class="icon icon-tel"></i>
-					<?php the_field('global_phone_number', 'options'); ?>	
-				</div>
-				<div class="span one-third">
-					<h1 class="logo-container">
-						<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php // bloginfo( 'name' ); ?></a>
-					</h1>						
-				</div>
-				<div class="span one-third ecommerce-options">
+				<div class="first span one-third ecommerce-options">
 					<?php if ( is_user_logged_in() ): ?>
 							<?php $redirect_url = (isset($post->ID)) ? get_permalink($post->ID) : home_url(); ?>
 							<a class="btn account-btn" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">
@@ -54,7 +45,27 @@
 								<i class="icon icon-account"></i>
 								<?php _e("Login", 'ivip'); ?>
 							</a>	
-					<?php endif; ?>					
+					<?php endif; ?>									
+				</div>
+
+				<div class="span one-third">
+					<h1 class="logo-container">
+						<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php // bloginfo( 'name' ); ?></a>
+					</h1>						
+				</div>
+				<div class="span one-third ecommerce-options">	
+					<?php if ( is_user_logged_in() ): ?>
+							<?php $redirect_url = (isset($post->ID)) ? get_permalink($post->ID) : home_url(); ?>
+							<a class="btn last account-btn" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">
+								<i class="icon icon-account"></i>
+								<?php _e("My Account", 'ivip'); ?>
+							</a>
+					<?php else: ?>
+							<a class="btn last logout-btn" href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">
+								<i class="icon icon-account"></i>
+								<?php _e("Login", 'ivip'); ?>
+							</a>	
+					<?php endif; ?>									
 					<?php global $woocommerce; ?>	
 					<a class="btn cart-btn" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping bag', 'woothemes'); ?>">
 						<i class="icon icon-basket"></i>

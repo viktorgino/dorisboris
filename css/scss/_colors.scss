@@ -1,5 +1,6 @@
 $red: #c1272d;
 $orange: #fff0e3;
+$sage: #90A681;
 
 .orange {
 	
@@ -177,8 +178,8 @@ $orange: #fff0e3;
 	}
 }
 
-$sage: #689167;
-$lightsage: #4d5645;
+$sage: #4d5645;
+$lightsage: #a0d6b6;
 
 .sage {
 	
@@ -186,7 +187,7 @@ $lightsage: #4d5645;
 		background: $sage;
 
 		&:after {
-			border-color: transparent transparent transparent $sage !important;
+			border-color: transparent transparent transparent $sage;
 		}
 
 		&.alt {
@@ -202,19 +203,19 @@ $lightsage: #4d5645;
 	}
 
 	h1, h3, h3, h4 {
-		color: #bf1e2e;
+		color: $sage;
 	}	
 
 	.logo-container {
 
 		.logo {
-			&:after{
-				color: #fff;
+			&:after {
+				color: #FFF;
 			}
 
 			&:hover {
 				&:after {
-					color: $sage;
+					color: $lightsage;
 				}
 			}		
 		}	
@@ -222,20 +223,25 @@ $lightsage: #4d5645;
 
 	#header {
 		.top {
-			background: $lightsage;
+			background: $sage;
 
 			.ecommerce-options, .phone {
-				color: #fff;
 				padding-top: 3.5em;
 
 				a {
-					color: #fff;
+					color: #FFF;
+
+					i {
+						background: #FFF;
+						color: $sage;
+					}
 
 					&:hover {
-						color: $sage;
+						color: $lightsage;
 						
 						i {
-							background: $sage;
+							background: $lightsage;
+							color: #FFF;
 						}					
 					}
 				}
@@ -328,15 +334,12 @@ $lightsage: #4d5645;
 
 	        > ul.products {
 	            li, li.product {	
-					
-		            a:hover {
-		            	background: $lightsage;
 
-		            	h3{
-		            		color: #fff;
-		            	}
-		            	.price{
-		            		color: #fff;
+		            a:hover {
+		            	background: $sage;
+
+		            	h3, span {
+		            		color: #FFF;
 		            	}
 		            }	
 	        	}
@@ -345,13 +348,6 @@ $lightsage: #4d5645;
 
 		#gifts #content > ul.products li a:hover .gift-top{
 			background: $lightsage;
-
-			h3{
-				color: #fff;
-			}
-			.price{
-				color: #fff;
-			}
 		}	
 	}
 
