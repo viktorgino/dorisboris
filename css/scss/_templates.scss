@@ -202,39 +202,39 @@
 						padding: 60px 25px 25px;
 					}
 
-					&:before {
-						content: '';
-						width: 21px;
-						height: 21px;
-						background: url(../images/misc/gift-card-hole.png) left top no-repeat;
-						position: absolute;
-						margin-left: -10px;
-						left: 50%;
-						top: 18px;
-					}
+					// &:before {
+					// 	content: '';
+					// 	width: 21px;
+					// 	height: 21px;
+					// 	background: url(../images/misc/gift-card-hole.png) left top no-repeat;
+					// 	position: absolute;
+					// 	margin-left: -10px;
+					// 	left: 50%;
+					// 	top: 18px;
+					// }
 
 				}
 
 				//String
-				&:nth-child(1), &:nth-child(8n+7) {
-					.gift-top {
-						&:after {
-							content: '';
-							width: 60%;
-							height: 150%;
-							background-image: url(../images/misc/string.png);
-							background-size: 100% 100%;
-							position: absolute;
-							margin-left: -10px;
-							left: 15%;
-							top: -132%;	
+				// &:nth-child(1), &:nth-child(8n+7) {
+				// 	.gift-top {
+				// 		&:after {
+				// 			content: '';
+				// 			width: 60%;
+				// 			height: 150%;
+				// 			background-image: url(../images/misc/string.png);
+				// 			background-size: 100% 100%;
+				// 			position: absolute;
+				// 			margin-left: -10px;
+				// 			left: 15%;
+				// 			top: -132%;	
 
-							@include device-width(5) {
-								display: none;
-							}									
-						}
-					}
-				} 				
+				// 			@include device-width(5) {
+				// 				display: none;
+				// 			}									
+				// 		}
+				// 	}
+				// } 				
 
 
 				img {

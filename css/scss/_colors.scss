@@ -184,22 +184,26 @@ $lightsage: #a0d6b6;
 .sage {
 	
 	.button {
-		background: $sage;
+		background: $sage !important;
 
-		&:after {
-			border-color: transparent transparent transparent $sage;
+		&:hover{
+			color: #fff !important;
+		}
+
+		&:after { 
+			border-color: transparent transparent transparent $sage !important;
 		}
 
 		&.alt {
-			background: #FFF;
-			border: 1px solid $sage;
-			color: $sage;
+			color: #fff !important;
+			background: $sage !important;
+			border: none !important;
+		}
 
-			&:hover {
-				background: $sage;
-				color: #FFF;
-			}
-		}		
+		// &.checkout-button{
+		// 	color: #fff !important;
+		// 	background: $sage !important;
+		// }		
 	}
 
 	h1, h3, h3, h4 {
