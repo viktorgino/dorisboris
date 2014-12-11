@@ -4604,7 +4604,7 @@ body {
   color: #FFF; }
 /* line 221, scss/_colors.scss */
 .sage .logo-container .logo:hover:after {
-  color: #a0d6b6; }
+  color: #799AA1; }
 /* line 229, scss/_colors.scss */
 .sage #header .top {
   background: #4d5645; }
@@ -4620,30 +4620,30 @@ body {
         color: #4d5645; }
       /* line 243, scss/_colors.scss */
       .sage #header .top .ecommerce-options a:hover, .sage #header .top .phone a:hover {
-        color: #a0d6b6; }
+        color: #799AA1; }
         /* line 246, scss/_colors.scss */
         .sage #header .top .ecommerce-options a:hover i, .sage #header .top .phone a:hover i {
-          background: #a0d6b6;
+          background: #799AA1;
           color: #FFF; }
 /* line 261, scss/_colors.scss */
 .sage #header .navigation li a:hover {
-  color: #4d5645; }
+  color: #799AA1; }
 /* line 271, scss/_colors.scss */
 .sage #header #header-navigation .current-menu-item > a, .sage #header #header-navigation .current-product_cat-ancestor > a {
-  color: #4d5645; }
+  color: #799AA1; }
 /* line 282, scss/_colors.scss */
 .sage .owl-carousel .item .caption a.link:hover {
-  color: #4d5645; }
+  color: #799AA1; }
 /* line 288, scss/_colors.scss */
 .sage .owl-carousel .item:hover .caption {
-  background-color: #4d5645; }
+  background-color: #799AA1; }
   /* line 291, scss/_colors.scss */
   .sage .owl-carousel .item:hover .caption h1, .sage .owl-carousel .item:hover .caption p, .sage .owl-carousel .item:hover .caption .link {
     color: #FFF; }
 /* line 301, scss/_colors.scss */
 .sage #quick-links a:hover h1 {
   color: #FFF;
-  background: #4d5645; }
+  background: #799AA1; }
 /* line 316, scss/_colors.scss */
 .woocommerce-page #content div.product form.cart .sage .woocommerce .woocommerce-error a.button, .sage .woocommerce.woocommerce-checkout .woocommerce-error form.login .lost_password a, .sage .woocommerce.woocommerce-checkout form.login .lost_password .woocommerce-error a, .sage .woocommerce .woocommerce-error .woocommerce-page.woocommerce-checkout form.login .lost_password a, .woocommerce-page.woocommerce-checkout form.login .lost_password .sage .woocommerce .woocommerce-error a, .sage .woocommerce .woocommerce-error a.button, .sage .woocommerce .woocommerce-error #content div.product form.cart a.button, .sage .woocommerce #content div.product form.cart .woocommerce-error a.button, .woocommerce-page .sage #content div.product form.cart .woocommerce .woocommerce-error a.button,
 .woocommerce-page #content div.product form.cart .sage .woocommerce .woocommerce-message a.button,
@@ -4706,16 +4706,16 @@ body {
   color: #4d5645; }
 /* line 342, scss/_colors.scss */
 .sage .woocommerce #content > ul.products li a:hover, .sage .woocommerce #content > ul.products li.product a:hover, .woocommerce-page .sage #content > ul.products li a:hover, .woocommerce-page .sage #content > ul.products li.product a:hover {
-  background: #4d5645; }
+  background: #799AA1; }
   /* line 345, scss/_colors.scss */
   .sage .woocommerce #content > ul.products li a:hover h3, .sage .woocommerce #content > ul.products li a:hover span, .sage .woocommerce #content > ul.products li.product a:hover h3, .sage .woocommerce #content > ul.products li.product a:hover span, .woocommerce-page .sage #content > ul.products li a:hover h3, .woocommerce-page .sage #content > ul.products li a:hover span, .woocommerce-page .sage #content > ul.products li.product a:hover h3, .woocommerce-page .sage #content > ul.products li.product a:hover span {
     color: #FFF; }
 /* line 353, scss/_colors.scss */
 .sage .woocommerce #gifts #content > ul.products li a:hover .gift-top, .woocommerce-page .sage #gifts #content > ul.products li a:hover .gift-top {
-  background: #a0d6b6; }
+  background: #799AA1; }
 /* line 363, scss/_colors.scss */
 .sage #footer aside ul li a:hover {
-  color: #4d5645; }
+  color: #799AA1; }
 /* line 373, scss/_colors.scss */
 .sage #footer .footer-navigation ul.menu li a:hover {
-  color: #4d5645; }
+  color: #799AA1; }

@@ -179,7 +179,7 @@ $sage: #90A681;
 }
 
 $sage: #4d5645;
-$lightsage: #a0d6b6;
+$lightsage: #799AA1;
 
 .sage {
 	
@@ -259,7 +259,7 @@ $lightsage: #a0d6b6;
 				a {
 
 					&:hover {
-						color: $sage;
+						color: $lightsage;
 					}							
 				}
 			}
@@ -269,7 +269,7 @@ $lightsage: #a0d6b6;
 			.current-menu-item, .current-product_cat-ancestor {
 
 				> a {
-					color: $sage;
+					color: $lightsage;
 				}			
 			}
 		}
@@ -280,13 +280,13 @@ $lightsage: #a0d6b6;
 		.item {
 			.caption {
 				a.link:hover {
-					color: $sage;
+					color: $lightsage;
 				}
 			}
 
 			&:hover {
 				.caption {
-					background-color: $sage;
+					background-color: $lightsage;
 
 					h1, p, .link {
 						color: #FFF;
@@ -300,7 +300,7 @@ $lightsage: #a0d6b6;
 		a:hover {
 			h1 {
 				color: #FFF;
-				background: $sage;
+				background: $lightsage;
 			}
 		}
 	}
@@ -340,7 +340,7 @@ $lightsage: #a0d6b6;
 	            li, li.product {	
 
 		            a:hover {
-		            	background: $sage;
+		            	background: $lightsage;
 
 		            	h3, span {
 		            		color: #FFF;
@@ -361,7 +361,7 @@ $lightsage: #a0d6b6;
 			ul {
 				li {
 					a:hover {
-						color: $sage;
+						color: $lightsage;
 					}
 				}				
 			} 
@@ -371,7 +371,7 @@ $lightsage: #a0d6b6;
 			ul.menu {
 				li {
 					a:hover {
-						color: $sage;
+						color: $lightsage;
 					}					
 				}
 			}
