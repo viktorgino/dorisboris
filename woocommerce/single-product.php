@@ -30,7 +30,7 @@ get_header( 'shop' ); ?>
 			$terms = wp_get_post_terms( $post->ID, 'product_cat' );
 			foreach ( $terms as $term ) $categories[] = $term->slug;
 
-			if ( in_array( 'upcycling-shop', $categories ) ) {
+			if ( in_array( 'upcycling', $categories ) ) {
 			  wc_get_template_part( 'content', 'single-product-upcycle' );
 			} else {
 			  wc_get_template_part( 'content', 'single-product' );
