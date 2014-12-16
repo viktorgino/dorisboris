@@ -20,8 +20,8 @@
 					<?php 
 					$relations = get_sub_field('link_to');
 					if( $relations ): ?>
-						<?php foreach( $relations as $relation ): // variable must NOT be called $post (IMPORTANT) ?>
-						    	<a class="link" href="<?php echo get_permalink( $p ); ?>"><?php the_sub_field('button_title'); ?></a>
+						<?php foreach( $relations as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+						    <a class="link" href="<?php echo get_permalink( $p ); ?>"><?php the_sub_field('button_title'); ?></a>
 						<?php endforeach; ?>
 					<?php endif; ?>						
 				</div>
