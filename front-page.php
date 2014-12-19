@@ -13,18 +13,24 @@
 			?>
 
 			<div class="item">
+			<?php $relations = get_sub_field('link_to'); ?>
+			<?php if( $relations ): ?>
+				<?php foreach( $relations as $p ):?>
+				    <a href="<?php echo get_permalink( $p ); ?>" title="">
+				<?php endforeach; ?>
+			<?php endif; ?>
+
 				<img alt="" src="<?php echo $image[0]; ?>" />
 				<div class="caption">
 					<h1><?php the_sub_field('slide_title'); ?></h1>
 					<p><?php the_sub_field('slide_description'); ?></p>
-					<?php 
-					$relations = get_sub_field('link_to');
-					if( $relations ): ?>
-						<?php foreach( $relations as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-						    <a class="link" href="<?php echo get_permalink( $p ); ?>"><?php the_sub_field('button_title'); ?></a>
-						<?php endforeach; ?>
-					<?php endif; ?>						
+				    <!-- <span class="link"><?php the_sub_field('button_title'); ?></span>				 -->
 				</div>
+
+			<?php if($relations): ?>
+				</a>
+			<?php endif; ?>
+			
 			</div>				
 	    <?php endwhile; ?>
 	    </div>

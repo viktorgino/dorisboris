@@ -7,8 +7,17 @@ $sage: #90A681;
 	.button {
 		background: $red;
 
+		&:hover{
+			color: #fff;
+			background-color: lighten($red, 10%) !important;
+
+			&:after{
+				border-color: transparent transparent transparent lighten($red, 10%) !important;
+			}
+		}
+
 		&:after {
-			border-color: transparent transparent transparent $red;
+			border-color: transparent transparent transparent $red !important;
 		}
 
 		&.alt {
@@ -21,6 +30,18 @@ $sage: #90A681;
 				color: #FFF;
 			}
 		}		
+	}
+
+	input.alt.button{
+		background: #FFF;
+		border: 1px solid $red;
+		color: $red;
+		@include text-shadow(0 0 0 transparent);
+
+		&:hover {
+			background: $red;
+			color: #FFF;
+		}
 	}
 
 	h1, h3, h3, h4 {
@@ -44,7 +65,6 @@ $sage: #90A681;
 			background: $orange;
 
 			.ecommerce-options, .phone {
-				padding-top: 3.5em;
 
 				a {
 
@@ -118,11 +138,22 @@ $sage: #90A681;
 		.woocommerce-notice,
 		.woocommerce-info {
 
+			color: #fff;
+			background: $red;
+
 			a {
+				color: #fff;
 
 				&.button {
 					@extend .button;
-					background: $red;
+					background: lighten($red, 10%) !important;
+					
+					&:before{
+						border-color: transparent transparent transparent $red !important;
+					}
+					&:after{
+						border-color: transparent transparent transparent lighten($red, 10%) !important;
+					}
 				}
 			}
 		}
@@ -184,10 +215,15 @@ $lightsage: #799AA1;
 .sage {
 	
 	.button {
-		background: $sage !important;
+		background: $sage;
 
 		&:hover{
 			color: #fff !important;
+			background: lighten($sage, 10%) !important;
+
+			&:after{
+				border-color: transparent transparent transparent lighten($sage, 10%) !important;
+			}
 		}
 
 		&:after { 
@@ -195,15 +231,27 @@ $lightsage: #799AA1;
 		}
 
 		&.alt {
-			color: #fff !important;
-			background: $sage !important;
-			border: none !important;
-		}
+			background: #FFF;
+			border: 1px solid $sage;
+			color: $sage;
 
-		// &.checkout-button{
-		// 	color: #fff !important;
-		// 	background: $sage !important;
-		// }		
+			&:hover {
+				background: $sage;
+				color: #FFF;
+			}
+		}	
+	}
+
+	input.alt.button{
+		background: #FFF;
+		border: 1px solid $sage;
+		color: $sage;
+		@include text-shadow(0 0 0 transparent);
+
+		&:hover {
+			background: $sage;
+			color: #FFF;
+		}
 	}
 
 	h1, h3, h3, h4 {
@@ -230,7 +278,6 @@ $lightsage: #799AA1;
 			background: $sage;
 
 			.ecommerce-options, .phone {
-				padding-top: 3.5em;
 
 				a {
 					color: #FFF;
@@ -262,15 +309,6 @@ $lightsage: #799AA1;
 						color: $lightsage;
 					}							
 				}
-			}
-		}
-
-		#header-navigation {
-			.current-menu-item, .current-product_cat-ancestor {
-
-				> a {
-					color: $lightsage;
-				}			
 			}
 		}
 	}
@@ -314,12 +352,22 @@ $lightsage: #799AA1;
 		.woocommerce-message,
 		.woocommerce-notice,
 		.woocommerce-info {
+			
+			color: #fff;
+			background: $sage;
 
 			a {
-
+				color: #fff;
 				&.button {
 					@extend .button;
-					background: $sage;
+					background: lighten($sage, 10%) !important;
+					
+					&:before{
+						border-color: transparent transparent transparent $sage !important;
+					}
+					&:after{
+						border-color: transparent transparent transparent lighten($sage, 10%) !important;
+					}
 				}
 			}
 		}

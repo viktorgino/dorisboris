@@ -2,11 +2,6 @@
 
 <section id="index">
 <?php
-/**
- * Template Name: Press
- *
- */
-
 get_header(); ?>
 
 	<div id="blog">

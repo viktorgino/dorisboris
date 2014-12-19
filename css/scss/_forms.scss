@@ -40,13 +40,13 @@ select {
 	-webkit-appearance: none;
 	display: inline-block;
 	border: 1px solid #ccc;
-	padding: 1.5em 2em;
-	@include font-size(12);
+	padding: 1em;
+	font-size: 14px !important;
 	background: #FFF;
 	position: relative;
 	width: 100%;
-	color: #ccc;
-	height: 51px !important;
+	color: #333;
+	// height: 51px !important;
 	box-shadow: none;
 	background: #FFF url(../images/misc/dropdown.png) no-repeat center right;
 

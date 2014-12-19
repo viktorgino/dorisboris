@@ -151,16 +151,23 @@ blockquote {
 
 		li {
 			@include inline-block;
+			padding: 0 18px;
+			border-right: 1px solid #555555;
+
+			@include device-width(10){
+				padding: 0 10px;
+			}
 
 			a {
 				display: block;
+				margin-bottom: -5px;
+				padding-bottom: 5px;
 				line-height: 1;
 				color: #555555;
 				text-transform: uppercase;
 				@include font-size(12);
 				@include gillsans-medium;
-				padding: 0 18px;
-				border-right: 1px solid #555555;
+				border-bottom: 1px dotted transparent;
 
 				&:hover {
 					color: #0258ad;
@@ -168,14 +175,11 @@ blockquote {
 
 				@include device-width(10) {
 					@include font-size(10);
-					padding: 0 10px;
 				}						
 			}
 
 			&:last-child {
-				a {
-					border-right: none;
-				}
+				border-right: none;
 			}
 		}
 	}	
@@ -222,7 +226,9 @@ blockquote {
 		.current-menu-item, .current-product_cat-ancestor {
 
 			> a {
-				color: #0258ad;
+				position: relative;
+				color: #000;
+				border-bottom: 1px dotted #000;
 			}
 
 			&.menu-item-has-children {
@@ -232,6 +238,21 @@ blockquote {
 					display: block;					
 				}
 			}
+		}
+
+		.menu-item-has-children.current-menu-item > a, .current-product_cat-ancestor > a{
+				&:after{
+					position: absolute;
+					top: 200%;
+					left: 50%;
+					margin-left: -20px;
+					content: "";
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					background-color: #eae8e2;
+					@include rotate(45deg);
+				}
 		}
 	}
 }
@@ -669,6 +690,7 @@ blockquote {
 	perspective-origin: 50% 200%;
 	z-index: 200;
 	text-align: right;
+	background-color: #4691a7;
 
 	@include device-width(8) {
 		display: block;
@@ -679,7 +701,7 @@ blockquote {
 	}	
 
 	button {
-		background: #f69d40;
+		background: #4691a7;
 		border: none;
 		width: 48px;
 		height: 45px;
@@ -688,11 +710,7 @@ blockquote {
 		position: relative;
 		cursor: pointer;
 		outline: none;
-		margin-right: 20px;	
-
-		@include device-width(8) {
-			top: -13px;
-		}	
+		margin-right: 20px;
 
 		&:after {
 			content: '';
@@ -711,7 +729,7 @@ blockquote {
 	button:hover,
 	button.dl-active,
 	ul {
-		background: #4691a7;
+		background: lighten(#4691a7, 10%);
 	}
 
 	ul {
@@ -797,10 +815,6 @@ blockquote {
 		transform: translateY(10px);
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
-
-		.home & {
-			margin: 5px 0 0 0;
-		}
 
 		&.dl-menu-toggle {
 			transition: all 0.3s ease;

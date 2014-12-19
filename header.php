@@ -48,7 +48,7 @@
 					<?php endif; ?>									
 				</div>
 
-				<div class="span one-third">
+				<div class="span logo-wrap one-third">
 					<h1 class="logo-container">
 						<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php // bloginfo( 'name' ); ?></a>
 					</h1>						
@@ -70,19 +70,31 @@
 					<a class="btn cart-btn" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping bag', 'woothemes'); ?>">
 						<i class="icon icon-basket"></i>
 						<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
+					</a>
+					<a class="btn search-btn" href="#" title="Search Doris &amp; Boris">
+						<i class="icon icon-search"></i>
+						<span><?php _e("Search", 'dorisboris'); ?></span>
 					</a>					
 				</div>
+			</div><!-- container -->
+			<div id="search-bar">
+				<div class="container">
+					<?php get_search_form(); ?>	
+				</div>
 			</div>
-		</div>
+		</div><!-- .top -->
 		<div class="bottom">
 			<div class="container">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'clearfix menu', 'container' => 'nav', 'container_class' => 'primary-navigation navigation', 'depth' => 2, 'container_id' => 'header-navigation' )); ?>			
-					<div id="dl-menu" class="dl-menuwrapper mobile-navigation">
-					<button class="dl-trigger">Open Menu</button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'dl-menu', 'depth' => 4, 'container' => '' )); ?>		
-				</div><!-- /dl-menuwrapper -->							
+					
 			</div>
 		</div><!-- .bottom -->
+		
+		<div id="dl-menu" class="dl-menuwrapper mobile-navigation">	
+			<button class="dl-trigger">Open Menu</button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'dl-menu', 'depth' => 4, 'container' => '' )); ?>					
+		</div><!-- /dl-menuwrapper -->		
+
 	</header><!-- #header -->
 
 	<!-- site header -->

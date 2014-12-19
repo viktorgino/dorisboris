@@ -36,7 +36,9 @@
 
 		global: {
 			init: function(){
-				
+				$('.search-btn').on('click', function(){
+					$('#search-bar').toggleClass('visible');
+				});
 			}
 		},
 

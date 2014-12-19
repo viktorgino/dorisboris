@@ -185,6 +185,10 @@ function custom_pre_get_posts( $query ) {
 			$query->set('posts_per_page', 20);
 	}
 
+	if(is_search()){
+		$query->set('posts_per_page', 12);
+	}
+
 	return $query;
 }
 

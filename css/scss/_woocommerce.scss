@@ -44,18 +44,79 @@ body.single-product .ppt, body.single-product .pp_description {
     a.button, button.button, input.button {
         @extend .button;
     }
+    input.button.alt{
+        background: #FFF;
+        border: 1px solid #0258ad;
+        color: #0258ad;
+
+        &:after, &:before {
+            display: none;
+        }
+
+        &:hover {
+            background: #0258ad;
+            color: #FFF;
+        }
+    }
     .woocommerce-error, .woocommerce-message, .woocommerce-notice, .woocommerce-info {
         margin: 0 0 3em 0;
-        text-align: left;
-        border-bottom: 1px solid #CCC;
         padding: 0 0 1em 0;
+        color: #fff;
+        text-align: left;
         list-style-position: inside;
+        // border-bottom: 1px solid #CCC;
+        border-top: none;
+        background: #0258ad;
+        @include text-shadow(0 0 0 transparent);
+        @include box-shadow(0 0 0 0 transparent);
+
+        &#checkout_paypal_message{
+            background: #1e85be;
+
+            .woocommerce_paypal_ec_checkout_message{
+                p{
+                    color: #fff;
+                    font-weight: bold;
+                    line-height: 47px;
+                    text-transform: uppercase;
+                }
+            }
+            
+            img{
+                @include border-radius(5px);
+            }
+
+            &:before{
+                display: none;
+            }
+
+        }// .#checkout_paypal_message
+
+        &:before{
+            // display: none;
+        }
+
+        li{
+            @include text-shadow(0 0 0 transparent);
+        }
+
         a {
             float: right;
             padding-top: 0;
+            color: #fff;
+            @include text-shadow(0 0 0 transparent);
+
             &.button {
                 margin: 0 20px !important;
                 @extend .button;
+                background: lighten(#0258ad, 10%) !important;
+                
+                &:before{
+                    border-color: transparent transparent transparent #0258ad !important;
+                }
+                &:after{
+                    border-color: transparent transparent transparent lighten(#0258ad, 10%) !important;
+                }
             }
         }
     }
@@ -96,8 +157,8 @@ body.single-product .ppt, body.single-product .pp_description {
         padding: 1em 0 10%;
         .woocommerce-pagination {
             margin-top: 4em;
-
             text-align: center;
+
             .page-numbers {
                 display: inline-block;
                 @extend .clearfix;
@@ -180,31 +241,40 @@ body.single-product .ppt, body.single-product .pp_description {
                 &.first {
                     clear: none;
                 }
+
                 &:nth-child(4n) {
                     clear: left;
+
                     @include device-width(8) {
                         clear: none;
                     }
                 }
+
                 @include device-width(8) {
                     width: 31%;
+
                     &:nth-child(3n+2) {
                         clear: left;
+
                         @include device-width(6) {
                             clear: none;
                         }
                     }
                 }
+
                 @include device-width(6) {
                     width: 48%;
+                    
                     &:nth-child(2n+2) {
-                        clear: left !important;
+                        clear: left;
                     }
                 }
+
                 a {
                     padding-bottom: .5em;
 
                     img {
+                        border: 1px solid rgba(#ccc, 0.5);
                         @include box-shadow(none);
                     }
 
@@ -244,10 +314,16 @@ body.single-product .ppt, body.single-product .pp_description {
                 @extend .clearfix;
                 .images {
 
+                    img{
+                        padding: 5px;
+                        @include box-shadow(0 0 2px 0 rgba(0,0,0,0.3));
+                    }
+
                     .woocommerce-main-image{
                         float: left;
                         display: inline-block;
-                        width: 80%;
+                        width: 78%;
+                        margin-right: 2%;
                     }
 
                     .thumbnails {
@@ -378,7 +454,28 @@ body.single-product .ppt, body.single-product .pp_description {
                 }
 
                 .variations td {
-                    vertical-align: middle;
+                    // vertical-align: middle;
+                    &.label{
+                        padding:0;
+
+                        label{
+                            display: inline-block;
+                            width: 100%;
+                            line-height: normal;
+                            margin:0;
+                            padding: 1em;
+                            color: #fff;
+                            background-color: #333;
+                            border-top: 1px solid #ccc;
+                            border-left: 1px solid #ccc;
+                            border-bottom: 1px solid #ccc;
+                            vertical-align: top;
+                        }
+                    }
+
+                    &.value{
+                        padding: 0;
+                    }
                 }
             }
             /* =Upcycle Products
@@ -465,7 +562,7 @@ body.single-product .ppt, body.single-product .pp_description {
             border-bottom: 1px solid #CCC;
         }
         thead th, tfoot th {
-            color: #CCC;
+            color: #333;
         }
         .actions {
             text-align: right;
@@ -544,6 +641,12 @@ body.single-product .ppt, body.single-product .pp_description {
                 @media screen and (max-width: 768px) {
                     width: 100%;
                 }
+                
+                #coupon_code{
+                    padding: 8px;
+                    @include font-size(14);
+                }
+
                 input#coupon_code, .button {
                     width: 48%;
                 }
@@ -595,9 +698,9 @@ body.single-product .ppt, body.single-product .pp_description {
                 @include font-size(13);
                 @include american;
                 .woocommerce-checkout & {
-                    @include font-size(10);
-                    color: #ccc;
-                    margin: 1em 0 1.5em;
+                    @include font-size(14);
+                    color: #333;
+                    margin: 1em 0 0.7em;
                 }
             }
             label.hidden {
@@ -729,9 +832,9 @@ body.single-product .ppt, body.single-product .pp_description {
         input[type=text], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=password], textarea {
             border: 1px solid #ccc;
             color: #000;
-            @include font-size(12);
+            @include font-size(14);
             font-weight: normal;
-            padding: 1.5em;
+            padding: 1em;
             letter-spacing: 2px;
         }
         // .woocommerce-info, .woocommerce-error {
@@ -818,6 +921,18 @@ body.single-product .ppt, body.single-product .pp_description {
                 border: none;
                 padding: 0;
             }
+
+            .payment_method_stripe{
+                .payment_box{
+                    width: 100%;
+                }
+                
+                label{
+                    margin:1em 0 0.7em;
+                    color: #333;
+                    @include font-size(14);
+                }
+            }
         }
     }
     /* Payment box - appears on checkout and page page */
@@ -859,6 +974,11 @@ body.single-product .ppt, body.single-product .pp_description {
         .terms {
             padding: 0 1em 0;
             text-align: right;
+            vertical-align: middle;
+
+            .checkbox{
+                display: inline-block;
+            }
         }
         div.payment_box {
             position: relative;

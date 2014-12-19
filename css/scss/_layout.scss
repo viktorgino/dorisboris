@@ -19,6 +19,12 @@ body {
 	position: relative;
 }
 
+/*
+//////////////////
+////////////////// HEADER
+//////////////////
+*/
+
 #header {
 	@extend .clearfix;
 
@@ -44,7 +50,12 @@ body {
 		padding: 35px 0 30px;
 		@include american;
 
+		@include device-width(6) {
+			padding-bottom: 10px;
+		}
+
 		i {
+			display: inline-block;
 			color: #FFF;
 			background: #333333;
 			@include border-radius(25px);
@@ -55,29 +66,18 @@ body {
 				padding: 10px 6px;
 				@include font-size(12);
 			}				
-		}		
+		}
 
-		.ecommerce-options, .phone {
-			padding-top: 3.5em;
-
-			a {
-
-				&:hover {
-					color: #0258ad;
-					
-					i {
-						background: #0258ad;
-					}					
-				}
-			}
-
-			@include device-width(6) {
-				padding-top: 2.5em;
+		.logo-wrap{
+			@include device-width(9){
+				width: 100%;
 			}
 		}
 
 		.ecommerce-options {
-			text-align: right;	
+			position: relative;
+			padding-top: 3.5em;
+			text-align: right;
 
 			&.first {
 				text-align: left;
@@ -98,17 +98,140 @@ body {
 				@include font-size(13);
 				color: #2f2f2f;
 				margin-left: 30px;
+
+				&:hover {
+					color: #0258ad;
+					
+					i {
+						background: #0258ad;
+					}					
+				}
+			}
+			
+			@include device-width(9){
+				width: 100%;
+				padding-top: 2em;
+				text-align: center;
+
+				a:first-child{
+					margin-left: 0;
+				}
 			}
 
 			@include device-width(6) {
+				padding-top: 2em;
 				text-align: center;
+				z-index: 400;
 
 				a {
 					margin: 0 15px;
 				}
 			}				
+		}// .ecommerce-options
+	}// .top
+
+	.search-btn{
+		position: relative;
+
+		span{
+			position: absolute;
+			top: 0;
+			right: -150%;
+			color: #fff;
+			visibility: hidden;
+			@include opacity(0);
+			@include transition(all, .3s);
 		}
-	}
+
+		&:hover{
+			span{
+				right: -175%;
+				color: #fff;
+				visibility: visible;
+				@include opacity(1);
+			}
+		}
+
+		@include device-width(5) {
+			display: none;
+		}
+	}// .search-brn
+
+	#search-bar{
+		max-height: 0;
+		text-align: right;
+		@include opacity(0);
+		visibility: hidden;
+		overflow: hidden;
+		@include transition(all, .3s);
+
+		@include device-width(9) {
+			text-align: center;
+		}
+
+		@include device-width(5) {
+			max-height: initial;
+			padding-top: 10px;
+			visibility: visible;
+			@include opacity(1);
+		}
+
+		&.visible{
+			max-height: 200px;
+			padding-top: 2em;
+			@include opacity(1);
+			visibility: visible;
+		}
+		
+		#searchform{
+			position: relative;
+			display: inline-block;
+			width: 33%;
+
+			@include device-width(9) {
+				width: 80%;
+			}
+
+			label{
+				display: none;
+			}
+
+			#search-input{
+				display: inline-block;
+				width: 100%;
+				padding-right: 70px;
+				background-color: rgba(#fff,0.5);
+				border: none;
+				@include transition(all, .3s);
+
+				&:focus{
+					background-color: rgba(#fff,1);
+				}
+			}
+
+			#searchsubmit{
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: inline-block;
+				background-color: #333;
+				@include transition(all, .3s);
+
+				&:hover{
+					background-color: lighten(#333, 10%);
+				}
+
+				.icon-search {
+					background-color: transparent;
+
+					&:before{
+						font-size: 16px;
+					}			
+				}
+			}
+		}
+
+	}// #search-bar
 
 	.bottom {
 		background: #f6f6f5;
@@ -125,6 +248,7 @@ body {
 		}
 
 		@include device-width(8) {
+			display: none;
 			padding: 0;
 			background: none;
 		}
@@ -134,10 +258,20 @@ body {
 			@include device-width(8) {
 				margin-top: -50px;
 			}
+
+			@include device-width(8) {
+				margin-top: -50px;
+			}
 			
 		}
-	}
-}
+	}// .bottom
+}// #header
+
+/*
+//////////////////
+////////////////// MAIN
+//////////////////
+*/
 
 #page-header {
 	background-color: #FCFCFC;
