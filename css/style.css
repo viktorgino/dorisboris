@@ -1621,6 +1621,8 @@ body.single-product .ppt, body.single-product .pp_description {
         color: #333333;
         font-size: 15px;
         font-size: 1.5rem; }
+        .woocommerce #content div.product .product-inner .summary .dimensions .variation-name, .woocommerce-page #content div.product .product-inner .summary .dimensions .variation-name {
+          text-transform: capitalize; }
       .woocommerce #content div.product .product-inner .summary .price, .woocommerce-page #content div.product .product-inner .summary .price {
         color: #333333;
         font-size: 18px;

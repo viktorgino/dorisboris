@@ -28,11 +28,46 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			<?php _e( 'Weight: ', 'woocommerce' ) ?> <?php echo $weight; ?> <?php _e('kg','woocommerce'); ?>
 		</div>
 	<?php endif; ?>	
+
+
+	<?php $dimensions = $product->get_dimensions(); ?>
 	<?php if ($dimensions != '0.0000 x 0.0000 cm' ): ?>
 		<div class="dimensions">
 			<?php _e( 'Dimensions: ', 'woocommerce' ) ?>
 			<?php echo $height . ' x ' . $width . ' ' . get_option( 'woocommerce_dimension_unit' ); ?>
 		</div>
 	<?php endif; ?>
+
+	<?php $variation_ids = $product->children; ?>
+
+    <?php if($variation_ids): ?>
+
+		<div class="dimensions">
+
+			<?php $i = 1; ?>
+		    <?php foreach( $variation_ids as $var_id ) : ?>
+
+		        <?php
+			        $all_cfs = get_post_custom($var_id); 
+
+			        $name = get_post_meta( $var_id, 'attribute_pa_products', true);
+			        $height = get_post_meta( $var_id, '_height', true );
+			        $width = get_post_meta( $var_id, '_width', true );
+
+
+
+			        if($height != '' && $width !='' ) {
+				        if($i == 1) {
+				        	echo 'Dimensions: ';
+				        }
+			        	echo '<div class="variation-name">' . $name . ': ' . $height . ' x ' . $width . ' ' . get_option( 'woocommerce_dimension_unit' ) . '</div>'; 	
+			        }
+
+			        
+		        ?>
+		        <?php $i++; ?>
+	    	<?php endforeach; ?>
+		</div>
+    <?php endif; ?>
 
 

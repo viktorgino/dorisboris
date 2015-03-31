@@ -369,6 +369,10 @@ body.single-product .ppt, body.single-product .pp_description {
                     .dimensions {
                         color: #333333;
                         @include font-size(15);
+
+                        .variation-name {
+                            text-transform: capitalize;
+                        }
                     }
                     .price {
                         color: #333333;
