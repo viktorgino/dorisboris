@@ -13,12 +13,25 @@
 			?>
 
 			<div class="item">
-			<?php $relations = get_sub_field('link_to'); ?>
-			<?php if( $relations ): ?>
-				<?php foreach( $relations as $p ):?>
-				    <a href="<?php echo get_permalink( $p ); ?>" title="">
-				<?php endforeach; ?>
-			<?php endif; ?>
+
+				<?php $type = get_sub_field('link_type'); ?>
+
+					<?php if($type == 'category'): ?>
+						<?php 
+							$category_id = get_sub_field('box_link_product_category');
+						 ?>
+						 <a href="<?php echo get_term_link($category_id, 'product_cat'); ?>">
+						
+					<?php else: ?>
+  						<?php 
+						$urls = get_sub_field('link_to');
+						if( $urls ): ?>
+							<?php foreach( $urls as $url ): // variable must NOT be called $post (IMPORTANT) ?>
+					    	<a class="link" href="<?php echo get_permalink( $url ); ?>">
+							<?php endforeach; ?>
+						<?php endif; ?>
+					<?php endif; ?>
+
 
 				<img alt="" src="<?php echo $image[0]; ?>" />
 				<div class="caption">
@@ -27,7 +40,7 @@
 				    <!-- <span class="link"><?php the_sub_field('button_title'); ?></span>				 -->
 				</div>
 
-			<?php if($relations): ?>
+			<?php if($type): ?>
 				</a>
 			<?php endif; ?>
 			
