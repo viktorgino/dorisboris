@@ -3165,8 +3165,6 @@ blockquote {
   #footer #newsletter .container .gform_wrapper .gform_footer, #footer #newsletter #error #content .gform_wrapper .gform_footer, #error #footer #newsletter #content .gform_wrapper .gform_footer {
     padding: 0;
     margin: 0; }
-    #footer #newsletter .container .gform_wrapper .gform_footer .gform_button, #footer #newsletter #error #content .gform_wrapper .gform_footer .gform_button, #error #footer #newsletter #content .gform_wrapper .gform_footer .gform_button {
-      display: none; }
   #footer #newsletter .container .gform_body, #footer #newsletter #error #content .gform_body, #error #footer #newsletter #content .gform_body {
     position: relative; }
     #footer #newsletter .container .gform_body .gform_fields, #footer #newsletter #error #content .gform_body .gform_fields, #error #footer #newsletter #content .gform_body .gform_fields {
