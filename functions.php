@@ -232,3 +232,13 @@ function woo_custom_cart_button_text() {
  
         return __( '<i class="icon-basket"></i> Add to Basket', 'woocommerce' );
 }
+
+function woocommerce_template_loop_product_thumbnail() {
+    global $post;
+    $size = 'shop_catalog';
+    if (has_post_thumbnail($post->ID)) {
+        echo wp_get_attachment_image_src( get_post_thumbnail_id(), $size )[0];
+    } elseif (wc_placeholder_img_src()) {
+        echo wc_placeholder_img($size);
+    }
+}

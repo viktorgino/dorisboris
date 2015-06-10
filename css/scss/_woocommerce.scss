@@ -81,7 +81,7 @@ body.single-product .ppt, body.single-product .pp_description {
                     text-transform: uppercase;
                 }
             }
-            
+
             img{
                 @include border-radius(5px);
             }
@@ -110,7 +110,7 @@ body.single-product .ppt, body.single-product .pp_description {
                 margin: 0 20px !important;
                 @extend .button;
                 background: lighten(#0258ad, 10%) !important;
-                
+
                 &:before{
                     border-color: transparent transparent transparent #0258ad !important;
                 }
@@ -145,14 +145,14 @@ body.single-product .ppt, body.single-product .pp_description {
     }
 
     .content {
-    	margin: 3em auto 5em;
+        margin: 3em auto 5em;
     }
 
     span.onsale {
         background: #52A82E;
         padding: 5px 7px;
     }
-    
+
     #content {
         padding: 1em 0 10%;
         .woocommerce-pagination {
@@ -204,8 +204,8 @@ body.single-product .ppt, body.single-product .pp_description {
         }
     }
     /* =Archives
-	-------------------------------------------------------------- */
-    
+        -------------------------------------------------------------- */
+
     #content {
         > ul.products {
             li, li.product {
@@ -264,7 +264,7 @@ body.single-product .ppt, body.single-product .pp_description {
 
                 @include device-width(6) {
                     width: 48%;
-                    
+
                     &:nth-child(2n+2) {
                         clear: left;
                     }
@@ -273,9 +273,44 @@ body.single-product .ppt, body.single-product .pp_description {
                 a {
                     padding-bottom: .5em;
 
-                    img {
+                    table {
                         border: 1px solid rgba(#ccc, 0.5);
                         @include box-shadow(none);
+                        border-spacing: 0px;
+                        border: none;
+                        width : 100%;
+                        table-layout:fixed;      
+                        height:260px;
+                        background-color: #ffffff;
+                        @include device-width(8) {
+                            height:240px;
+                        }
+
+                        td {
+                            border: none;
+                            padding: 0px;
+                            vertical-align:middle;
+                            text-align:center;    
+                            height:260px;
+                            @include device-width(8) {
+                                height:240px;
+                            }
+
+                            img {
+                                max-height:260px;
+                                max-width:100%;
+                                vertical-align:middle;
+                                display:inline-block;
+                                margin:0px;
+                                width:auto;
+                                height:auto;
+                                
+                                @include device-width(8) {
+                                    max-height:240px;
+                                }
+
+                            }
+                        }
                     }
 
                     &:hover {
@@ -306,8 +341,8 @@ body.single-product .ppt, body.single-product .pp_description {
         }
     }
     /* =Single Product
-	-------------------------------------------------------------- */
-    
+        -------------------------------------------------------------- */
+
     #content {
         div.product {
             .product-inner {
@@ -483,8 +518,8 @@ body.single-product .ppt, body.single-product .pp_description {
                 }
             }
             /* =Upcycle Products
-	-------------------------------------------------------------- */
-            
+        -------------------------------------------------------------- */
+
             &#upcycle {
                 background: none;
                 .product-inner {
@@ -522,8 +557,8 @@ body.single-product .ppt, body.single-product .pp_description {
         }
     }
     /* =Tables
-	-------------------------------------------------------------- */
-    
+        -------------------------------------------------------------- */
+
     table.shop_attributes {
         border: 0;
         border-top: 1px solid #f2f2f2;
@@ -617,8 +652,8 @@ body.single-product .ppt, body.single-product .pp_description {
         min-width: 80px;
     }
     /* =Cart Page
-	-------------------------------------------------------------- */
-    
+        -------------------------------------------------------------- */
+
     table.cart {
         img {
             width: 150px;
@@ -645,7 +680,7 @@ body.single-product .ppt, body.single-product .pp_description {
                 @media screen and (max-width: 768px) {
                     width: 100%;
                 }
-                
+
                 #coupon_code{
                     padding: 8px;
                     @include font-size(14);
@@ -684,8 +719,8 @@ body.single-product .ppt, body.single-product .pp_description {
         }
     }
     /* =Forms
-	-------------------------------------------------------------- */
-    
+        -------------------------------------------------------------- */
+
     form {
         .form-row {
             @extend .clearfix;
@@ -792,11 +827,11 @@ body.single-product .ppt, body.single-product .pp_description {
         }
     }
     form.login, form.checkout_coupon, form.register, form.lost_reset_password, &.woocommerce-account .content form {
-		padding: 4em;
-		margin: 0 auto;
-		text-align: left;
-		background: #f8f8f8;
-		max-width: 800px;
+        padding: 4em;
+        margin: 0 auto;
+        text-align: left;
+        background: #f8f8f8;
+        max-width: 800px;
     }
 
     ul#shipping_method {
@@ -830,8 +865,8 @@ body.single-product .ppt, body.single-product .pp_description {
         }
     }
     /* =Checkout
-	-------------------------------------------------------------- */
-    
+        -------------------------------------------------------------- */
+
     &.woocommerce-checkout {
         input[type=text], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=password], textarea {
             border: 1px solid #ccc;
@@ -930,7 +965,7 @@ body.single-product .ppt, body.single-product .pp_description {
                 .payment_box{
                     width: 100%;
                 }
-                
+
                 label{
                     margin:1em 0 0.7em;
                     color: #333;
@@ -940,7 +975,7 @@ body.single-product .ppt, body.single-product .pp_description {
         }
     }
     /* Payment box - appears on checkout and page page */
-    
+
     #payment {
         @include border-radius(0);
         @include device-width(6) {
@@ -1029,8 +1064,8 @@ body.single-product .ppt, body.single-product .pp_description {
         margin: 3em 0 10em 0;
     }
     /* =Order Page
-	-------------------------------------------------------------- */
-    
+        -------------------------------------------------------------- */
+
     .order-details-table {
         margin-top: 8em;
     }
@@ -1086,21 +1121,21 @@ body.single-product .ppt, body.single-product .pp_description {
         }
     }
     /* = MY Account Page
-	-------------------------------------------------------------- */    
+        -------------------------------------------------------------- */    
 
     &.woocommerce-account {
-    	.myaccount_user {
-    		margin: 3em 0;
-    	}
+        .myaccount_user {
+            margin: 3em 0;
+        }
 
-    	.addresses {
-    		margin: 3em 0;
+        .addresses {
+            margin: 3em 0;
 
-    		address {
-    			background: #f6f6f5;
-    			padding: 2em;
-    		}
-    	}
+            address {
+                background: #f6f6f5;
+                padding: 2em;
+            }
+        }
 
     }
 }
