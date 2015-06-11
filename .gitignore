@@ -2,5 +2,5 @@ config.codekit
 config.rb
 css/.DS_Store
 .DS_Store
-/JavaApplication2/nbproject/private/
-/JavaApplication2/build/
+.gitignore
+nbproject
