@@ -304,7 +304,7 @@ body.single-product .ppt, body.single-product .pp_description {
                                 margin:0px;
                                 width:auto;
                                 height:auto;
-                                
+
                                 @include device-width(8) {
                                     max-height:240px;
                                 }
@@ -401,7 +401,7 @@ body.single-product .ppt, body.single-product .pp_description {
                         margin-bottom: 20px;
                     }
 
-                    .dimensions {
+                    .dimensions, weight {
                         color: #333333;
                         @include font-size(15);
 
@@ -564,7 +564,7 @@ body.single-product .ppt, body.single-product .pp_description {
         border-top: 1px solid #f2f2f2;
         width: 100%;
         text-align: left;
-        color: #ccc;
+        font-style:normal;
         th {
             width: 150px;
             padding: 0.6em 0;
@@ -580,6 +580,7 @@ body.single-product .ppt, body.single-product .pp_description {
             border-bottom: 1px solid #f2f2f2;
             margin: 0;
             line-height: 1.5em;
+            font-style:normal;
         }
     }
     .shop_table {
