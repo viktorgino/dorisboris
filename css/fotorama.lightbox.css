@@ -1,0 +1,15 @@
+  .fullscreen,
+  .fotorama--fullscreen,
+  .fotorama--fullscreen .fotorama__stage,
+  .fotorama--fullscreen .fotorama__nav,
+  .fotorama-overlay {
+    background-color: #fffff;
+  }
+  .woocommerce div.product div.images > .fotorama {
+    overflow: visible;
+  }
+ 
+  /* straight “close” icon instead of “cancel fullscreen” */
+  .fotorama--fullscreen .fotorama__fullscreen-icon {
+    background-position: -64px 0;
+  }
