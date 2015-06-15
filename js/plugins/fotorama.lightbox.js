@@ -52,7 +52,7 @@ jQuery(function ($) {
     $(".woocommerce div.product div.images .thumbnails a").mouseenter(function (e) {
         change_img($(this).attr("href"));
     });
-    $(".woocommerce div.product div.images .thumbnails a").mouseleave(function (e) {
+    $(".woocommerce div.product div.images .thumbnails").mouseleave(function (e) {
         change_img(current_woocommerce_main_image);
     });
     $(".woocommerce div.product div.images .thumbnails a").click(function (e) {

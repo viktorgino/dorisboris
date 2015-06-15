@@ -126,6 +126,8 @@ function custom_scripts() {
     wp_enqueue_script('owlcarousel', $template_directory_uri . '/js/plugins/jquery.owlcarousel.js', array('jquery'), '', true);
     wp_enqueue_script('dl-menu', $template_directory_uri . '/js/plugins/jquery.dlmenu.js', array('jquery'), '', true);
     wp_enqueue_script('main', $template_directory_uri . '/js/main.js', array('jquery'), '', true);
+    wp_enqueue_script('slick', $template_directory_uri . '/js/plugins/slick.min.js', array('jquery'), '1.5.0', true);
+    wp_enqueue_script('footer', $template_directory_uri . '/js/footer.js', array('jquery'), '1.0.0', true);
 }
 
 function custom_styles() {
@@ -133,6 +135,9 @@ function custom_styles() {
 
     wp_enqueue_style('style', $template_directory_uri . '/css/style.css');
     wp_enqueue_style('fonts', '//fast.fonts.net/cssapi/ba131fe1-e71a-4fd6-83e4-29c24022bc46.css');
+    wp_enqueue_style('slick', $template_directory_uri . '/css/slick.css');
+    wp_enqueue_style('slick-theme', $template_directory_uri . '/css/slick-theme.css');
+    wp_enqueue_style('font-awesome', $template_directory_uri . '/css/font-awesome.min.css');
 }
 
 //remove Woocommerce Default Sorting Dropdown
