@@ -46,8 +46,10 @@ if ($attachment_ids) {
                  $image_class = implode(" ", $class);
                  $image = wp_get_attachment_image($attachment_id, apply_filters('single_product_small_thumbnail_size', 'shop_thumbnail'));
                  $image_title = esc_attr(get_the_title($attachment_id));
+                 $thumb = wp_get_attachment_image_src($attachment_id, 'shop_single');
+                 $image_thumb = $thumb['0'];
 
-                 echo apply_filters('woocommerce_single_product_image_thumbnail_html', sprintf('<a href="%s" title="%s" class="%s" data-rel="prettyPhoto[product-gallery]">%s</a>', $image_link, $image_title, $image_class, $image), $attachment_id, $post->ID);
+                 echo apply_filters('woocommerce_single_product_image_thumbnail_html', sprintf('<a href="%s" title="%s" class="%s" data-rel="prettyPhoto[product-gallery]" data-single-product-image="%s">%s</a>', $image_link, $image_title, $image_class, $image_thumb, $image), $attachment_id, $post->ID);
 
                  $loop++;
              }
@@ -55,3 +57,4 @@ if ($attachment_ids) {
     </div>
     <?php
 }
+    

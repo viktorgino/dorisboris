@@ -238,7 +238,7 @@
 
 
 				img {
-					display: block;
+					display: inline-block;
 					margin: 0;
 					@include box-shadow(none);
 					position: relative;

@@ -359,6 +359,16 @@ body.single-product .ppt, body.single-product .pp_description {
                         display: inline-block;
                         width: 78%;
                         margin-right: 2%;
+                        position:relative;
+                        
+                        .loader{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #FFFFFF;
+                            top:0px;
+                            left:0px;
+                        }
                     }
 
                     .thumbnails {

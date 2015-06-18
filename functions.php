@@ -37,7 +37,6 @@ add_filter('jpeg_quality', create_function('', 'return 100;'));
 
 add_filter('the_content_feed', 'custom_the_content_feed', 10, 2);
 
-
 //Custom shortcodes
 
 
@@ -134,7 +133,6 @@ function custom_styles() {
     global $wp_styles, $template_directory_uri;
 
     wp_enqueue_style('style', $template_directory_uri . '/css/style.css');
-    wp_enqueue_style('fonts', '//fast.fonts.net/cssapi/ba131fe1-e71a-4fd6-83e4-29c24022bc46.css');
     wp_enqueue_style('slick', $template_directory_uri . '/css/slick.css');
     wp_enqueue_style('slick-theme', $template_directory_uri . '/css/slick-theme.css');
     wp_enqueue_style('font-awesome', $template_directory_uri . '/css/font-awesome.min.css');
@@ -160,6 +158,9 @@ function frontend_scripts_include_lightbox() {
     wp_enqueue_style('fotorama.lightbox', get_template_directory_uri() . '/css/fotorama.lightbox.css');
     wp_enqueue_script('fotorama', get_template_directory_uri() . '/js/plugins/fotorama.js', array('jquery'), '4.6.4', false);
     wp_enqueue_script('fotorama.lightbox', get_template_directory_uri() . '/js/plugins/fotorama.lightbox.js', array('jquery'), '1.0.0', true);
+    wp_deregister_script('wc-add-to-cart-variation');
+    wp_register_script('wc-add-to-cart-variation', get_template_directory_uri() . '/js/add-to-cart-variation.js', array('jquery'), WC_VERSION, TRUE);
+    wp_enqueue_script('wc-add-to-cart-variation');
     //}
 }
 

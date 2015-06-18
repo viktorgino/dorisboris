@@ -47,22 +47,35 @@ jQuery(function ($) {
     });
     var current_woocommerce_main_image;
     $(document).ready(function () {
-        current_woocommerce_main_image = $(".woocommerce div.product div.images .woocommerce-main-image").first().attr("href");
+        current_woocommerce_main_image = $(".woocommerce div.product div.images .woocommerce-main-image").first().data("single-product-image");
     });
     $(".woocommerce div.product div.images .thumbnails a").mouseenter(function (e) {
-        change_img($(this).attr("href"));
+        if ($(this).data("single-product-image") != $("#content .woocommerce-main-image img").attr("src")) {
+            change_img($(this).data("single-product-image"));
+        }
     });
     $(".woocommerce div.product div.images .thumbnails").mouseleave(function (e) {
-        change_img(current_woocommerce_main_image);
+        if (current_woocommerce_main_image != $("#content .woocommerce-main-image img").attr("src")) {
+            change_img(current_woocommerce_main_image);
+        }
     });
     $(".woocommerce div.product div.images .thumbnails a").click(function (e) {
         e.preventDefault();
-        current_woocommerce_main_image = $(this).attr("href");
-        change_img($(this).attr("href"));
-        $('.woocommerce div.product div.images .thumbnails a').removeClass("active");
-        $(this).addClass("active");
+        if ($(this).data("single-product-image") != current_woocommerce_main_image) {
+            current_woocommerce_main_image = $(this).data("single-product-image");
+            change_img($(this).data("single-product-image"));
+            $('.woocommerce div.product div.images .thumbnails a').removeClass("active");
+            $(this).addClass("active");
+        }
+    });
+    $(".woocommerce div.product div.images .woocommerce-main-image img").load(function () {
+        $(".woocommerce-main-image .loader").hide();
     });
     function change_img(src) {
+        $(".woocommerce-main-image .loader").show();
         $(".woocommerce div.product div.images .woocommerce-main-image img").attr("src", src);
     }
+    $(window).on('load', function () {
+        $(".woocommerce div.product form.cart").trigger("reset");
+    });
 });
