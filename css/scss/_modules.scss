@@ -80,8 +80,6 @@ blockquote {
 	line-height: 1;
 
 	span {
-		position: relative;
-		top: -10px;
 		margin-right: 5px;
 	}		
 
@@ -445,9 +443,12 @@ blockquote {
 		i {
 			color: #FFF;
 			background: #333333;
-			@include border-radius(25px);
-			padding: 10px 9px;
-			@include font-size(13);			
+			@include border-radius(35px);
+			padding: 10px;
+			@include font-size(18);
+                        .fa{
+                            
+                        }
 		}		
 
 		.phone {
@@ -455,11 +456,6 @@ blockquote {
 			@include gillsans-medium;
 			@include font-size(18);
 			padding-top: 3px;
-
-			.icon-tel {
-				padding: 10px 7px;
-				@include font-size(13);
-			}
 		}		
 	}
 

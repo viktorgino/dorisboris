@@ -709,7 +709,7 @@ body.single-product .ppt, body.single-product .pp_description {
     }
     .cart_totals {
         table {
-            border: 1px solid #CCC;
+            border: 1px solid #CCC !important;
             float: right;
 
             th, td {

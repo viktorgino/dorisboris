@@ -23,7 +23,7 @@ global $post, $woocommerce, $product;
 				) );
 
                         $loader = '<div class="loader" style="display:none"></div>';
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s">%s %s</a>', $image_link, $image_title, $image, $loader ), $post->ID );
+			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s">%s %s</a>', $image_link, $image_title,$image, $loader ), $post->ID );
 
 		} else {
 
