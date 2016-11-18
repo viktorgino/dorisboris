@@ -14,9 +14,26 @@ if (!defined('ABSPATH'))
     </div>
     <div class="col-xs-6 text-right">
         <h1><?php wcdn_document_title(); ?></h1>
-        <h1><small>Order Number <?php echo $order->id ?></small></h1>
+
+        <?php if (wcdn_get_template_type() == "delivery-note"): ?>
+            <h1>
+                <small>Order Number: <?php echo $order->id ?></small></br>
+                <small>Order date: <?php echo $order->payment_method_title ?></small>
+            </h1>
+        <?php else: ?>
+
+            <h1 class="info-list">
+                <?php $fields = apply_filters('wcdn_order_info_fields', wcdn_get_order_info($order), $order); ?>
+                <?php foreach ($fields as $field) : ?>
+                    <small>
+                        <?php printf("%s:%s", $field['label'], $field['value']); ?>
+                    </small></br>
+                <?php endforeach; ?>
+            </h1>
+        <?php endif; ?>
     </div>
 </div>
+<?php do_action('wcdn_after_branding', $order); ?>
 <div class="row">
     <div class="col-xs-6">
         <div class="panel panel-default">
@@ -68,15 +85,19 @@ if (!defined('ABSPATH'))
             <th>
     <h4>Product</h4>
 </th>
-<th>
-<h4>Price</h4>
-</th>
+<?php if (wcdn_get_template_type() == "invoice") : ?>
+    <th>
+    <h4>Price</h4>
+    </th>
+<?php endif; ?>
 <th>
 <h4>Quantity</h4>
 </th>
-<th>
-<h4>Sub Total</h4>
-</th>
+<?php if (wcdn_get_template_type() == "invoice") : ?>
+    <th>
+    <h4>Sub Total</h4>
+    </th>
+<?php endif; ?>
 </tr>
 </thead>
 <tbody>
@@ -96,61 +117,72 @@ if (!defined('ABSPATH'))
 
                     <?php $item_meta->display(); ?>
 
-                    <dl class="extras">
-                        <?php if ($product && $product->exists() && $product->is_downloadable() && $order->is_download_permitted()) : ?>
+                    <?php if (wcdn_get_template_type() == "invoice") : ?>
+                        <dl class="extras">
+                            <?php if ($product && $product->exists() && $product->is_downloadable() && $order->is_download_permitted()) : ?>
 
-                            <dt><?php _e('Download:', 'woocommerce-delivery-notes'); ?></dt>
-                            <dd><?php printf(__('%s Files', 'woocommerce-delivery-notes'), count($order->get_item_downloads($item))); ?></dd>
+                                <dt><?php _e('Download:', 'woocommerce-delivery-notes'); ?></dt>
+                                <dd><?php printf(__('%s Files', 'woocommerce-delivery-notes'), count($order->get_item_downloads($item))); ?></dd>
 
-                        <?php endif; ?>
+                            <?php endif; ?>
 
-                        <?php
-                        $fields = apply_filters('wcdn_order_item_fields', array(), $product, $order);
-                        foreach ($fields as $field) :
-                            ?>
+                            <?php
+                            $fields = apply_filters('wcdn_order_item_fields', array(), $product, $order);
+                            foreach ($fields as $field) :
+                                ?>
 
-                            <dt><?php echo $field['label']; ?></dt>
-                            <dd><?php echo $field['value']; ?></dd>
+                                <dt><?php echo $field['label']; ?></dt>
+                                <dd><?php echo $field['value']; ?></dd>
 
-                        <?php endforeach; ?>
-                    </dl>
+                            <?php endforeach; ?>
+                        </dl>
+                    <?php endif; ?>
                 </td>
-                <td class="product-item-price">
-                    <span><?php echo wcdn_get_formatted_item_price($order, $item); ?></span>
-                </td>
+                <?php if (wcdn_get_template_type() == "invoice") : ?>
+                    <td class="product-item-price">
+                        <span><?php echo wcdn_get_formatted_item_price($order, $item); ?></span>
+                    </td>
+
+                <?php endif; ?>
                 <td class="product-quantity">
                     <span><?php echo apply_filters('wcdn_order_item_quantity', $item['qty'], $item); ?></span>
                 </td>
-                <td class="product-price">
-                    <span><?php echo $order->get_formatted_line_subtotal($item); ?></span>
-                </td>
+
+                <?php if (wcdn_get_template_type() == "invoice") : ?>
+                    <td class="product-price">
+                        <span><?php echo $order->get_formatted_line_subtotal($item); ?></span>
+                    </td>
+
+                <?php endif; ?>
             </tr>
         <?php endforeach; ?>
     <?php endif; ?>
 </tbody>
 </table>
-<div class="row text-right">
-    <div class="col-xs-4 col-xs-offset-4">
-        <p>
+<?php if (wcdn_get_template_type() == "invoice") : ?>
+    <div class="row text-right">
+        <div class="col-xs-4 col-xs-offset-4">
+            <p>
+                <strong>
+                    <?php if ($totals = $order->get_order_item_totals()) : ?>
+                        <?php foreach ($totals as $total) : ?>
+                            <?php echo $total['label']; ?><br>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </strong>
+            </p>
+        </div>
+        <div class="col-xs-4">
             <strong>
                 <?php if ($totals = $order->get_order_item_totals()) : ?>
                     <?php foreach ($totals as $total) : ?>
-                        <?php echo $total['label']; ?><br>
+                        <?php echo $total['value']; ?><br>
                     <?php endforeach; ?>
                 <?php endif; ?>
             </strong>
-        </p>
+        </div>
     </div>
-    <div class="col-xs-4">
-        <strong>
-            <?php if ($totals = $order->get_order_item_totals()) : ?>
-                <?php foreach ($totals as $total) : ?>
-                    <?php echo $total['value']; ?><br>
-                <?php endforeach; ?>
-            <?php endif; ?>
-        </strong>
-    </div>
-</div>
+<?php endif; ?>
 <div class="row">
     <div class="col-xs-5">
         <div class="panel panel-info">

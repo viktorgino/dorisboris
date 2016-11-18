@@ -403,11 +403,11 @@ body.single-product .ppt, body.single-product .pp_description {
                 }
                 .summary {
                     padding: 0 3em;
+                    float:left;
 
                     @include device-width(8) {
                         padding: 0 2em;
                     }
-
                     .product_title {
                         color: #0063a1;
                         @include font-size(27);
@@ -494,6 +494,9 @@ body.single-product .ppt, body.single-product .pp_description {
                         .button {
                             display: none;
                         }                         
+                    }
+                    li.first{
+                        clear: none !important;
                     }
                 }
             }

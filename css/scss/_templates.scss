@@ -186,10 +186,7 @@
 				&:nth-child(4n+1) {	
 					clear: left;
 				}
-
-				&.first {	
-					clear: left;
-				}
+                                
 
 				.gift-top {
 					@extend .clearfix;

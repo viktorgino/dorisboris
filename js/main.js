@@ -1,5 +1,4 @@
 ;(function($) {
-
 	window.main = {
 		w: $(window),
 		d: $(document),
@@ -12,7 +11,6 @@
 			if ($(window).width() > 400) {
 				main.equalHeight();	
 			}
-			
 
 			$('.owl-carousel').owlCarousel({
 			    loop:true,
@@ -27,7 +25,8 @@
 			    dots: false
 
 
-			});				
+			});
+                        $(".product-gallery").productGallery();
 		},
 
 		loaded: function(){

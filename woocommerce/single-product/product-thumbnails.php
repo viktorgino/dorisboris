@@ -24,17 +24,13 @@ if ($product->has_child()) {
 if (count($attachment_ids) <= 1) {
     $attachment_ids = array_merge($attachment_ids, $product->get_gallery_attachment_ids());
 }
+
 if ($attachment_ids) {
     $loop = 0;
     $columns = apply_filters('woocommerce_product_thumbnails_columns', 3);
     ?>
-
-    <div class="thumbnails fotorama <?php echo 'columns-' . $columns; ?>" 
-         data-auto="false"
-         data-allow-full-screen="true"
-         data-thumb-width="70"
-         data-thumb-height="47"
-         data-nav="thumbs"><?php
+    <div class="thumbnails">
+        <?php
              foreach (array_unique($attachment_ids) as $key => $attachment_id) {
                  $class = array();
                  $image_link = wp_get_attachment_url($attachment_id);
@@ -49,7 +45,7 @@ if ($attachment_ids) {
                  $thumb = wp_get_attachment_image_src($attachment_id, 'shop_single');
                  $image_thumb = $thumb['0'];
 
-                 echo apply_filters('woocommerce_single_product_image_thumbnail_html', sprintf('<a href="%s" title="%s" class="%s" data-rel="prettyPhoto[product-gallery]" data-single-product-image="%s">%s</a>', $image_link, $image_title, $image_class, $image_thumb, $image), $attachment_id, $post->ID);
+                 echo apply_filters('woocommerce_single_product_image_thumbnail_html', sprintf('<a href="%s" title="%s" class="%s" data-large="%s">%s</a>', $image_thumb, $image_title, $image_class, $image_link, $image), $attachment_id, $post->ID);
 
                  $loop++;
              }

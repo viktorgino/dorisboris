@@ -18,8 +18,7 @@
 		<?php endif; ?>
 	<?php elseif(is_page()): ?>
 		<?php 
-			$header = get_field( "header_content", $post->ID ); 
-			echo($value);
+			$header = get_field( "header_content", $post->ID );
 		 ?>
 		<?php if($header): ?>
 			<div class="page-header">
